@@ -1,4 +1,4 @@
-package com.example.hassannaqvi.wfppishincr;
+package com.example.hassannaqvi.wfppishincr.core;
 
 import android.app.Application;
 
