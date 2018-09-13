@@ -170,7 +170,11 @@
                 </android.support.design.widget.TextInputLayout>
 
                 <!--Q5-->
-
+            <LinearLayout
+                android:id="@+id/fldGrpccb05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -254,7 +258,7 @@
                         android:textSize="20sp" />
 
                 </RadioGroup>
-
+            </LinearLayout>
                 <!--Q6-->
                 <TextView
                     android:layout_width="match_parent"

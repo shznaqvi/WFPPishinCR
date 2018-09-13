@@ -35,8 +35,9 @@
                 android:layout_height="wrap_content"
                 android:animateLayoutChanges="true"
                 android:orientation="vertical">
+<!--
 
-                <!--Q1-->
+                &lt;!&ndash;Q1&ndash;&gt;
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -56,7 +57,7 @@
 
                 </Spinner>
 
-                <!--Q2-->
+                &lt;!&ndash;Q2&ndash;&gt;
 
                 <TextView
                     android:layout_width="match_parent"
@@ -74,6 +75,7 @@
                     android:layout_marginBottom="10dp"
                     android:layout_marginTop="10dp"
                     android:padding="16dp" />
+-->
 
                 <!--Q3-->
 
@@ -125,7 +127,7 @@
                     android:textColor="@color/white" />
 
                 <Spinner
-                    android:id="@+id/cca005"
+                    android:id="@+id/cca05"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
@@ -249,6 +251,7 @@
                         android:layout_weight="1"
                         android:backgroundTint="#1ed61e"
                         android:text="@string/start_interview"
+                        android:onClick="@{() -> callback.BtnContinue()}"
                         android:textColor="@color/white"
                         android:visibility='@{cca08a.checked? View.VISIBLE : View.GONE }' />
 
@@ -259,6 +262,7 @@
                         android:layout_weight="1"
                         android:backgroundTint="@color/red"
                         android:text="@string/end_interview"
+                        android:onClick="@{() -> callback.BtnEnd()}"
                         android:textColor="@color/white"
                         android:visibility='@{cca08b.checked? View.VISIBLE : View.GONE }' />
 
