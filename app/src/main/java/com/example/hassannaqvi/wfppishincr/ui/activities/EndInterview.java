@@ -31,7 +31,7 @@ public class EndInterview extends AppCompatActivity {
 
                 SaveDraft();
                 if (UpdateDB()) {
-                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                    startActivity(new Intent(getApplicationContext(), StartActivity.class));
                 } else {
                     Toast.makeText(EndInterview.this, "Error in updating db!!", Toast.LENGTH_SHORT).show();
                 }
@@ -50,12 +50,13 @@ public class EndInterview extends AppCompatActivity {
     }
 
     public void SaveDraft() {
-        MainActivity.formContract.setIstatus(istatusa.isChecked() ? "1" : istatusb.isChecked() ? "2" : "0");
+        StartActivity.formContract.setIstatus(istatusa.isChecked() ? "1" : istatusb.isChecked() ? "2" : "0");
     }
 
     public boolean UpdateDB() {
         try {
-            Long longID = new crudOperations(1, MainActivity.db, MainActivity.formContract).execute().get();
+
+            Long longID = new crudOperations(1, StartActivity.db, StartActivity.formContract).execute().get();
             return longID == 1;
 
         } catch (InterruptedException e) {

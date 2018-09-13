@@ -23,7 +23,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.util.concurrent.ExecutionException;
 
-public class MainActivity extends AppCompatActivity {
+public class StartActivity extends AppCompatActivity {
 
     public static Forms formContract;
     public static AppDatabase db;
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_start);
 
         initialization();
 
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 if (UpdateDB()) {
                     startActivity(new Intent(getApplicationContext(), EndInterview.class));
                 } else {
-                    Toast.makeText(MainActivity.this, "Error in updating db!!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(StartActivity.this, "Error in updating db!!", Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -141,6 +141,7 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 return false;
             }
+
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (ExecutionException e) {
