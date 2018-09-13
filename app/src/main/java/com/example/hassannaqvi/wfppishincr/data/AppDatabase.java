@@ -3,11 +3,11 @@ package com.example.hassannaqvi.wfppishincr.data;
 import android.arch.persistence.room.Database;
 import android.arch.persistence.room.RoomDatabase;
 
-import com.example.hassannaqvi.wfppishincr.core.DatabaseHelper;
+import com.example.hassannaqvi.wfppishincr.core.DBConnection;
 import com.example.hassannaqvi.wfppishincr.data.DAO.FormsDAO;
 import com.example.hassannaqvi.wfppishincr.data.entities.Forms;
 
-@Database(entities = {Forms.class}, version = DatabaseHelper.DBConnection.DATABASE_VERSION, exportSchema = false)
+@Database(entities = {Forms.class}, version = DBConnection.Sub_DBConnection.DATABASE_VERSION, exportSchema = false)
 public abstract class AppDatabase extends RoomDatabase {
 
     /*@VisibleForTesting

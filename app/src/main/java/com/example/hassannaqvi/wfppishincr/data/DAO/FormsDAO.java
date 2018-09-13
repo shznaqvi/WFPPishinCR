@@ -6,7 +6,7 @@ import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.Query;
 import android.arch.persistence.room.Update;
 
-import com.example.hassannaqvi.wfppishincr.core.DatabaseHelper.DBConnection;
+import com.example.hassannaqvi.wfppishincr.core.DBConnection.Sub_DBConnection;
 import com.example.hassannaqvi.wfppishincr.data.entities.Forms;
 
 import java.util.List;
@@ -14,13 +14,13 @@ import java.util.List;
 @Dao
 public interface FormsDAO {
 
-    @Query("SELECT * FROM " + DBConnection.TABLE_FORM)
+    @Query("SELECT * FROM " + Sub_DBConnection.TABLE_FORM)
     List<Forms> getAll();
 
-    @Query("SELECT * FROM " + DBConnection.TABLE_FORM + " WHERE id=:id")
+    @Query("SELECT * FROM " + Sub_DBConnection.TABLE_FORM + " WHERE id=:id")
     Forms getLastForm(int id);
 
-    @Query("SELECT * FROM " + DBConnection.TABLE_FORM + " WHERE synced = ''")
+    @Query("SELECT * FROM " + Sub_DBConnection.TABLE_FORM + " WHERE synced = ''")
     Forms getUnSynced();
 
     @Insert

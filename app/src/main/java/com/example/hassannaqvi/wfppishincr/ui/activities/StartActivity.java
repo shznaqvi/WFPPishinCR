@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.hassannaqvi.wfppishincr.R;
-import com.example.hassannaqvi.wfppishincr.core.DatabaseHelper;
+import com.example.hassannaqvi.wfppishincr.core.DBConnection;
 import com.example.hassannaqvi.wfppishincr.core.crudOperations;
 import com.example.hassannaqvi.wfppishincr.data.AppDatabase;
 import com.example.hassannaqvi.wfppishincr.data.entities.Forms;
@@ -39,7 +39,7 @@ public class StartActivity extends AppCompatActivity {
         initialization();
 
         // Room DB instantiate
-        DatabaseHelper database = new DatabaseHelper(getApplicationContext());
+        DBConnection database = new DBConnection(getApplicationContext());
         db = database.ReturnDB();
 
         btn_saveData.setOnClickListener(new View.OnClickListener() {
@@ -84,11 +84,11 @@ public class StartActivity extends AppCompatActivity {
             if (success) {
 
                 try {
-                    File dbFile = new File(this.getDatabasePath(DatabaseHelper.DBConnection.DATABASE_NAME).getPath());
+                    File dbFile = new File(this.getDatabasePath(DBConnection.Sub_DBConnection.DATABASE_NAME).getPath());
                     FileInputStream fis = new FileInputStream(dbFile);
 
                     String outFileName = folder.getPath() + File.separator +
-                            DatabaseHelper.DBConnection.DATABASE_NAME;
+                            DBConnection.Sub_DBConnection.DATABASE_NAME;
 
                     // Open the empty db as the output stream
                     OutputStream output = new FileOutputStream(outFileName);
