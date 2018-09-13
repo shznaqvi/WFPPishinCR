@@ -4,7 +4,9 @@ import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Delete;
 import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.Query;
+import android.arch.persistence.room.Update;
 
+import com.example.hassannaqvi.wfppishincr.core.DatabaseHelper.DBConnection;
 import com.example.hassannaqvi.wfppishincr.data.entities.Forms;
 
 import java.util.List;
@@ -12,15 +14,22 @@ import java.util.List;
 @Dao
 public interface FormsDAO {
 
-    @Query("SELECT * FROM forms")
+    @Query("SELECT * FROM " + DBConnection.TABLE_FORM)
     List<Forms> getAll();
 
-    @Query("SELECT * FROM forms WHERE synced = ''")
-    Forms findUnSynced();
+    @Query("SELECT * FROM " + DBConnection.TABLE_FORM + " WHERE id=:id")
+    Forms getLastForm(int id);
+
+    @Query("SELECT * FROM " + DBConnection.TABLE_FORM + " WHERE synced = ''")
+    Forms getUnSynced();
 
     @Insert
-    void insertAll(Forms... forms);
+    Long insertAll(Forms forms);
 
     @Delete
     void delete(Forms forms);
+
+    @Update
+    int updateForm(Forms... forms);
+
 }
