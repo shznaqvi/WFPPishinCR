@@ -1,6 +1,20 @@
 <resources>
     <string name="app_name">WFP Pishin CR</string>
 
+<!--copied Strings for splash, login and main screen-->
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Login</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="istatus">انٹروہو کا نتیجہ</string>
+    <string name="istatusa">مکمل</string>
+    <string name="istatusb">نا مکمل</string>
+    <string name="istatusc">انکار کردیا</string>
+    <string name="istatusd">گھر بند ہے</string>
+    <color name="grayOverlay">#7f7f7f7f</color>
 
     <!--common strings-->
     <string name="end_interview">اختتام</string>
@@ -661,8 +675,8 @@
     <string name="ccnHeading"> گھر میں خوراک کی کمی کو پورا کرنے کے لئے حکمت عملی(صرف کھانوں سے متعلق) </string>
     <string name="ccnsubHeading"> گزشتہ 7 دنوں میں، اگر کسی وقت آپ کے گھر میں کافی مقدار میں کھانا نہیں تھا یا کھانا خریدنے کے لئے رقم نہیں تھی، تو اکثر ایسا آپ کے گھر میں کتنی مرتبہ ہوا </string>
     <string name="ccn01">سستے اور کم قیمت کھانوں پر انحصار کرنا</string>
-    <string name="ccn01a">کبھی نہیں                                              </string>
-    <string name="ccn01b">گزشتہ 7 دنوں میں ایک مرتبہ             </string>
+    <string name="ccn01a">کبھی نہیں </string>
+    <string name="ccn01b">گزشتہ 7 دنوں میں ایک مرتبہ </string>
     <string name="ccn01c">گزشتہ 7 دنوں میں دو مرتبہ</string>
     <string name="ccn01d">گزشتہ 7 دنوں میں تین مرتبہ</string>
     <string name="ccn01e">      گزشتہ 7 دنوں میں چار مرتبہ</string>
@@ -701,4 +715,5 @@
     <string name="ccp10">آئرن فولک ایسڈ</string>
     <string name="ccp11">وٹامن اے </string>
     <string name="ccp12">دیگر </string>
+
 </resources>
