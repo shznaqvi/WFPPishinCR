@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="callback"
+            type="com.example.hassannaqvi.wfppishincr.ui.activities.SectionLActivity" />
+    </data>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -118,7 +127,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:hint="@string/ccl0196"
-                                android:text='@{ccl0196.checked? ccl0196x.getText.toString : "" }' />
+                                android:text='@{ccl0196.checked ? ccl0196x.getText.toString : "" }' />
 
                         </android.support.design.widget.TextInputLayout>
 
@@ -520,12 +529,12 @@
                             android:layout_height="wrap_content"
                             android:visibility='@{ccl0696.checked? View.VISIBLE : View.GONE}'>
 
-                            <android.support.design.widget.TextInputEditTextt
+                            <android.support.design.widget.TextInputEditText
                                 android:id="@+id/ccl0696x"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:hint="@string/ccl0196"
-                                android:text='@{ccl0696.checked? ccl0696x.getText.toString : "" }' />
+                                android:text='@{ccl0696.checked ? ccl0696x.getText.toString : "" }' />
 
                         </android.support.design.widget.TextInputLayout>
 

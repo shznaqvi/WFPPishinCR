@@ -1023,12 +1023,12 @@
                     android:layout_margin="10dp"
                     android:background="@color/colorPrimary"
                     android:padding="5dp"
-                    android:text="@string/ccp03"
+                    android:text="@string/ccp04"
                     android:textColor="@color/white"
                     android:textSize="25sp" />
 
                 <RadioGroup
-                    android:id="@+id/ccp03"
+                    android:id="@+id/ccp04"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layoutDirection="rtl"
@@ -1036,7 +1036,7 @@
                     android:padding="16dp">
 
                     <RadioButton
-                        android:id="@+id/ccp03yes"
+                        android:id="@+id/ccp04yes"
                         style="@style/radiobutton"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -1045,7 +1045,7 @@
                         android:textSize="20sp" />
 
                     <RadioButton
-                        android:id="@+id/ccp03no"
+                        android:id="@+id/ccp04no"
                         style="@style/radiobutton"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -1060,7 +1060,7 @@
                     android:layout_height="wrap_content">
 
                     <android.support.design.widget.TextInputEditText
-                        android:id="@+id/ccp03b"
+                        android:id="@+id/ccp04b"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/ccp01b"
@@ -1073,7 +1073,7 @@
                     android:layout_height="wrap_content">
 
                     <android.support.design.widget.TextInputEditText
-                        android:id="@+id/ccp03ngo"
+                        android:id="@+id/ccp04ngo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/ccp01ngo" />

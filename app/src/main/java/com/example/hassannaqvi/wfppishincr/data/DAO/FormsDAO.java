@@ -6,7 +6,7 @@ import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.Query;
 import android.arch.persistence.room.Update;
 
-import com.example.hassannaqvi.wfppishincr.core.DBConnection.Sub_DBConnection;
+import com.example.hassannaqvi.wfppishincr.data.AppDatabase.Sub_DBConnection;
 import com.example.hassannaqvi.wfppishincr.data.entities.Forms;
 
 import java.util.List;

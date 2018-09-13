@@ -21,18 +21,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!-- <activity android:name=".ui.activities.SectionAActivity"></activity> -->
+        <activity android:name=".ui.activities.SectionAActivity" />
         <activity android:name=".ui.activities.SectionBActivity" />
         <activity android:name=".ui.activities.SectionCActivity" />
         <activity android:name=".ui.activities.SectionDEFActivity" />
-        <!-- <activity android:name=".ui.activities.SectionGHActivity"></activity> -->
+        <activity android:name=".ui.activities.SectionGHActivity" />
         <activity android:name=".ui.activities.SectionIActivity" />
         <activity android:name=".ui.activities.SectionJActivity" />
         <activity android:name=".ui.activities.SectionKActivity" />
         <activity android:name=".ui.activities.SectionLActivity" />
         <activity android:name=".ui.activities.SectionMActivity" />
-        <activity android:name=".ui.activities.SectionNOPActivity"></activity>
-        <activity android:name=".ui.activities.EndInterview"></activity>
+        <activity android:name=".ui.activities.SectionNOPActivity" />
+        <activity android:name=".ui.activities.EndInterview" />
     </application>
 
 </manifest>

@@ -2,25 +2,17 @@ package com.example.hassannaqvi.wfppishincr.ui.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.hassannaqvi.wfppishincr.R;
-import com.example.hassannaqvi.wfppishincr.core.DBConnection;
 import com.example.hassannaqvi.wfppishincr.core.crudOperations;
 import com.example.hassannaqvi.wfppishincr.data.AppDatabase;
 import com.example.hassannaqvi.wfppishincr.data.entities.Forms;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
 import java.util.concurrent.ExecutionException;
 
 public class StartActivity extends AppCompatActivity {
@@ -39,8 +31,7 @@ public class StartActivity extends AppCompatActivity {
         initialization();
 
         // Room DB instantiate
-        DBConnection database = new DBConnection(getApplicationContext());
-        db = database.ReturnDB();
+        db = AppDatabase.getDatabase(getApplicationContext());
 
         btn_saveData.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,7 +50,7 @@ public class StartActivity extends AppCompatActivity {
         dbBackup();
 
         /*try {
-            Toast.makeText(this, new GetAllDBData(db, new Forms(),2).execute().get().getIstatus(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, new GetAllDBData(db, new Forms(),2).execute().get().getUsername(), Toast.LENGTH_SHORT).show();
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (ExecutionException e) {
@@ -70,7 +61,7 @@ public class StartActivity extends AppCompatActivity {
 
     public void dbBackup() {
 
-        File folder = new File(Environment.getExternalStorageDirectory() + File.separator + "ROOM-PHISIN");
+        /*File folder = new File(Environment.getExternalStorageDirectory() + File.separator + "PHISIN-CR");
         boolean success = true;
         if (!folder.exists()) {
             success = folder.mkdirs();
@@ -84,11 +75,11 @@ public class StartActivity extends AppCompatActivity {
             if (success) {
 
                 try {
-                    File dbFile = new File(this.getDatabasePath(DBConnection.Sub_DBConnection.DATABASE_NAME).getPath());
+                    File dbFile = new File(this.getDatabasePath(AppDatabase.Sub_DBConnection.DATABASE_NAME).getPath());
                     FileInputStream fis = new FileInputStream(dbFile);
 
                     String outFileName = folder.getPath() + File.separator +
-                            DBConnection.Sub_DBConnection.DATABASE_NAME;
+                            AppDatabase.Sub_DBConnection.DATABASE_NAME + ".db";
 
                     // Open the empty db as the output stream
                     OutputStream output = new FileOutputStream(outFileName);
@@ -111,8 +102,7 @@ public class StartActivity extends AppCompatActivity {
 
         } else {
             Toast.makeText(this, "Not create folder", Toast.LENGTH_SHORT).show();
-        }
-
+        }*/
 
     }
 

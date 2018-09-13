@@ -5,9 +5,9 @@ import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.Ignore;
 import android.arch.persistence.room.PrimaryKey;
 
-import com.example.hassannaqvi.wfppishincr.core.DBConnection;
+import com.example.hassannaqvi.wfppishincr.data.AppDatabase;
 
-@Entity(tableName = DBConnection.Sub_DBConnection.TABLE_FORM)
+@Entity(tableName = AppDatabase.Sub_DBConnection.TABLE_FORM)
 public class Forms {
 
     @Ignore
