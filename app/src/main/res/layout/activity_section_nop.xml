@@ -844,10 +844,12 @@
                 </RadioGroup>
 
                 <android.support.design.widget.TextInputLayout
+                    android:visibility='@{ccp01yes.checked? View.VISIBLE : View.GONE}'
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <android.support.design.widget.TextInputEditText
+                        android:text='@{ccp01yes.checked? ccp01b.getText.toString: ""}'
                         android:id="@+id/ccp01b"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -857,10 +859,12 @@
                 </android.support.design.widget.TextInputLayout>
 
                 <android.support.design.widget.TextInputLayout
+                    android:visibility='@{ccp01yes.checked? View.VISIBLE : View.GONE}'
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <android.support.design.widget.TextInputEditText
+                        android:text='@{ccp01yes.checked? ccp01ngo.getText.toString: ""}'
                         android:id="@+id/ccp01ngo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -917,10 +921,12 @@
                 </RadioGroup>
 
                 <android.support.design.widget.TextInputLayout
+                    android:visibility='@{ccp02yes.checked? View.VISIBLE : View.GONE}'
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <android.support.design.widget.TextInputEditText
+                        android:text='@{ccp02yes.checked? ccp02b.getText.toString: ""}'
                         android:id="@+id/ccp02b"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -930,10 +936,12 @@
                 </android.support.design.widget.TextInputLayout>
 
                 <android.support.design.widget.TextInputLayout
+                    android:visibility='@{ccp02yes.checked? View.VISIBLE : View.GONE}'
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <android.support.design.widget.TextInputEditText
+                        android:text='@{ccp02yes.checked? ccp02ngo.getText.toString: ""}'
                         android:id="@+id/ccp02ngo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -991,10 +999,12 @@
                 </RadioGroup>
 
                 <android.support.design.widget.TextInputLayout
+                    android:visibility='@{ccp03yes.checked? View.VISIBLE : View.GONE}'
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <android.support.design.widget.TextInputEditText
+                        android:text='@{ccp03yes.checked? ccp03b.getText.toString: ""}'
                         android:id="@+id/ccp03b"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -1004,10 +1014,12 @@
                 </android.support.design.widget.TextInputLayout>
 
                 <android.support.design.widget.TextInputLayout
+                    android:visibility='@{ccp03yes.checked? View.VISIBLE : View.GONE}'
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <android.support.design.widget.TextInputEditText
+                        android:text='@{ccp03yes.checked? ccp03ngo.getText.toString: ""}'
                         android:id="@+id/ccp03ngo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -1064,10 +1076,12 @@
                 </RadioGroup>
 
                 <android.support.design.widget.TextInputLayout
+                    android:visibility='@{ccp04yes.checked? View.VISIBLE : View.GONE}'
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <android.support.design.widget.TextInputEditText
+                        android:text='@{ccp04yes.checked? ccp04b.getText.toString: ""}'
                         android:id="@+id/ccp04b"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -1077,10 +1091,12 @@
                 </android.support.design.widget.TextInputLayout>
 
                 <android.support.design.widget.TextInputLayout
+                    android:visibility='@{ccp04yes.checked? View.VISIBLE : View.GONE}'
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <android.support.design.widget.TextInputEditText
+                        android:text='@{ccp04yes.checked? ccp04ngo.getText.toString: ""}'
                         android:id="@+id/ccp04ngo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -1137,10 +1153,12 @@
                 </RadioGroup>
 
                 <android.support.design.widget.TextInputLayout
+                    android:visibility='@{ccp05yes.checked? View.VISIBLE : View.GONE}'
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <android.support.design.widget.TextInputEditText
+                        android:text='@{ccp05yes.checked? ccp05b.getText.toString: ""}'
                         android:id="@+id/ccp05b"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -1150,10 +1168,12 @@
                 </android.support.design.widget.TextInputLayout>
 
                 <android.support.design.widget.TextInputLayout
+                    android:visibility='@{ccp05yes.checked? View.VISIBLE : View.GONE}'
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <android.support.design.widget.TextInputEditText
+                        android:text='@{ccp05yes.checked? ccp05ngo.getText.toString: ""}'
                         android:id="@+id/ccp05ngo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -1210,10 +1230,12 @@
                 </RadioGroup>
 
                 <android.support.design.widget.TextInputLayout
+                    android:visibility='@{ccp06yes.checked? View.VISIBLE : View.GONE}'
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <android.support.design.widget.TextInputEditText
+                        android:text='@{ccp06yes.checked? ccp06b.getText.toString: ""}'
                         android:id="@+id/ccp06b"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -1223,10 +1245,12 @@
                 </android.support.design.widget.TextInputLayout>
 
                 <android.support.design.widget.TextInputLayout
+                    android:visibility='@{ccp06yes.checked? View.VISIBLE : View.GONE}'
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <android.support.design.widget.TextInputEditText
+                        android:text='@{ccp06yes.checked? ccp06ngo.getText.toString: ""}'
                         android:id="@+id/ccp06ngo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -1283,10 +1307,12 @@
                 </RadioGroup>
 
                 <android.support.design.widget.TextInputLayout
+                    android:visibility='@{ccp07yes.checked? View.VISIBLE : View.GONE}'
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <android.support.design.widget.TextInputEditText
+                        android:text='@{ccp07yes.checked? ccp07b.getText.toString: ""}'
                         android:id="@+id/ccp07b"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -1296,10 +1322,12 @@
                 </android.support.design.widget.TextInputLayout>
 
                 <android.support.design.widget.TextInputLayout
+                    android:visibility='@{ccp07yes.checked? View.VISIBLE : View.GONE}'
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <android.support.design.widget.TextInputEditText
+                        android:text='@{ccp07yes.checked? ccp07ngo.getText.toString: ""}'
                         android:id="@+id/ccp07ngo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -1356,10 +1384,12 @@
                 </RadioGroup>
 
                 <android.support.design.widget.TextInputLayout
+                    android:visibility='@{ccp08yes.checked? View.VISIBLE : View.GONE}'
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <android.support.design.widget.TextInputEditText
+                        android:text='@{ccp08yes.checked? ccp08b.getText.toString: ""}'
                         android:id="@+id/ccp08b"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -1369,10 +1399,12 @@
                 </android.support.design.widget.TextInputLayout>
 
                 <android.support.design.widget.TextInputLayout
+                    android:visibility='@{ccp08yes.checked? View.VISIBLE : View.GONE}'
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <android.support.design.widget.TextInputEditText
+                        android:text='@{ccp08yes.checked? ccp08ngo.getText.toString: ""}'
                         android:id="@+id/ccp08ngo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -1429,10 +1461,12 @@
                 </RadioGroup>
 
                 <android.support.design.widget.TextInputLayout
+                    android:visibility='@{ccp09yes.checked? View.VISIBLE : View.GONE}'
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <android.support.design.widget.TextInputEditText
+                        android:text='@{ccp09yes.checked? ccp09b.getText.toString: ""}'
                         android:id="@+id/ccp09b"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -1442,11 +1476,13 @@
                 </android.support.design.widget.TextInputLayout>
 
                 <android.support.design.widget.TextInputLayout
+                    android:visibility='@{ccp09yes.checked? View.VISIBLE : View.GONE}'
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <android.support.design.widget.TextInputEditText
                         android:id="@+id/ccp09ngo"
+                        android:text='@{ccp09yes.checked? ccp09ngo.getText.toString: ""}'
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/ccp01ngo" />
@@ -1502,10 +1538,12 @@
                 </RadioGroup>
 
                 <android.support.design.widget.TextInputLayout
+                    android:visibility='@{ccp10yes.checked? View.VISIBLE : View.GONE}'
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <android.support.design.widget.TextInputEditText
+                        android:text='@{ccp10yes.checked? ccp10b.getText.toString: ""}'
                         android:id="@+id/ccp10b"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -1515,10 +1553,12 @@
                 </android.support.design.widget.TextInputLayout>
 
                 <android.support.design.widget.TextInputLayout
+                    android:visibility='@{ccp10yes.checked? View.VISIBLE : View.GONE}'
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <android.support.design.widget.TextInputEditText
+                        android:text='@{ccp10yes.checked? ccp10ngo.getText.toString: ""}'
                         android:id="@+id/ccp10ngo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -1575,10 +1615,12 @@
                 </RadioGroup>
 
                 <android.support.design.widget.TextInputLayout
+                    android:visibility='@{ccp11yes.checked? View.VISIBLE : View.GONE}'
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <android.support.design.widget.TextInputEditText
+                        android:text='@{ccp11yes.checked? ccp11b.getText.toString: ""}'
                         android:id="@+id/ccp11b"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -1588,10 +1630,12 @@
                 </android.support.design.widget.TextInputLayout>
 
                 <android.support.design.widget.TextInputLayout
+                    android:visibility='@{ccp11yes.checked? View.VISIBLE : View.GONE}'
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <android.support.design.widget.TextInputEditText
+                        android:text='@{ccp11yes.checked? ccp11ngo.getText.toString: ""}'
                         android:id="@+id/ccp11ngo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -1648,10 +1692,12 @@
                 </RadioGroup>
 
                 <android.support.design.widget.TextInputLayout
+                    android:visibility='@{ccp12yes.checked? View.VISIBLE : View.GONE}'
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <android.support.design.widget.TextInputEditText
+                        android:text='@{ccp12yes.checked? ccp1296b.getText.toString: ""}'
                         android:id="@+id/ccp1296b"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -1661,11 +1707,13 @@
                 </android.support.design.widget.TextInputLayout>
 
                 <android.support.design.widget.TextInputLayout
+                    android:visibility='@{ccp12yes.checked? View.VISIBLE : View.GONE}'
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <android.support.design.widget.TextInputEditText
                         android:id="@+id/ccp1296ngo"
+                        android:text='@{ccp12yes.checked? ccp1296ngo.getText.toString: ""}'
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/ccp01ngo" />
@@ -1677,6 +1725,7 @@
 
             <!--===============Button End===================-->
             <LinearLayout
+                android:layoutDirection="rtl"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"

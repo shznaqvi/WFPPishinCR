@@ -11,6 +11,7 @@ import com.example.hassannaqvi.wfppishincr.R;
 import com.example.hassannaqvi.wfppishincr.core.MainApp;
 import com.example.hassannaqvi.wfppishincr.databinding.ActivitySectionLBinding;
 import com.example.hassannaqvi.wfppishincr.validation.ClearClass;
+import com.example.hassannaqvi.wfppishincr.validation.validatorClass;
 
 import org.json.JSONException;
 
@@ -90,12 +91,48 @@ public class SectionLActivity extends AppCompatActivity {
         return true;
     }
 
-    public void saveData() throws JSONException {
+    public void saveData() {
 
 
     }
 
     private boolean formValidate() {
+
+        if (!validatorClass.EmptyRadioButton(this, bi.ccl01, bi.ccl01a, getString(R.string.ccl01))) {
+            return false;
+        }
+
+        if (bi.ccl01a.isChecked()) {
+
+            if (!validatorClass.EmptyRadioButton(this, bi.ccl02, bi.ccl02a, getString(R.string.ccl02))) {
+                return false;
+            }
+            if (!validatorClass.EmptyRadioButton(this, bi.ccl03, bi.ccl03a, getString(R.string.ccl03))) {
+                return false;
+            }
+        }
+        if (bi.ccl0196.isChecked()) {
+            if (!validatorClass.EmptyTextBox(this, bi.ccl0196x, getString(R.string.ccl01))) {
+                return false;
+            }
+        }
+        if (!validatorClass.EmptyRadioButton(this, bi.ccl04, bi.ccl04a, getString(R.string.ccl04))) {
+            return false;
+        }
+
+        if (bi.ccl04a.isChecked()) {
+            if (!validatorClass.EmptyRadioButton(this, bi.ccl05, bi.ccl05a, getString(R.string.ccl05))) {
+                return false;
+            }
+        }
+
+        if (!validatorClass.EmptyRadioButton(this, bi.ccl06, bi.ccl06a, getString(R.string.ccl06))) {
+            return false;
+        }
+
+        if (bi.ccl0696.isChecked()) {
+            return validatorClass.EmptyTextBox(this, bi.ccl0696x, getString(R.string.ccl06));
+        }
 
 
         return true;
