@@ -39,6 +39,7 @@
 
                 <!--Q1-->
                 <LinearLayout
+                    android:id="@+id/fldgrpccl01"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -137,6 +138,7 @@
 
                 <!--Q2-->
                 <LinearLayout
+                    android:id="@+id/fldgrpccl02"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -193,6 +195,7 @@
 
                 <!--Q3-->
                 <LinearLayout
+                    android:id="@+id/fldgrpccl03"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -276,6 +279,7 @@
 
                 <!--Q4-->
                 <LinearLayout
+                    android:id="@+id/fldgrpccl04"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -291,7 +295,7 @@
                         android:textSize="25sp" />
 
                     <RadioGroup
-                        android:id="@+id/cck04"
+                        android:id="@+id/ccl04"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
@@ -299,7 +303,7 @@
                         android:padding="16dp">
 
                         <RadioButton
-                            android:id="@+id/cck04a"
+                            android:id="@+id/ccl04a"
                             style="@style/radiobutton"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -308,7 +312,7 @@
                             android:textSize="20sp" />
 
                         <RadioButton
-                            android:id="@+id/cck04b"
+                            android:id="@+id/ccl04b"
                             style="@style/radiobutton"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -324,6 +328,7 @@
 
                 <!--Q5-->
                 <LinearLayout
+                    android:id="@+id/fldgrpccl05"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -401,6 +406,7 @@
                 <!--Q6-->
 
                 <LinearLayout
+                    android:id="@+id/fldgrpccl06"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -554,6 +560,7 @@
                         android:id="@+id/btn_Continue"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:onClick='@{() ->  callback.BtnContinue()}'
                         android:layout_weight="1"
                         android:backgroundTint="#1ed61e"
                         android:text="@string/start_interview"
@@ -564,6 +571,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:onClick='@{ () -> callback.BtnEnd()}'
                         android:backgroundTint="@color/red"
                         android:text="@string/end_interview"
                         android:textColor="@color/white" />

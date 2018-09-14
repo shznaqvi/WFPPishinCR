@@ -41,6 +41,7 @@
 
                 <!--Q1-->
                 <LinearLayout
+                    android:id="@+id/fldgrpccj01"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -74,6 +75,7 @@
 
                 <!--Q2-->
                 <LinearLayout
+                    android:id="@+id/fldgrpccj02"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -107,6 +109,7 @@
 
                 <!--Q3-->
                 <LinearLayout
+                    android:id="@+id/fldgrpccj03"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -165,12 +168,13 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:visibility='@{ccj03a.checked? View.VISIBLE : View.GONE}'>
+                    android:orientation="vertical">
 
 
-                    <!--Q4-->
+                    <!--
+                    Q4-->
                     <LinearLayout
+                        android:id="@+id/fldgrpccj04"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -292,6 +296,7 @@
 
                     <!--Q5-->
                     <LinearLayout
+                        android:id="@+id/fldgrpccj05"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -362,6 +367,7 @@
 
                     <!--Q6-->
                     <LinearLayout
+                        android:id="@+id/fldgrpccj06"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -403,6 +409,7 @@
 
                     <!--Q7-->
                     <LinearLayout
+                        android:id="@+id/fldgrpccj07"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -446,6 +453,7 @@
                     <!--Q8-->
 
                     <LinearLayout
+                        android:id="@+id/fldgrpccj08"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -522,6 +530,7 @@
 
                     <!--Q9-->
                     <LinearLayout
+                        android:id="@+id/fldgrpccj09"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -576,10 +585,10 @@
 
                     <!--Q10-->
                     <LinearLayout
+                        android:id="@+id/fldgrpccj10"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:visibility='@{ccj09a.checked? View.VISIBLE : View.GONE}'>
+                        android:orientation="vertical">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -619,6 +628,7 @@
 
                 <!--Q11-->
                 <LinearLayout
+                    android:id="@+id/fldgrpccj11"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -675,11 +685,11 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:visibility='@{ccj11a.checked? View.VISIBLE : View.GONE}'>
+                    android:orientation="vertical">
 
                     <!--Q12-->
                     <LinearLayout
+                        android:id="@+id/fldgrpccj12"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -722,6 +732,7 @@
 
                     <!--Q13-->
                     <LinearLayout
+                        android:id="@+id/fldgrpccj13"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -756,6 +767,7 @@
 
                 <!--Q14-->
                 <LinearLayout
+                    android:id="@+id/fldgrpccj14"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -810,10 +822,10 @@
 
                 <!--=========Q15 (skips if answer is 2 or 99)============-->
                 <LinearLayout
+                    android:id="@+id/fldgrpccj15"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:visibility='@{ccj14a.checked ? View.VISIBLE : View.GONE}'>
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -859,6 +871,7 @@
 
                 <!--Q16-->
                 <LinearLayout
+                    android:id="@+id/fldgrpccj16"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -913,6 +926,7 @@
 
                 <!--Q17-->
                 <LinearLayout
+                    android:id="@+id/fldgrpccj17"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -1523,11 +1537,11 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:visibility='@{ccj1797.checked? View.GONE : View.VISIBLE }'>
+                    android:orientation="vertical">
 
                     <!--Q18-->
                     <LinearLayout
+                        android:id="@+id/fldgrpccj18"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -1581,6 +1595,7 @@
 
                     <!--Q19-->
                     <LinearLayout
+                        android:id="@+id/fldgrpccj19"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -1695,6 +1710,7 @@
 
                     <!--Q20-->
                     <LinearLayout
+                        android:id="@+id/fldgrpccj20"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -1768,6 +1784,7 @@
 
                     <!--Q21-->
                     <LinearLayout
+                        android:id="@+id/fldgrpccj21"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -1883,6 +1900,7 @@
 
                     <!--Q22-->
                     <LinearLayout
+                        android:id="@+id/fldgrpccj22"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -1937,6 +1955,7 @@
 
                     <!--Q23-->
                     <LinearLayout
+                        android:id="@+id/fldgrpccj23"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -2052,6 +2071,7 @@
 
                     <!--Q24-->
                     <LinearLayout
+                        android:id="@+id/fldgrpccj24"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -2099,6 +2119,7 @@
 
                     <!--Q25-->
                     <LinearLayout
+                        android:id="@+id/fldgrpccj25"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -2133,6 +2154,7 @@
 
                     <!--Q26-->
                     <LinearLayout
+                        android:id="@+id/fldgrpccj26"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -2176,6 +2198,7 @@
                     </LinearLayout>
                     <!--Q27-->
                     <LinearLayout
+                        android:id="@+id/fldgrpccj27"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -2263,6 +2286,7 @@
                     </LinearLayout>
                     <!--Q28-->
                     <LinearLayout
+                        android:id="@+id/fldgrpccj28"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -2347,6 +2371,7 @@
                         android:id="@+id/btn_Continue"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:onClick='@{() ->  callback.BtnContinue()}'
                         android:layout_weight="1"
                         android:backgroundTint="#1ed61e"
                         android:text="@string/start_interview"
@@ -2357,6 +2382,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:onClick='@{ () -> callback.BtnEnd()}'
                         android:backgroundTint="@color/red"
                         android:text="@string/end_interview"
                         android:textColor="@color/white" />

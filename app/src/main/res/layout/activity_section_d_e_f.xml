@@ -127,7 +127,7 @@
                     android:layout_weight="40">
 
                     <android.support.design.widget.TextInputEditText
-                        android:id="@+id/ccd01kg01"
+                        android:id="@+id/ccd02kg01"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="XX.X kg"
@@ -155,7 +155,7 @@
                     android:layout_weight="40">
 
                     <android.support.design.widget.TextInputEditText
-                        android:id="@+id/ccd01kg02"
+                        android:id="@+id/ccd02kg02"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="XX.X kg"
@@ -272,7 +272,7 @@
                     android:layout_weight="40">
 
                     <android.support.design.widget.TextInputEditText
-                        android:id="@+id/cce01kg01"
+                        android:id="@+id/cce02kg01"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="XX.X kg"
@@ -300,7 +300,7 @@
                     android:layout_weight="40">
 
                     <android.support.design.widget.TextInputEditText
-                        android:id="@+id/cce01kg02"
+                        android:id="@+id/cce02kg02"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="XX.X kg"
@@ -332,10 +332,10 @@
                 android:textSize="20sp" />
 
             <LinearLayout
+                android:id="@+id/fldgrpFatherAnthro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:visibility='@{ccf01.checked? View.GONE : View.VISIBLE}'>
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -369,8 +369,7 @@
                             android:layout_height="wrap_content"
                             android:hint="XX.X cm"
                             android:inputType="numberDecimal"
-                            android:maxLength="4"
-                            android:text='@{ccf01.checked? "" : ccf01cm01.getText.toString }' />
+                            android:maxLength="4" />
 
                     </android.support.design.widget.TextInputLayout>
 
@@ -398,8 +397,7 @@
                             android:layout_height="wrap_content"
                             android:hint="XX.X cm"
                             android:inputType="numberDecimal"
-                            android:maxLength="4"
-                            android:text='@{ccf01.checked? "" : ccf01cm02.getText.toString }' />
+                            android:maxLength="4" />
 
                     </android.support.design.widget.TextInputLayout>
 
@@ -432,13 +430,12 @@
                         android:layout_weight="40">
 
                         <android.support.design.widget.TextInputEditText
-                            android:id="@+id/ccf01kg01"
+                            android:id="@+id/ccf02kg01"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="XX.X kg"
                             android:inputType="numberDecimal"
-                            android:maxLength="4"
-                            android:text='@{ccf01.checked? "" : ccf01kg01.getText.toString }' />
+                            android:maxLength="4" />
 
                     </android.support.design.widget.TextInputLayout>
 
@@ -461,13 +458,12 @@
                         android:layout_weight="40">
 
                         <android.support.design.widget.TextInputEditText
-                            android:id="@+id/ccf01kg02"
+                            android:id="@+id/ccf02kg02"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="XX.X kg"
                             android:inputType="numberDecimal"
-                            android:maxLength="4"
-                            android:text='@{ccf01.checked? "" : ccf01kg02.getText.toString }' />
+                            android:maxLength="4" />
 
                     </android.support.design.widget.TextInputLayout>
 
@@ -485,10 +481,12 @@
                 android:layout_marginTop="30dp"
                 android:orientation="horizontal">
 
+
                 <Button
                     android:id="@+id/btn_Continue"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:onClick='@{() ->  callback.BtnContinue()}'
                     android:layout_weight="1"
                     android:backgroundTint="#1ed61e"
                     android:text="@string/start_interview"
@@ -499,6 +497,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick='@{ () -> callback.BtnEnd()}'
                     android:backgroundTint="@color/red"
                     android:text="@string/end_interview"
                     android:textColor="@color/white" />

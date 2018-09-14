@@ -87,10 +87,10 @@
 
                 <!--Q 1.1-->
                 <LinearLayout
+                    android:id="@+id/fldgrpcci02"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:visibility='@{!cci01a.checked? View.VISIBLE : View.GONE}'>
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -1638,7 +1638,7 @@
                             android:textSize="20sp" />
 
                         <RadioButton
-                            android:id="@+id/cci08q8"
+                            android:id="@+id/cci08q98"
                             style="@style/radiobutton"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -1651,6 +1651,7 @@
                 <!--Q8-->
 
                 <LinearLayout
+                    android:id="@+id/fldgrpcci08"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -1713,13 +1714,13 @@
                     </RadioGroup>
                 </LinearLayout>
 
-                <!--Q 9-->
+                <!--Q9-->
 
                 <LinearLayout
+                    android:id="@+id/fldgrpcci09"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:visibility='@{cci09a.checked? View.VISIBLE : View.GONE}'>
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -2113,11 +2114,11 @@
                     android:layout_gravity="end"
                     android:layout_marginTop="30dp"
                     android:orientation="horizontal">
-
                     <Button
                         android:id="@+id/btn_Continue"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:onClick='@{() ->  callback.BtnContinue()}'
                         android:layout_weight="1"
                         android:backgroundTint="#1ed61e"
                         android:text="@string/start_interview"
@@ -2128,6 +2129,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:onClick='@{ () -> callback.BtnEnd()}'
                         android:backgroundTint="@color/red"
                         android:text="@string/end_interview"
                         android:textColor="@color/white" />

@@ -373,19 +373,19 @@
                 android:textColor="@color/white"
                 android:textSize="25sp" />
 
-            <RadioButton
+            <CheckBox
                 android:id="@+id/ccg0197"
-                style="@style/radiobutton"
+                style="@style/checkbox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/ccg0197"
                 android:textSize="20sp" />
 
             <LinearLayout
+                android:id="@+id/fldgrpccg002"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:visibility='@{ccg0197.checked? View.GONE : View.VISIBLE}'>
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -425,10 +425,10 @@
                 </RadioGroup>
 
                 <LinearLayout
+                    android:id="@+id/fldgrpccg03"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:visibility='@{ccg02b.checked? View.GONE : View.VISIBLE}'>
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -610,10 +610,10 @@
             </RadioGroup>
 
             <LinearLayout
+                android:id="@+id/fldgrpcch02"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:visibility='@{cch01a.checked? View.VISIBLE : View.GONE}'>
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -1335,6 +1335,7 @@
                     android:id="@+id/btn_Continue"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:onClick='@{() ->  callback.BtnContinue()}'
                     android:layout_weight="1"
                     android:backgroundTint="#1ed61e"
                     android:text="@string/start_interview"
@@ -1345,6 +1346,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick='@{ () -> callback.BtnEnd()}'
                     android:backgroundTint="@color/red"
                     android:text="@string/end_interview"
                     android:textColor="@color/white" />

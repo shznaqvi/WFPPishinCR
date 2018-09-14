@@ -57,8 +57,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/ccc01"
-                        android:inputType="number"
-                        android:maxLength="5" />
+                        android:inputType="numberDecimal"
+                        android:maxLength="6" />
 
                 </android.support.design.widget.TextInputLayout>
 
@@ -78,6 +78,7 @@
                     android:layout_height="wrap_content">
 
                     <android.support.design.widget.TextInputEditText
+                        android:inputType="text"
                         android:id="@+id/ccc02"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -134,7 +135,7 @@
                     android:textColor="@color/white"
                     android:textSize="25sp" />
 
-                <io.blackbox_vision.datetimepickeredittext.view.TimePickerEditText
+                <io.blackbox_vision.datetimepickeredittext.view.DatePickerEditText
                     android:id="@+id/ccc04d"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -207,6 +208,7 @@
                     android:padding="16dp">
 
                     <RadioButton
+                        android:id="@+id/ccc06a"
                         style="@style/radiobutton"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -215,6 +217,7 @@
                         android:textSize="20sp" />
 
                     <RadioButton
+                        android:id="@+id/ccc06b"
                         style="@style/radiobutton"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -296,6 +299,7 @@
 
                 <!--Q9-->
                 <LinearLayout
+                    android:id="@+id/fldgrpccc09"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
@@ -321,9 +325,9 @@
                         android:text='@{ccc0998.checked? ccc09kg.getText.toString : "" }'
                         android:visibility='@{ccc0998.checked? View.GONE : View.VISIBLE}' />
 
-                    <RadioButton
+                    <CheckBox
                         android:id="@+id/ccc0998"
-                        style="@style/radiobutton"
+                        style="@style/checkbox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -331,7 +335,7 @@
                         android:textSize="20sp" />
                 </LinearLayout>
 
-                <!--Q-->
+
 
                 <!--================ Button End===================-->
                 <LinearLayout
@@ -345,6 +349,7 @@
                         android:id="@+id/btn_Continue"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:onClick='@{() ->  callback.BtnContinue()}'
                         android:layout_weight="1"
                         android:backgroundTint="#1ed61e"
                         android:text="@string/start_interview"
@@ -355,6 +360,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:onClick='@{ () -> callback.BtnEnd()}'
                         android:backgroundTint="@color/red"
                         android:text="@string/end_interview"
                         android:textColor="@color/white" />
