@@ -26,6 +26,7 @@ public class SectionJActivity extends AppCompatActivity {
 
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_j);
         bi.setCallback(this);
+        this.setTitle("Section J");
 
 
         //=========================skip patterns=======================================
@@ -252,6 +253,14 @@ public class SectionJActivity extends AppCompatActivity {
     }
 
     private boolean formValidate() {
+
+//        if(!validatorClass.EmptyTextBox(this,bi.ccj01a,getString(R.string.ccj01))){
+//            return false;
+//        }
+//
+//        if(!validatorClass.EmptyTextBox(this,bi.ccj01a,getString(R.string.ccj01))){
+//            return false;
+//        }
 
 
         return true;

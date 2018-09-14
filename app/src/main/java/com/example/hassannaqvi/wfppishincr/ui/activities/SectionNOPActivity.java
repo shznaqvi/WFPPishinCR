@@ -10,7 +10,6 @@ import com.example.hassannaqvi.wfppishincr.core.MainApp;
 import com.example.hassannaqvi.wfppishincr.databinding.ActivitySectionNopBinding;
 
 import org.json.JSONException;
-import org.json.JSONObject;
 
 public class SectionNOPActivity extends AppCompatActivity {
 
@@ -21,6 +20,8 @@ public class SectionNOPActivity extends AppCompatActivity {
 
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_nop);
         bi.setCallback(this);
+
+        this.setTitle("Section N,O,P");
     }
 
     public void BtnContinue() {
@@ -48,8 +49,6 @@ public class SectionNOPActivity extends AppCompatActivity {
     }
 
     public void saveData() {
-
-        JSONObject sNop = new JSONObject();
 
 
     }

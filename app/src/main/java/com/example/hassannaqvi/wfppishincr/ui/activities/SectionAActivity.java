@@ -69,6 +69,7 @@ public class SectionAActivity extends AppCompatActivity {
 
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_a);
         bi.setCallback(this);
+        this.setTitle("Section A");
         db = new DatabaseHelper(this);
         populateSpinner(this);
         bi.cca08.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {

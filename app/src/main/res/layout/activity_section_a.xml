@@ -245,6 +245,7 @@
                     android:orientation="horizontal">
 
                     <Button
+                        style="@style/buttons"
                         android:id="@+id/btn_Continue"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -256,6 +257,7 @@
                         android:visibility='@{cca08a.checked? View.VISIBLE : View.GONE }' />
 
                     <Button
+                        style="@style/buttons"
                         android:id="@+id/btn_End"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"

@@ -98,6 +98,7 @@
                         android:orientation="vertical">
 
                         <EditText
+                            android:textColor="@color/white"
                             android:id="@+id/email"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -133,6 +134,7 @@
                             android:padding="3dp" />
 
                         <EditText
+                            android:textColor="@color/white"
                             android:id="@+id/password"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -152,6 +154,7 @@
                             android:textSize="18sp" />
 
                         <EditText
+                            android:textColor="@color/white"
                             android:id="@+id/email2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -185,6 +188,7 @@
                             android:padding="3dp" />
 
                         <EditText
+                            android:textColor="@color/white"
                             android:id="@+id/password2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"

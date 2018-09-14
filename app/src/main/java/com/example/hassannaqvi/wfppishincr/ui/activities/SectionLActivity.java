@@ -25,6 +25,8 @@ public class SectionLActivity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_l);
         bi.setCallback(this);
 
+        this.setTitle("Section L");
+
 
         //============================skip patterns==============================================
 

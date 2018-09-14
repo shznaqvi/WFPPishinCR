@@ -11,5 +11,7 @@ public class SectionMActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_section_m);
+
+        this.setTitle("Section M");
     }
 }
