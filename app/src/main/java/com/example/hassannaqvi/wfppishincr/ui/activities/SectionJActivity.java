@@ -247,7 +247,7 @@ public class SectionJActivity extends AppCompatActivity {
         return true;
     }
 
-    public void saveData() {
+    public void saveData() throws JSONException {
 
 
     }

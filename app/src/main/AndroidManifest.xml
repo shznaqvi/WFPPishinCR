@@ -32,30 +32,53 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activities.SectionAActivity" />
-        <activity android:name=".ui.activities.SectionBActivity" />
-        <activity android:name=".ui.activities.SectionCActivity" />
-        <activity android:name=".ui.activities.SectionDEFActivity" />
-        <activity android:name=".ui.activities.SectionGHActivity" />
-        <activity android:name=".ui.activities.SectionIActivity" />
-        <activity android:name=".ui.activities.SectionJActivity" />
-        <activity android:name=".ui.activities.SectionKActivity" />
-        <activity android:name=".ui.activities.SectionLActivity" />
-        <activity android:name=".ui.activities.SectionMActivity" />
-        <activity android:name=".ui.activities.SectionNOPActivity" />
+        <activity android:name=".ui.activities.SectionAActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1"/>
+        <activity android:name=".ui.activities.SectionBActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1"/>
+        <activity android:name=".ui.activities.SectionCActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1"/>
+        <activity android:name=".ui.activities.SectionDEFActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1"/>
+        <activity android:name=".ui.activities.SectionGHActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1"/>
+        <activity android:name=".ui.activities.SectionIActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1"/>
+        <activity android:name=".ui.activities.SectionJActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1"/>
+        <activity android:name=".ui.activities.SectionKActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1"/>
+        <activity android:name=".ui.activities.SectionLActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1"/>
+        <activity android:name=".ui.activities.SectionMActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1"/>
+        <activity android:name=".ui.activities.SectionNOPActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1"/>
         <activity android:name=".ui.activities.EndInterview" />
-        <activity android:name=".ui.activities.LoginActivity"/>
+        <activity android:name=".ui.activities.LoginActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            />
         <activity
             android:name=".core.AndroidDatabaseManager"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".ui.activities.EndingActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
+            android:theme="@style/AppTheme1"/>
         <activity
             android:name=".ui.activities.MainActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
+            android:screenOrientation="portrait" />
 
     </application>
 

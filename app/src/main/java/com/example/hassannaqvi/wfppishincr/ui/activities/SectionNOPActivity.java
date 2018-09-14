@@ -31,7 +31,7 @@ public class SectionNOPActivity extends AppCompatActivity {
             try {
                 saveData();
                 if (updateDb()) {
-                    Intent secNext = new Intent(this, EndingActivity.class);
+                    Intent secNext = new Intent(this, EndingActivity.class).putExtra("complete",true);
                     startActivity(secNext);
                     finish();
                 }
@@ -48,7 +48,7 @@ public class SectionNOPActivity extends AppCompatActivity {
         return true;
     }
 
-    public void saveData() {
+    public void saveData() throws JSONException {
 
 
     }

@@ -18,6 +18,16 @@
     <string name="addMember">افراد کا اندراج</string>
     <string name="other">دیگر (وضاحت کریں)</string>
     <string name="dkn">معلوم نہیں</string>
+    <string name="ccmfood01">(جانور اور فصلیں) اپنی پیداوار</string>
+    <string name="ccmfood02">ماہی گیری /شکار</string>
+    <string name="ccmfood03">اکٹھا ہونا</string>
+    <string name="ccmfood04">قرض</string>
+    <string name="ccmfood05">بازار(پیسوں سے خریداری)</string>
+    <string name="ccmfood06">بازار (ادھار پر خریداری)</string>
+    <string name="ccmfood07">خوراک کے لیے بھیک مانگنا</string>
+    <string name="ccmfood08">کھانے پینے کی اشیاء یا مزدوری کا تبادلہ</string>
+    <string name="ccmfood09">دوستوں یا رشتہ داروں کی طرف سے خوراک کا تحفہ</string>
+    <string name="ccmfood10">این جی او، غیر سرکاری تنظیموں عا لمی ادارہ خوراک کی طرف سے امداد</string>
 
     <!--common strings-->
     <string name="end_interview">اختتام</string>
