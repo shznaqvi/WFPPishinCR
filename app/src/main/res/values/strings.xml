@@ -14,7 +14,10 @@
     <string name="istatusb">نا مکمل</string>
     <string name="istatusc">انکار کردیا</string>
     <string name="istatusd">گھر بند ہے</string>
-    <color name="grayOverlay">#7f7f7f7f</color>
+    <string name="nextSection">اگلا سیکشن</string>
+    <string name="addMember">افراد کا اندراج</string>
+    <string name="other">دیگر (وضاحت کریں)</string>
+    <string name="dkn">معلوم نہیں</string>
 
     <!--common strings-->
     <string name="end_interview">اختتام</string>
@@ -46,42 +49,42 @@
     <string name="ccb03m">مہینہ</string>
     <string name="ccb04"> عمرپانچ سال سے بڑے (مکمل سالوں میں)</string>
     <string name="ccb05">تعلیمی معیار </string>
-    <string name="ccb0501">نہیں </string>
-    <string name="ccb0502">پرائمری(1-5 سال )</string>
-    <string name="ccb0503">(مڈل پاس (6-8 سال
+    <string name="ccb05a">نہیں </string>
+    <string name="ccb05b">پرائمری(1-5 سال )</string>
+    <string name="ccb05c">(مڈل پاس (6-8 سال
 
  </string>
-    <string name="ccb0504">سیکنڈری (9-10 سال )
+    <string name="ccb05d">سیکنڈری (9-10 سال )
  </string>
-    <string name="ccb0505">(انٹرمیڈیٹ (11-12 سال
+    <string name="ccb05e">(انٹرمیڈیٹ (11-12 سال
  </string>
-    <string name="ccb0506">گریجویشن 13-14 سال)
+    <string name="ccb05f">گریجویشن 13-14 سال)
  </string>
-    <string name="ccb0507">ماسٹرز(15-16 سال)
+    <string name="ccb05g">ماسٹرز(15-16 سال)
  </string>
-    <string name="ccb0508">M.Phil./ PhD ایم فل / پی ایچ ڈی</string>
+    <string name="ccb05h">M.Phil./ PhD ایم فل / پی ایچ ڈی</string>
     <string name="ccb06">پیشہ </string>
-    <string name="ccb0601">قابل اطلاق نہیں
+    <string name="ccb06a">قابل اطلاق نہیں
  </string>
-    <string name="ccb0602">گھریلو عورت
+    <string name="ccb06b">گھریلو عورت
 </string>
-    <string name="ccb0603">ڈاکٹر / انجینئر / ماسٹر / مینیجر وغیرہ
+    <string name="ccb06c">ڈاکٹر / انجینئر / ماسٹر / مینیجر وغیرہ
  </string>
-    <string name="ccb0604">کلرک / ٹیکنیکل
+    <string name="ccb06d">کلرک / ٹیکنیکل
  </string>
-    <string name="ccb0605">سیلز اور سروسز
+    <string name="ccb06e">سیلز اور سروسز
  </string>
-    <string name="ccb0606"> ہنر مند مزدور
+    <string name="ccb06f"> ہنر مند مزدور
  </string>
-    <string name="ccb0607">غیر ہنر مند مزدور
+    <string name="ccb06g">غیر ہنر مند مزدور
  </string>
-    <string name="ccb0608">زراعت
+    <string name="ccb06h">زراعت
  </string>
-    <string name="ccb0609">کاروبار
+    <string name="ccb06i">کاروبار
  </string>
-    <string name="ccb0610">شاگرد
+    <string name="ccb06j">شاگرد
  </string>
-    <string name="ccb0611"> بیروز گار
+    <string name="ccb06k"> بیروز گار
  </string>
 
     <!--Section C-->

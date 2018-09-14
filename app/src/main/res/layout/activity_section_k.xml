@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
-
     <data>
-
         <import type="android.view.View" />
-
         <variable
             name="callback"
             type="com.example.hassannaqvi.wfppishincr.ui.activities.SectionKActivity" />
@@ -129,6 +126,15 @@
                     </RadioGroup>
 
                 </LinearLayout>
+                <EditText
+
+                    android:id="@+id/cck0196x"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:hint="@string/other"
+                    android:visibility="gone" />
 
                 <!--Q2-->
                 <LinearLayout
@@ -368,6 +374,7 @@
 
                 <!--Q4-->
                 <LinearLayout
+                    android:id="@+id/fldGrpcck04"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -627,7 +634,11 @@
 
 
                 </LinearLayout>
-
+            <LinearLayout
+                android:id="@+id/fldGrpcck06"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
                 <!--Q6-->
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -677,6 +688,7 @@
 
                 <!--Q7-->
                 <LinearLayout
+                    android:id="@+id/fldGrpcck07"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -715,7 +727,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/cci98" />
                 </LinearLayout>
-
+            </LinearLayout>
                 <!--Q8-->
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1590,6 +1602,7 @@
 
                 <!--Q10-->
                 <LinearLayout
+                    android:id="@+id/cckGrp09"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -2713,67 +2726,53 @@
                 </LinearLayout>
 
                 <!--Q18-->
+
                 <LinearLayout
+                    android:id="@+id/cckGrp17"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimary"
-                        android:padding="5dp"
-                        android:text="@string/cck18"
-                        android:textColor="@color/white"
-                        android:textSize="25sp" />
-
-                    <RadioGroup
-                        android:id="@+id/cck18"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:layout_marginTop="16dp"
+                        android:text="@string/cck18" />
 
-                        <RadioButton
-                            android:id="@+id/cck18a"
-                            style="@style/radiobutton"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="@string/cck18a"
-                            android:textSize="20sp" />
+                    <EditText
+                        android:id="@+id/cck18a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:hint="@string/cck18a"
+                        android:inputType="number"
+                        android:maxLength="3" />
 
-                        <RadioButton
-                            android:id="@+id/cck18b"
-                            style="@style/radiobutton"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="@string/cck18b"
-                            android:textSize="20sp" />
+                    <EditText
+                        android:id="@+id/cck18b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:hint="@string/cck18b"
+                        android:inputType="number"
+                        android:maxLength="3" />
 
-                        <RadioButton
-                            android:id="@+id/cck18c"
-                            style="@style/radiobutton"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="@string/cck18c"
-                            android:textSize="20sp" />
+                    <EditText
+                        android:id="@+id/cck18c"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:hint="@string/cck18c"
+                        android:inputType="number"
+                        android:maxLength="2" />
 
-                        <RadioButton
-                            android:id="@+id/cck1898"
-                            style="@style/radiobutton"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="@string/cck1898"
-                            android:textSize="20sp" />
-
-
-                    </RadioGroup>
+                    <CheckBox
+                        android:id="@+id/cck1898"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:text="@string/dkn" />
 
                 </LinearLayout>
 
@@ -2828,6 +2827,7 @@
                 <!--Q20-->
 
                 <LinearLayout
+                    android:id="@+id/cckGrp19"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -3013,13 +3013,15 @@
                     android:layout_marginTop="30dp"
                     android:orientation="horizontal">
 
+
                     <Button
                         android:id="@+id/btn_Continue"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:backgroundTint="#1ed61e"
-                        android:text="@string/start_interview"
+                        android:text="@string/nextSection"
+                        android:onClick="@{() -> callback.BtnContinue()}"
                         android:textColor="@color/white" />
 
                     <Button
@@ -3029,6 +3031,7 @@
                         android:layout_weight="1"
                         android:backgroundTint="@color/red"
                         android:text="@string/end_interview"
+                        android:onClick="@{() -> callback.BtnEnd()}"
                         android:textColor="@color/white" />
 
                 </LinearLayout>

@@ -14,6 +14,8 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.example.hassannaqvi.wfppishincr.R;
+import com.example.hassannaqvi.wfppishincr.contracts.FamilyMembersContract;
+import com.example.hassannaqvi.wfppishincr.core.DatabaseHelper;
 import com.example.hassannaqvi.wfppishincr.core.MainApp;
 import com.example.hassannaqvi.wfppishincr.databinding.ActivitySectionBBinding;
 import com.example.hassannaqvi.wfppishincr.utils.DateUtils;
@@ -27,6 +29,7 @@ import java.text.SimpleDateFormat;
 public class SectionBActivity extends AppCompatActivity {
 
     ActivitySectionBBinding bi;
+    static int serial_no = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,13 +38,13 @@ public class SectionBActivity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_b);
         bi.setCallback(this);
         this.setTitle("Section B");
-       /* setupViews();
-        skipPatterns();*/
+        setupViews();
+        skipPatterns();
     }
-/*
+
     public void skipPatterns() {
 
-        bi.wrb04.addTextChangedListener(new TextWatcher() {
+        bi.ccb04.addTextChangedListener(new TextWatcher() {
 
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -50,295 +53,280 @@ public class SectionBActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (bi.wrb04.getText().toString().isEmpty()) {
-                    bi.wrb03.setEnabled(false);
-                    bi.wrb033.setEnabled(false);
-                    bi.wrb033.setText(null);
-                    bi.wrb03.setText(null);
+                if (bi.ccb04.getText().toString().isEmpty()) {
+                    bi.ccb03dob.setEnabled(false);
+                    bi.ccb03m.setEnabled(false);
+                    bi.ccb03m.setText(null);
+                    bi.ccb03dob.setText(null);
 
-                    // bi.wrb06.clearCheck();
-                    for (int i = 0; i < bi.wrb06.getChildCount(); i++) {
-                        View v = bi.wrb06.getChildAt(i);
+                    // bi.ccb05.clearCheck();
+                    for (int i = 0; i < bi.ccb05.getChildCount(); i++) {
+                        View v = bi.ccb05.getChildAt(i);
                         if (v instanceof RadioButton) {
                             v.setEnabled(false);
                         }
                     }
 
-                    //bi.wrb07.clearCheck();
-                    for (int i = 0; i < bi.wrb07.getChildCount(); i++) {
-                        View v = bi.wrb07.getChildAt(i);
+                    //bi.ccb06.clearCheck();
+                    for (int i = 0; i < bi.ccb06.getChildCount(); i++) {
+                        View v = bi.ccb06.getChildAt(i);
                         if (v instanceof RadioButton) {
                             v.setEnabled(false);
                         }
                     }
 
                 } else {
-                    if(Integer.valueOf(bi.wrb04.getText().toString()) < 3){
+                    if(Integer.valueOf(bi.ccb04.getText().toString()) < 3){
 
-                        bi.wrb03.setEnabled(true);
-                        bi.wrb03.setText(null);
-                        bi.wrb033.setEnabled(true);
-                        // bi.wrb033.setText(null);
-                        switch (Integer.valueOf(bi.wrb04.getText().toString())) {
+                        bi.ccb03dob.setEnabled(true);
+                        bi.ccb03dob.setText(null);
+                        bi.ccb03m.setEnabled(true);
+                        // bi.ccb03m.setText(null);
+                        switch (Integer.valueOf(bi.ccb04.getText().toString())) {
                             case 1:
-                                bi.wrb03.setMinDate(DateUtils.getYearsBack("dd/MM/yyyy", -1));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsBack("dd/MM/yyyy", -1));
                                 break;
                             case 2:
-                                bi.wrb03.setMinDate(DateUtils.getYearsBack("dd/MM/yyyy", -2));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsBack("dd/MM/yyyy", -2));
                                 break;
                             case 3:
-                                bi.wrb03.setMinDate(DateUtils.getYearsBack("dd/MM/yyyy", -3));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsBack("dd/MM/yyyy", -3));
                                 break;
                             case 4:
-                                bi.wrb03.setMinDate(DateUtils.getYearsBack("dd/MM/yyyy", -4));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsBack("dd/MM/yyyy", -4));
                                 break;
                         }
 
 
-                        bi.wrb05.clearCheck();
-                        bi.wrb06.clearCheck();
+                        bi.ccb05.clearCheck();
                         View v = bi.fldGrpccb05.getChildAt(0);
                         for (int j = 0; j < ((RadioGroup) v).getChildCount(); j++) {
                             ((RadioGroup) v).getChildAt(j).setEnabled(false);
                         }
-                        bi.wrb06a.setEnabled(true);
-                        //bi.wrb06b.setEnabled(true);
-                        bi.wrb07.clearCheck();
-                        v = bi.fldGrpwrb03.getChildAt(0);
+                        bi.ccb05a.setEnabled(true);
+                        //bi.ccb05b.setEnabled(true);
+                        bi.ccb06.clearCheck();
+                        v = bi.fldGrpccb06.getChildAt(0);
                         for (int j = 0; j < ((RadioGroup) v).getChildCount(); j++) {
                             ((RadioGroup) v).getChildAt(j).setEnabled(false);
                         }
-                        bi.wrb07a.setChecked(true);
+                        bi.ccb06a.setChecked(true);
 
 
-                    } else if (Integer.valueOf(bi.wrb04.getText().toString()) < 5) {
-                        bi.wrb03.setEnabled(true);
-                        bi.wrb03.setText(null);
-                        bi.wrb033.setEnabled(true);
-                        // bi.wrb033.setText(null);
-                        switch (Integer.valueOf(bi.wrb04.getText().toString())) {
+                    } else if (Integer.valueOf(bi.ccb04.getText().toString()) < 5) {
+                        bi.ccb03dob.setEnabled(true);
+                        bi.ccb03dob.setText(null);
+                        bi.ccb03m.setEnabled(true);
+                        // bi.ccb03m.setText(null);
+                        switch (Integer.valueOf(bi.ccb04.getText().toString())) {
                             case 1:
-                                bi.wrb03.setMinDate(DateUtils.getYearsBack("dd/MM/yyyy", -1));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsBack("dd/MM/yyyy", -1));
                                 break;
                             case 2:
-                                bi.wrb03.setMinDate(DateUtils.getYearsBack("dd/MM/yyyy", -2));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsBack("dd/MM/yyyy", -2));
                                 break;
                             case 3:
-                                bi.wrb03.setMinDate(DateUtils.getYearsBack("dd/MM/yyyy", -3));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsBack("dd/MM/yyyy", -3));
                                 break;
                             case 4:
-                                bi.wrb03.setMinDate(DateUtils.getYearsBack("dd/MM/yyyy", -4));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsBack("dd/MM/yyyy", -4));
                                 break;
                         }
 
-
-                        bi.wrb05.clearCheck();
-                        bi.wrb06.clearCheck();
+                        bi.ccb05.clearCheck();
                         View v = bi.fldGrpccb05.getChildAt(0);
                         for (int j = 0; j < ((RadioGroup) v).getChildCount(); j++) {
                             ((RadioGroup) v).getChildAt(j).setEnabled(false);
                         }
-                        bi.wrb06a.setEnabled(true);
-                        bi.wrb06b.setEnabled(true);
-                        bi.wrb07.clearCheck();
-                        v = bi.fldGrpwrb03.getChildAt(0);
+                        bi.ccb05a.setEnabled(true);
+                        bi.ccb05b.setEnabled(true);
+                        bi.ccb06.clearCheck();
+                        v = bi.fldGrpccb06.getChildAt(0);
                         for (int j = 0; j < ((RadioGroup) v).getChildCount(); j++) {
                             ((RadioGroup) v).getChildAt(j).setEnabled(true);
                         }
 
                         if (bi.ccb02a.isChecked()) {
-                            bi.wrb07b.setEnabled(false);
+                            bi.ccb06b.setEnabled(false);
                         } else if (bi.ccb02b.isChecked()) {
-                            bi.wrb07b.setEnabled(true);
+                            bi.ccb06b.setEnabled(true);
                         }
 
 
-                    } else if (Integer.valueOf(bi.wrb04.getText().toString()) < 11) {
+                    } else if (Integer.valueOf(bi.ccb04.getText().toString()) < 11) {
 
-                        bi.wrb03.setEnabled(false);
-                        bi.wrb033.setEnabled(false);
-                        bi.wrb03.setText(null);
-                        bi.wrb033.setText(null);
-                        bi.wrb05.clearCheck();
-                        bi.wrb05e.setChecked(true);
+                        bi.ccb03dob.setEnabled(false);
+                        bi.ccb03m.setEnabled(false);
+                        bi.ccb03dob.setText(null);
+                        bi.ccb03m.setText(null);
 
-                        bi.wrb06.clearCheck();
+                        bi.ccb05.clearCheck();
                         View v = bi.fldGrpccb05.getChildAt(0);
                         for (int j = 0; j < ((RadioGroup) v).getChildCount(); j++) {
                             ((RadioGroup) v).getChildAt(j).setEnabled(false);
                         }
-                        bi.wrb06a.setEnabled(true);
-                        bi.wrb06b.setEnabled(true);
-                        bi.wrb06c.setEnabled(true);
-                        bi.wrb07.clearCheck();
-                        //bi.wrb07a.setChecked(true);
-                        v = bi.fldGrpwrb03.getChildAt(0);
+                        bi.ccb05a.setEnabled(true);
+                        bi.ccb05b.setEnabled(true);
+                        bi.ccb05c.setEnabled(true);
+                        bi.ccb06.clearCheck();
+                        //bi.ccb06a.setChecked(true);
+                        v = bi.fldGrpccb06.getChildAt(0);
                         for (int j = 0; j < ((RadioGroup) v).getChildCount(); j++) {
                             ((RadioGroup) v).getChildAt(j).setEnabled(true);
                         }
 
                         if (bi.ccb02a.isChecked()) {
-                            bi.wrb07b.setEnabled(false);
+                            bi.ccb06b.setEnabled(false);
                         } else if (bi.ccb02b.isChecked()) {
-                            bi.wrb07b.setEnabled(true);
+                            bi.ccb06b.setEnabled(true);
                         }
 
-                    } else if (Integer.valueOf(bi.wrb04.getText().toString()) < 14) {
+                    } else if (Integer.valueOf(bi.ccb04.getText().toString()) < 14) {
 
-                        bi.wrb03.setEnabled(false);
-                        bi.wrb033.setEnabled(false);
-                        bi.wrb03.setText(null);
-                        bi.wrb033.setText(null);
-                        bi.wrb05.clearCheck();
-                        bi.wrb05e.setChecked(true);
+                        bi.ccb03dob.setEnabled(false);
+                        bi.ccb03m.setEnabled(false);
+                        bi.ccb03dob.setText(null);
+                        bi.ccb03m.setText(null);
 
-                        bi.wrb06.clearCheck();
+                        bi.ccb05.clearCheck();
                         View v = bi.fldGrpccb05.getChildAt(0);
                         for (int j = 0; j < ((RadioGroup) v).getChildCount(); j++) {
                             ((RadioGroup) v).getChildAt(j).setEnabled(false);
                         }
-                        bi.wrb06a.setEnabled(true);
-                        bi.wrb06b.setEnabled(true);
-                        bi.wrb06c.setEnabled(true);
-                        bi.wrb06d.setEnabled(true);
-                        bi.wrb07.clearCheck();
-                        v = bi.fldGrpwrb03.getChildAt(0);
+                        bi.ccb05a.setEnabled(true);
+                        bi.ccb05b.setEnabled(true);
+                        bi.ccb05c.setEnabled(true);
+                        bi.ccb05d.setEnabled(true);
+                        bi.ccb06.clearCheck();
+                        v = bi.fldGrpccb06.getChildAt(0);
                         for (int j = 0; j < ((RadioGroup) v).getChildCount(); j++) {
                             ((RadioGroup) v).getChildAt(j).setEnabled(true);
                         }
 
                         if (bi.ccb02a.isChecked()) {
-                            bi.wrb07b.setEnabled(false);
+                            bi.ccb06b.setEnabled(false);
                         } else if (bi.ccb02b.isChecked()) {
-                            bi.wrb07b.setEnabled(true);
+                            bi.ccb06b.setEnabled(true);
                         }
 
-                    } else if (Integer.valueOf(bi.wrb04.getText().toString()) < 16) {
+                    } else if (Integer.valueOf(bi.ccb04.getText().toString()) < 16) {
 
-                        bi.wrb03.setEnabled(false);
-                        bi.wrb033.setEnabled(false);
-                        bi.wrb03.setText(null);
-                        bi.wrb033.setText(null);
-                        bi.wrb05.clearCheck();
-                        bi.wrb05e.setChecked(true);
+                        bi.ccb03dob.setEnabled(false);
+                        bi.ccb03m.setEnabled(false);
+                        bi.ccb03dob.setText(null);
+                        bi.ccb03m.setText(null);
 
-                        bi.wrb06.clearCheck();
+                        bi.ccb05.clearCheck();
                         View v = bi.fldGrpccb05.getChildAt(0);
                         for (int j = 0; j < ((RadioGroup) v).getChildCount(); j++) {
                             ((RadioGroup) v).getChildAt(j).setEnabled(false);
                         }
-                        bi.wrb06a.setEnabled(true);
-                        bi.wrb06b.setEnabled(true);
-                        bi.wrb06c.setEnabled(true);
-                        bi.wrb06d.setEnabled(true);
-                        bi.wrb06e.setEnabled(true);
-                        bi.wrb07.clearCheck();
+                        bi.ccb05a.setEnabled(true);
+                        bi.ccb05b.setEnabled(true);
+                        bi.ccb05c.setEnabled(true);
+                        bi.ccb05d.setEnabled(true);
+                        bi.ccb05e.setEnabled(true);
+                        bi.ccb06.clearCheck();
 
-                        v = bi.fldGrpwrb03.getChildAt(0);
+                        v = bi.fldGrpccb06.getChildAt(0);
                         for (int j = 0; j < ((RadioGroup) v).getChildCount(); j++) {
                             ((RadioGroup) v).getChildAt(j).setEnabled(true);
                         }
 
                         if (bi.ccb02a.isChecked()) {
-                            bi.wrb07b.setEnabled(false);
+                            bi.ccb06b.setEnabled(false);
                         } else if (bi.ccb02b.isChecked()) {
-                            bi.wrb07b.setEnabled(true);
+                            bi.ccb06b.setEnabled(true);
                         }
-                    } else if (Integer.valueOf(bi.wrb04.getText().toString()) < 18) {
-                        bi.wrb03.setEnabled(false);
-                        bi.wrb033.setEnabled(false);
-                        bi.wrb03.setText(null);
-                        bi.wrb033.setText(null);
-                        bi.wrb05.clearCheck();
-                        bi.wrb05e.setChecked(true);
+                    } else if (Integer.valueOf(bi.ccb04.getText().toString()) < 18) {
+                        bi.ccb03dob.setEnabled(false);
+                        bi.ccb03m.setEnabled(false);
+                        bi.ccb03dob.setText(null);
+                        bi.ccb03m.setText(null);
 
-                        bi.wrb06.clearCheck();
+                        bi.ccb05.clearCheck();
 //                        for (int j = 0; j < ((RadioGroup) v).getChildCount(); j++) {
 //                            ((RadioGroup) v).getChildAt(j).setEnabled(false);
 //                        }
-                        bi.wrb06a.setEnabled(true);
-                        bi.wrb06b.setEnabled(true);
-                        bi.wrb06c.setEnabled(true);
-                        bi.wrb06d.setEnabled(true);
-                        bi.wrb06e.setEnabled(true);
-                        bi.wrb06f.setEnabled(true);
-                        bi.wrb07.clearCheck();
+                        bi.ccb05a.setEnabled(true);
+                        bi.ccb05b.setEnabled(true);
+                        bi.ccb05c.setEnabled(true);
+                        bi.ccb05d.setEnabled(true);
+                        bi.ccb05e.setEnabled(true);
+                        bi.ccb05f.setEnabled(true);
+                        bi.ccb06.clearCheck();
 
                         View v = bi.fldGrpccb05.getChildAt(0);
-                        v = bi.fldGrpwrb03.getChildAt(0);
+                        v = bi.fldGrpccb06.getChildAt(0);
                         for (int j = 0; j < ((RadioGroup) v).getChildCount(); j++) {
                             ((RadioGroup) v).getChildAt(j).setEnabled(true);
                         }
 
                         if (bi.ccb02a.isChecked()) {
-                            bi.wrb07b.setEnabled(false);
+                            bi.ccb06b.setEnabled(false);
                         } else if (bi.ccb02b.isChecked()) {
-                            bi.wrb07b.setEnabled(true);
+                            bi.ccb06b.setEnabled(true);
                         }
-                    } else if (Integer.valueOf(bi.wrb04.getText().toString()) < 20) {
-                        bi.wrb03.setEnabled(false);
-                        bi.wrb033.setEnabled(false);
-                        bi.wrb03.setText(null);
-                        bi.wrb033.setText(null);
-                        bi.wrb05.clearCheck();
-                        bi.wrb05e.setChecked(true);
+                    } else if (Integer.valueOf(bi.ccb04.getText().toString()) < 20) {
+                        bi.ccb03dob.setEnabled(false);
+                        bi.ccb03m.setEnabled(false);
+                        bi.ccb03dob.setText(null);
+                        bi.ccb03m.setText(null);
 
-                        bi.wrb06.clearCheck();
+                        bi.ccb05.clearCheck();
                         View v = bi.fldGrpccb05.getChildAt(0);
                         for (int j = 0; j < ((RadioGroup) v).getChildCount(); j++) {
                             ((RadioGroup) v).getChildAt(j).setEnabled(false);
                         }
-                        bi.wrb06a.setEnabled(true);
-                        bi.wrb06b.setEnabled(true);
-                        bi.wrb06c.setEnabled(true);
-                        bi.wrb06d.setEnabled(true);
-                        bi.wrb06e.setEnabled(true);
-                        bi.wrb06f.setEnabled(true);
-                        bi.wrb06g.setEnabled(true);
-                        bi.wrb07.clearCheck();
+                        bi.ccb05a.setEnabled(true);
+                        bi.ccb05b.setEnabled(true);
+                        bi.ccb05c.setEnabled(true);
+                        bi.ccb05d.setEnabled(true);
+                        bi.ccb05e.setEnabled(true);
+                        bi.ccb05f.setEnabled(true);
+                        bi.ccb05g.setEnabled(true);
+                        bi.ccb06.clearCheck();
 
-                        v = bi.fldGrpwrb03.getChildAt(0);
+                        v = bi.fldGrpccb06.getChildAt(0);
                         for (int j = 0; j < ((RadioGroup) v).getChildCount(); j++) {
                             ((RadioGroup) v).getChildAt(j).setEnabled(true);
                         }
 
                         if (bi.ccb02a.isChecked()) {
-                            bi.wrb07b.setEnabled(false);
+                            bi.ccb06b.setEnabled(false);
                         } else if (bi.ccb02b.isChecked()) {
-                            bi.wrb07b.setEnabled(true);
+                            bi.ccb06b.setEnabled(true);
                         }
                     } else {
-                        bi.wrb03.setEnabled(false);
-                        bi.wrb033.setEnabled(false);
-                        bi.wrb03.setText(null);
-                        bi.wrb033.setText(null);
-                        bi.wrb05.clearCheck();
-                        bi.wrb05e.setChecked(true);
+                        bi.ccb03dob.setEnabled(false);
+                        bi.ccb03m.setEnabled(false);
+                        bi.ccb03dob.setText(null);
+                        bi.ccb03m.setText(null);
 
-                        bi.wrb06.clearCheck();
+                        bi.ccb05.clearCheck();
                         View v = bi.fldGrpccb05.getChildAt(0);
                         for (int j = 0; j < ((RadioGroup) v).getChildCount(); j++) {
                             ((RadioGroup) v).getChildAt(j).setEnabled(false);
                         }
-                        bi.wrb06a.setEnabled(true);
-                        bi.wrb06b.setEnabled(true);
-                        bi.wrb06c.setEnabled(true);
-                        bi.wrb06d.setEnabled(true);
-                        bi.wrb06e.setEnabled(true);
-                        bi.wrb06f.setEnabled(true);
-                        bi.wrb06g.setEnabled(true);
-                        bi.wrb06h.setEnabled(true);
-                        bi.wrb07.clearCheck();
+                        bi.ccb05a.setEnabled(true);
+                        bi.ccb05b.setEnabled(true);
+                        bi.ccb05c.setEnabled(true);
+                        bi.ccb05d.setEnabled(true);
+                        bi.ccb05e.setEnabled(true);
+                        bi.ccb05f.setEnabled(true);
+                        bi.ccb05g.setEnabled(true);
+                        bi.ccb05h.setEnabled(true);
+                        bi.ccb06.clearCheck();
 
-                        v = bi.fldGrpwrb03.getChildAt(0);
+                        v = bi.fldGrpccb06.getChildAt(0);
                         for (int j = 0; j < ((RadioGroup) v).getChildCount(); j++) {
                             ((RadioGroup) v).getChildAt(j).setEnabled(true);
                         }
 
                         if (bi.ccb02a.isChecked()) {
-                            bi.wrb07b.setEnabled(false);
+                            bi.ccb06b.setEnabled(false);
                         } else if (bi.ccb02b.isChecked()) {
-                            bi.wrb07b.setEnabled(true);
+                            bi.ccb06b.setEnabled(true);
                         }
                     }
 
@@ -351,7 +339,7 @@ public class SectionBActivity extends AppCompatActivity {
             }
         });
 
-        bi.wrb033.addTextChangedListener(new TextWatcher() {
+        bi.ccb03m.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
@@ -360,179 +348,179 @@ public class SectionBActivity extends AppCompatActivity {
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
-                if (!bi.wrb033.getText().toString().equalsIgnoreCase("")) {
-                    if (Integer.valueOf(bi.wrb04.getText().toString()) == 1) {
-                        switch (Integer.valueOf(bi.wrb033.getText().toString())) {
+                if (!bi.ccb03m.getText().toString().equalsIgnoreCase("")) {
+                    if (Integer.valueOf(bi.ccb04.getText().toString()) == 1) {
+                        switch (Integer.valueOf(bi.ccb03m.getText().toString())) {
                             case 0:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -12, 0));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -12, 0));
                                 break;
                             case 1:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -13, 0));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -13, 0));
                                 break;
                             case 2:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -14, 0));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -14, 0));
                                 break;
                             case 3:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -15, 0));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -15, 0));
                                 break;
                             case 4:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -16, 0));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -16, 0));
                                 break;
                             case 5:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -17, 0));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -17, 0));
                                 break;
                             case 6:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -18, 0));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -18, 0));
                                 break;
                             case 7:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -19, 0));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -19, 0));
                                 break;
                             case 8:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -20, 0));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -20, 0));
                                 break;
                             case 9:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -21, 0));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -21, 0));
                                 break;
                             case 10:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -22, 0));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -22, 0));
                                 break;
                             case 11:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -23, 0));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -23, 0));
                                 break;
                             case 12:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -24, 0));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -24, 0));
                                 break;
 
                         }
 
-                    } else if (Integer.valueOf(bi.wrb04.getText().toString()) == 2) {
-                        switch (Integer.valueOf(bi.wrb033.getText().toString())) {
+                    } else if (Integer.valueOf(bi.ccb04.getText().toString()) == 2) {
+                        switch (Integer.valueOf(bi.ccb03m.getText().toString())) {
                             case 0:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -12, 0));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -12, 0));
                                 break;
                             case 1:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -13, -1));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -13, -1));
                                 break;
                             case 2:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -14, -1));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -14, -1));
                                 break;
                             case 3:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -15, -1));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -15, -1));
                                 break;
                             case 4:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -16, -1));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -16, -1));
                                 break;
                             case 5:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -17, -1));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -17, -1));
                                 break;
                             case 6:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -18, -1));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -18, -1));
                                 break;
                             case 7:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -19, -1));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -19, -1));
                                 break;
                             case 8:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -20, -1));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -20, -1));
                                 break;
                             case 9:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -21, -1));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -21, -1));
                                 break;
                             case 10:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -22, -1));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -22, -1));
                                 break;
                             case 11:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -23, -1));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -23, -1));
                                 break;
                             case 12:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -24, -1));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -24, -1));
                                 break;
 
                         }
 
-                    } else if (Integer.valueOf(bi.wrb04.getText().toString()) == 3) {
-                        switch (Integer.valueOf(bi.wrb033.getText().toString())) {
+                    } else if (Integer.valueOf(bi.ccb04.getText().toString()) == 3) {
+                        switch (Integer.valueOf(bi.ccb03m.getText().toString())) {
                             case 0:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -12, 0));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -12, 0));
                                 break;
                             case 1:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -13, -3));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -13, -3));
                                 break;
                             case 2:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -14, -2));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -14, -2));
                                 break;
                             case 3:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -15, -2));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -15, -2));
                                 break;
                             case 4:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -16, -2));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -16, -2));
                                 break;
                             case 5:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -17, -2));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -17, -2));
                                 break;
                             case 6:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -18, -2));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -18, -2));
                                 break;
                             case 7:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -19, -2));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -19, -2));
                                 break;
                             case 8:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -20, -2));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -20, -2));
                                 break;
                             case 9:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -21, -2));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -21, -2));
                                 break;
                             case 10:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -22, -2));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -22, -2));
                                 break;
                             case 11:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -23, -2));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -23, -2));
                                 break;
                             case 12:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -24, -2));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -24, -2));
                                 break;
 
                         }
 
-                    } else if (Integer.valueOf(bi.wrb04.getText().toString()) == 4) {
-                        switch (Integer.valueOf(bi.wrb033.getText().toString())) {
+                    } else if (Integer.valueOf(bi.ccb04.getText().toString()) == 4) {
+                        switch (Integer.valueOf(bi.ccb03m.getText().toString())) {
                             case 0:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -12, 0));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -12, 0));
                                 break;
                             case 1:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -13, -3));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -13, -3));
                                 break;
                             case 2:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -14, -3));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -14, -3));
                                 break;
                             case 3:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -15, -3));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -15, -3));
                                 break;
                             case 4:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -16, -3));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -16, -3));
                                 break;
                             case 5:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -17, -3));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -17, -3));
                                 break;
                             case 6:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -18, -3));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -18, -3));
                                 break;
                             case 7:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -19, -3));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -19, -3));
                                 break;
                             case 8:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -20, -3));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -20, -3));
                                 break;
                             case 9:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -21, -3));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -21, -3));
                                 break;
                             case 10:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -22, -3));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -22, -3));
                                 break;
                             case 11:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -23, -3));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -23, -3));
                                 break;
                             case 12:
-                                bi.wrb03.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -24, -3));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -24, -3));
                                 break;
 
                         }
@@ -552,23 +540,23 @@ public class SectionBActivity extends AppCompatActivity {
             }
         });
 
-        bi.wrb06.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        bi.ccb05.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
-//                if (i == R.id.wrb06c) {
+//                if (i == R.id.ccb05c) {
 //                    if (bi.ccb02a.isChecked()) {
 //
-//                        for (int j = 0; j < bi.wrb07.getChildCount(); j++) {
+//                        for (int j = 0; j < bi.ccb06.getChildCount(); j++) {
 //
-//                            bi.wrb07.getChildAt(j).setEnabled(false);
+//                            bi.ccb06.getChildAt(j).setEnabled(false);
 //
 //                        }
 //
 //                    } else {
 //
-//                        for (int j = 0; j < bi.wrb07.getChildCount(); j++) {
+//                        for (int j = 0; j < bi.ccb06.getChildCount(); j++) {
 //
-//                            bi.wrb07.getChildAt(j).setEnabled(true);
+//                            bi.ccb06.getChildAt(j).setEnabled(true);
 //
 //                        }
 //
@@ -586,37 +574,37 @@ public class SectionBActivity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
 
                 if (i == R.id.ccb02a) {
-                    if (bi.wrb04.getText().toString().equalsIgnoreCase("") || Integer.valueOf(bi.wrb04.getText().toString()) >= 3) {
-                        View v = bi.fldGrpwrb03.getChildAt(0);
+                    if (bi.ccb04.getText().toString().equalsIgnoreCase("") || Integer.valueOf(bi.ccb04.getText().toString()) >= 3) {
+                        View v = bi.fldGrpccb06.getChildAt(0);
                         for (int j = 0; j < ((RadioGroup) v).getChildCount(); j++) {
                             ((RadioGroup) v).getChildAt(j).setEnabled(true);
                         }
-                        bi.wrb07b.setEnabled(false);
-                        bi.wrb07.clearCheck();
+                        bi.ccb06b.setEnabled(false);
+                        bi.ccb06.clearCheck();
 
                     } else {
-                        View v = bi.fldGrpwrb03.getChildAt(0);
+                        View v = bi.fldGrpccb06.getChildAt(0);
                         for (int j = 0; j < ((RadioGroup) v).getChildCount(); j++) {
                             ((RadioGroup) v).getChildAt(j).setEnabled(false);
                         }
-                        bi.wrb07a.setChecked(true);
+                        bi.ccb06a.setChecked(true);
                     }
 //
 
                 } else if (i == R.id.ccb02b) {
-                    if (bi.wrb04.getText().toString().equalsIgnoreCase("") || Integer.valueOf(bi.wrb04.getText().toString()) >= 3) {
-                        View v = bi.fldGrpwrb03.getChildAt(0);
+                    if (bi.ccb04.getText().toString().equalsIgnoreCase("") || Integer.valueOf(bi.ccb04.getText().toString()) >= 3) {
+                        View v = bi.fldGrpccb06.getChildAt(0);
                         for (int j = 0; j < ((RadioGroup) v).getChildCount(); j++) {
                             ((RadioGroup) v).getChildAt(j).setEnabled(true);
                         }
-                        bi.wrb07b.setEnabled(true);
-                        bi.wrb07.clearCheck();
+                        bi.ccb06b.setEnabled(true);
+                        bi.ccb06.clearCheck();
                     } else {
-                        View v = bi.fldGrpwrb03.getChildAt(0);
+                        View v = bi.fldGrpccb06.getChildAt(0);
                         for (int j = 0; j < ((RadioGroup) v).getChildCount(); j++) {
                             ((RadioGroup) v).getChildAt(j).setEnabled(false);
                         }
-                        bi.wrb07a.setChecked(true);
+                        bi.ccb06a.setChecked(true);
                     }
 
 
@@ -627,7 +615,7 @@ public class SectionBActivity extends AppCompatActivity {
         });
 
 
-//        bi.wrb04.addTextChangedListener(new TextWatcher() {
+//        bi.ccb04.addTextChangedListener(new TextWatcher() {
 //            @Override
 //            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 //
@@ -659,8 +647,8 @@ public class SectionBActivity extends AppCompatActivity {
     }
 
     public void setupViews() {
-        bi.wrb03.setManager(getSupportFragmentManager());
-        bi.wrb03.setMaxDate(new SimpleDateFormat("dd/MM/yyyy").format(System.currentTimeMillis()));
+        bi.ccb03dob.setManager(getSupportFragmentManager());
+        bi.ccb03dob.setMaxDate(new SimpleDateFormat("dd/MM/yyyy").format(System.currentTimeMillis()));
     }
 
     public void BtnAddMember() {
@@ -737,40 +725,34 @@ public class SectionBActivity extends AppCompatActivity {
             return false;
         }
 //        04
-        if (!validatorClass.EmptyTextBox(this, bi.wrb04, getString(R.string.wrb04))) {
+        if (!validatorClass.EmptyTextBox(this, bi.ccb04, getString(R.string.ccb04))) {
             return false;
         }
-        if (!validatorClass.RangeTextBox(this, bi.wrb04, 0, 99, getString(R.string.wrb04), " AGE")) {
+        if (!validatorClass.RangeTextBox(this, bi.ccb04, 0, 99, getString(R.string.ccb04), " AGE")) {
             return false;
         }
 //        03
-        if (Integer.valueOf(bi.wrb04.getText().toString()) < 5) {
+        if (Integer.valueOf(bi.ccb04.getText().toString()) < 5) {
 
-            if (!validatorClass.EmptyTextBox(this, bi.wrb033, getString(R.string.wrb033))) {
+            if (!validatorClass.EmptyTextBox(this, bi.ccb03m, getString(R.string.ccb03m))) {
 
                 return false;
             }
 
-            if (!validatorClass.RangeTextBox(this, bi.wrb033, 0, 12, "Month can not be greater than 12", "Number")) {
+            if (!validatorClass.RangeTextBox(this, bi.ccb03m, 0, 12, "Month can not be greater than 12", "Number")) {
                 return false;
             }
 
-            if (!validatorClass.EmptyTextBox(this, bi.wrb03, getString(R.string.wrb03))) {
+            if (!validatorClass.EmptyTextBox(this, bi.ccb03dob, getString(R.string.ccb03))) {
                 return false;
             }
         }
 //        05
-//        if (Integer.valueOf(bi.wrb04.getText().toString()) > 10) {
-//            if (!validatorClass.EmptyRadioButton(this, bi.wrb05, bi.wrb06e, getString(R.string.wrb05))) {
-//                return false;
-//            }
-//        }
-//        06
-        if (!validatorClass.EmptyRadioButton(this, bi.wrb06, bi.wrb06h, getString(R.string.wrb06))) {
+        if (!validatorClass.EmptyRadioButton(this, bi.ccb05, bi.ccb05h, getString(R.string.ccb05))) {
             return false;
         }
-//        07
-        return validatorClass.EmptyRadioButton(this, bi.wrb07, bi.wrb07k, getString(R.string.wrb07));
+//        06
+        return validatorClass.EmptyRadioButton(this, bi.ccb06, bi.ccb06k, getString(R.string.ccb06));
     }
 
     private void SaveDrafts() throws JSONException {
@@ -794,23 +776,21 @@ public class SectionBActivity extends AppCompatActivity {
         sB.put("ccb01", bi.ccb01.getText().toString());
         sB.put("serial_no", String.valueOf(serial_no));
         sB.put("ccb02", bi.ccb02a.isChecked() ? "1" : bi.ccb02b.isChecked() ? "2" : "0");
-        sB.put("wrb03", bi.wrb03.getText().toString());
-        sB.put("wrb04m", bi.wrb033.getText().toString());
-        sB.put("wrb04", bi.wrb04.getText().toString());
-        // sB.put("wrb05", bi.wrb05a.isChecked() ? "1" : bi.wrb05b.isChecked() ? "2" : bi.wrb05c.isChecked() ? "3" : bi.wrb05d.isChecked() ? "4"
-        //: bi.wrb05e.isChecked() ? "5" : "0");
-        sB.put("wrb06", bi.wrb06a.isChecked() ? "1" : bi.wrb06b.isChecked() ? "2" : bi.wrb06c.isChecked() ? "3" : bi.wrb06d.isChecked() ? "4"
-                : bi.wrb06e.isChecked() ? "5" : bi.wrb06f.isChecked() ? "6" : bi.wrb06g.isChecked() ? "7" : bi.wrb06h.isChecked() ? "8"
+        sB.put("ccb03dob", bi.ccb03dob.getText().toString());
+        sB.put("ccb03m", bi.ccb03m.getText().toString());
+        sB.put("ccb04", bi.ccb04.getText().toString());
+        sB.put("ccb05", bi.ccb05a.isChecked() ? "1" : bi.ccb05b.isChecked() ? "2" : bi.ccb05c.isChecked() ? "3" : bi.ccb05d.isChecked() ? "4"
+                : bi.ccb05e.isChecked() ? "5" : bi.ccb05f.isChecked() ? "6" : bi.ccb05g.isChecked() ? "7" : bi.ccb05h.isChecked() ? "8"
                 : "0");
-        sB.put("wrb07", bi.wrb07a.isChecked() ? "1" : bi.wrb07b.isChecked() ? "2" : bi.wrb07c.isChecked() ? "3" : bi.wrb07d.isChecked() ? "4"
-                : bi.wrb07e.isChecked() ? "5" : bi.wrb07f.isChecked() ? "6" : bi.wrb07g.isChecked() ? "7" : bi.wrb07h.isChecked() ? "8"
-                : bi.wrb07i.isChecked() ? "9" : bi.wrb07j.isChecked() ? "10" : bi.wrb07k.isChecked() ? "11" : "0");
+        sB.put("ccb06", bi.ccb06a.isChecked() ? "1" : bi.ccb06b.isChecked() ? "2" : bi.ccb06c.isChecked() ? "3" : bi.ccb06d.isChecked() ? "4"
+                : bi.ccb06e.isChecked() ? "5" : bi.ccb06f.isChecked() ? "6" : bi.ccb06g.isChecked() ? "7" : bi.ccb06h.isChecked() ? "8"
+                : bi.ccb06i.isChecked() ? "9" : bi.ccb06j.isChecked() ? "10" : bi.ccb06k.isChecked() ? "11" : "0");
 
         MainApp.fmc.setsB(String.valueOf(sB));
 
 
 //        Functionality
-        if (bi.ccb02b.isChecked() && Integer.valueOf(bi.wrb04.getText().toString()) >= 14 && Integer.valueOf(bi.wrb04.getText().toString()) < 50 ) {
+        if (bi.ccb02b.isChecked() && Integer.valueOf(bi.ccb04.getText().toString()) >= 14 && Integer.valueOf(bi.ccb04.getText().toString()) < 50 ) {
             SectionAActivity.pwList.add(MainApp.fmc);
         }
 
@@ -833,5 +813,5 @@ public class SectionBActivity extends AppCompatActivity {
         }
 
     }
-*/
+
 }

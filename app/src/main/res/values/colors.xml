@@ -16,6 +16,7 @@
     <color name="gray">#7f7f7f</color>
     <color name="green">#4caf50</color>
     <color name="black">#ff000000</color>
+    <color name="grayOverlay">#7f7f7f7f</color>
 
 
 </resources>
