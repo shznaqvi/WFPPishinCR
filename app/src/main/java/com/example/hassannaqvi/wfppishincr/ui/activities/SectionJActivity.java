@@ -76,6 +76,7 @@ public class SectionJActivity extends AppCompatActivity {
             }
         });
 
+
         bi.ccj09.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
