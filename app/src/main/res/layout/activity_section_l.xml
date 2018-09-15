@@ -13,6 +13,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
         android:orientation="vertical">
 
 
@@ -220,7 +221,7 @@
                         android:textColor="@color/white"
                         android:textSize="25sp" />
 
-                    <RadioGroup
+                    <LinearLayout
                         android:id="@+id/ccl03"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -228,52 +229,52 @@
                         android:orientation="vertical"
                         android:padding="16dp">
 
-                        <RadioButton
+                        <CheckBox
                             android:id="@+id/ccl03a"
-                            style="@style/radiobutton"
+                            style="@style/checkbox"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="@string/ccl03a"
                             android:textSize="20sp" />
 
-                        <RadioButton
+                        <CheckBox
                             android:id="@+id/ccl03b"
-                            style="@style/radiobutton"
+                            style="@style/checkbox"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="@string/ccl03b"
                             android:textSize="20sp" />
 
-                        <RadioButton
+                        <CheckBox
                             android:id="@+id/ccl03c"
-                            style="@style/radiobutton"
+                            style="@style/checkbox"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="@string/ccl03c"
                             android:textSize="20sp" />
 
-                        <RadioButton
+                        <CheckBox
                             android:id="@+id/ccl03d"
-                            style="@style/radiobutton"
+                            style="@style/checkbox"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="@string/ccl03d"
                             android:textSize="20sp" />
 
-                        <RadioButton
+                        <CheckBox
                             android:id="@+id/ccl0397"
-                            style="@style/radiobutton"
+                            style="@style/checkbox"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="@string/ccl0397"
                             android:textSize="20sp" />
 
-                    </RadioGroup>
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -344,61 +345,55 @@
                         android:textSize="25sp" />
 
 
-                    <RadioGroup
+                    <LinearLayout
                         android:id="@+id/ccl05"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
-                        <RadioButton
+                        <CheckBox
                             android:id="@+id/ccl05a"
-                            style="@style/radiobutton"
+                            style="@style/checkbox"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:text="@string/ccl05a"
                             android:textSize="20sp" />
 
-                        <RadioButton
+                        <CheckBox
                             android:id="@+id/ccl05b"
-                            style="@style/radiobutton"
+                            style="@style/checkbox"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:text="@string/ccl05b"
                             android:textSize="20sp" />
 
-                        <RadioButton
-                            android:id="@+id/cck05c"
-                            style="@style/radiobutton"
+                        <CheckBox
+                            android:id="@+id/ccl05c"
+                            style="@style/checkbox"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:text="@string/cck05c"
                             android:textSize="20sp" />
 
-                        <RadioButton
+                        <CheckBox
                             android:id="@+id/ccl05d"
-                            style="@style/radiobutton"
+                            style="@style/checkbox"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:text="@string/ccl05d"
                             android:textSize="20sp" />
 
-                        <RadioButton
+                        <CheckBox
                             android:id="@+id/ccl0597"
-                            style="@style/radiobutton"
+                            style="@style/checkbox"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:text="@string/ccl0597"
                             android:textSize="20sp" />
 
 
-                    </RadioGroup>
+                    </LinearLayout>
 
 
                 </LinearLayout>
@@ -432,101 +427,90 @@
                         android:textColor="@color/white"
                         android:textSize="25sp" />
 
-                    <RadioGroup
+                    <LinearLayout
                         android:id="@+id/ccl06"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
-                        <RadioButton
+                        <CheckBox
                             android:id="@+id/ccl06a"
-                            style="@style/radiobutton"
+                            style="@style/checkbox"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:text="@string/ccl06a"
                             android:textSize="20sp" />
 
-                        <RadioButton
+                        <CheckBox
                             android:id="@+id/ccl06b"
-                            style="@style/radiobutton"
+                            style="@style/checkbox"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:text="@string/ccl06b"
                             android:textSize="20sp" />
 
-                        <RadioButton
+                        <CheckBox
                             android:id="@+id/ccl06c"
-                            style="@style/radiobutton"
+                            style="@style/checkbox"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:text="@string/ccl06c"
                             android:textSize="20sp" />
 
-                        <RadioButton
+                        <CheckBox
                             android:id="@+id/ccl06d"
-                            style="@style/radiobutton"
+                            style="@style/checkbox"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:text="@string/ccl06d"
                             android:textSize="20sp" />
 
-                        <RadioButton
+                        <CheckBox
                             android:id="@+id/ccl06e"
-                            style="@style/radiobutton"
+                            style="@style/checkbox"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:text="@string/ccl06e"
                             android:textSize="20sp" />
 
-                        <RadioButton
+                        <CheckBox
                             android:id="@+id/ccl06f"
-                            style="@style/radiobutton"
+                            style="@style/checkbox"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:text="@string/ccl06f"
                             android:textSize="20sp" />
 
-                        <RadioButton
+                        <CheckBox
                             android:id="@+id/ccl06g"
-                            style="@style/radiobutton"
+                            style="@style/checkbox"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:text="@string/ccl06g"
                             android:textSize="20sp" />
 
-                        <RadioButton
+                        <CheckBox
                             android:id="@+id/ccl06h"
-                            style="@style/radiobutton"
+                            style="@style/checkbox"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:text="@string/ccl06h"
                             android:textSize="20sp" />
 
-                        <RadioButton
+                        <CheckBox
                             android:id="@+id/ccl06i"
-                            style="@style/radiobutton"
+                            style="@style/checkbox"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:text="@string/ccl06i"
                             android:textSize="20sp" />
 
-                        <RadioButton
+                        <CheckBox
                             android:id="@+id/ccl0696"
-                            style="@style/radiobutton"
+                            style="@style/checkbox"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:text="@string/ccl0696"
                             android:textSize="20sp" />
 
@@ -544,7 +528,7 @@
 
                         </android.support.design.widget.TextInputLayout>
 
-                    </RadioGroup>
+                    </LinearLayout>
 
                 </LinearLayout>
 

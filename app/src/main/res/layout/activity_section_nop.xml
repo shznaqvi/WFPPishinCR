@@ -17,6 +17,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
             android:orientation="vertical">
 
             <!--Section N-->
@@ -1697,8 +1698,23 @@
                     android:layout_height="wrap_content">
 
                     <android.support.design.widget.TextInputEditText
-                        android:text='@{ccp12yes.checked? ccp1296b.getText.toString: ""}'
-                        android:id="@+id/ccp1296b"
+                        android:text='@{ccp12yes.checked? ccp1296x.getText.toString: ""}'
+                        android:id="@+id/ccp1296x"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
+                        android:inputType="textCapWords"
+                        android:hint="@string/other"/>
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:visibility='@{ccp12yes.checked? View.VISIBLE : View.GONE}'
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:text='@{ccp12yes.checked? ccp12b.getText.toString: ""}'
+                        android:id="@+id/ccp12b"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/ccp01b"
@@ -1712,8 +1728,8 @@
                     android:layout_height="wrap_content">
 
                     <android.support.design.widget.TextInputEditText
-                        android:id="@+id/ccp1296ngo"
-                        android:text='@{ccp12yes.checked? ccp1296ngo.getText.toString: ""}'
+                        android:id="@+id/ccp12ngo"
+                        android:text='@{ccp12yes.checked? ccp12ngo.getText.toString: ""}'
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/ccp01ngo" />

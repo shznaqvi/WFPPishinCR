@@ -6,14 +6,17 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import com.example.hassannaqvi.wfppishincr.R;
+import com.example.hassannaqvi.wfppishincr.core.DatabaseHelper;
 import com.example.hassannaqvi.wfppishincr.core.MainApp;
 import com.example.hassannaqvi.wfppishincr.databinding.ActivitySectionLBinding;
 import com.example.hassannaqvi.wfppishincr.validation.ClearClass;
 import com.example.hassannaqvi.wfppishincr.validation.validatorClass;
 
 import org.json.JSONException;
+import org.json.JSONObject;
 
 public class SectionLActivity extends AppCompatActivity {
 
@@ -87,12 +90,49 @@ public class SectionLActivity extends AppCompatActivity {
     }
 
     public boolean updateDb() {
+        DatabaseHelper db = new DatabaseHelper(this);
 
-        return true;
+        int updcount = db.updateSL();
+
+        if (updcount == 1) {
+            Toast.makeText(this, "Updating Database... Successful!", Toast.LENGTH_SHORT).show();
+            return true;
+        } else {
+            Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
+            return false;
+        }
     }
 
-    public void saveData() {
-
+    public void saveData() throws JSONException {
+        JSONObject sL = new JSONObject();
+        sL.put("ccl01", bi.ccl01a.isChecked() ? "1" : bi.ccl01b.isChecked() ? "2" : bi.ccl01c.isChecked() ? "3"
+                : bi.ccl0196.isChecked() ? "96" : "0");
+        sL.put("ccl0196x", bi.ccl0196x.getText().toString());
+        sL.put("ccl02", bi.ccl02a.isChecked() ? "1" : bi.ccl02b.isChecked() ? "2" : "0");
+        sL.put("ccl03a", bi.ccl03a.isChecked() ? "1" : "0");
+        sL.put("ccl03b", bi.ccl03b.isChecked() ? "2" : "0");
+        sL.put("ccl03c", bi.ccl03c.isChecked() ? "3" : "0");
+        sL.put("ccl03d", bi.ccl03d.isChecked() ? "4" : "0");
+        sL.put("ccl03e", bi.ccl0397.isChecked() ? "5" : "0");
+        sL.put("ccl04", bi.ccl04a.isChecked() ? "1" : bi.ccl04b.isChecked() ? "2" : "0");
+        sL.put("ccl05a", bi.ccl05a.isChecked() ? "1" : "0");
+        sL.put("ccl05b", bi.ccl05b.isChecked() ? "2" : "0");
+        sL.put("ccl05c", bi.ccl05c.isChecked() ? "3" : "0");
+        sL.put("ccl05d", bi.ccl05d.isChecked() ? "4" : "0");
+        sL.put("ccl05e", bi.ccl0597.isChecked() ? "5" : "0");
+        sL.put("ccl06a", bi.ccl06a.isChecked() ? "1" : "0");
+        sL.put("ccl06b", bi.ccl06b.isChecked() ? "2" : "0");
+        sL.put("ccl06c", bi.ccl06c.isChecked() ? "3" : "0");
+        sL.put("ccl06d", bi.ccl06d.isChecked() ? "4" : "0");
+        sL.put("ccl06e", bi.ccl06e.isChecked() ? "5" : "0");
+        sL.put("ccl06f", bi.ccl06f.isChecked() ? "6" : "0");
+        sL.put("ccl06g", bi.ccl06g.isChecked() ? "7" : "0");
+        sL.put("ccl06h", bi.ccl06h.isChecked() ? "8" : "0");
+        sL.put("ccl06i", bi.ccl06i.isChecked() ? "9" : "0");
+        sL.put("ccl0696", bi.ccl0696.isChecked() ? "96" : "0");
+        sL.put("ccl0696x", bi.ccl0696x.getText().toString());
+        MainApp.fc.setsL(String.valueOf(sL));
+        Toast.makeText(this, "Validation Successful", Toast.LENGTH_SHORT).show();
 
     }
 
@@ -107,7 +147,7 @@ public class SectionLActivity extends AppCompatActivity {
             if (!validatorClass.EmptyRadioButton(this, bi.ccl02, bi.ccl02a, getString(R.string.ccl02))) {
                 return false;
             }
-            if (!validatorClass.EmptyRadioButton(this, bi.ccl03, bi.ccl03a, getString(R.string.ccl03))) {
+            if (!validatorClass.EmptyCheckBox(this, bi.ccl03, bi.ccl03a, getString(R.string.ccl03))) {
                 return false;
             }
         }
@@ -121,12 +161,12 @@ public class SectionLActivity extends AppCompatActivity {
         }
 
         if (bi.ccl04a.isChecked()) {
-            if (!validatorClass.EmptyRadioButton(this, bi.ccl05, bi.ccl05a, getString(R.string.ccl05))) {
+            if (!validatorClass.EmptyCheckBox(this, bi.ccl05, bi.ccl05a, getString(R.string.ccl05))) {
                 return false;
             }
         }
 
-        if (!validatorClass.EmptyRadioButton(this, bi.ccl06, bi.ccl06a, getString(R.string.ccl06))) {
+        if (!validatorClass.EmptyCheckBox(this, bi.ccl06, bi.ccl06a, getString(R.string.ccl06))) {
             return false;
         }
 
@@ -140,7 +180,5 @@ public class SectionLActivity extends AppCompatActivity {
 
     public void BtnEnd() {
         MainApp.endActivity(this, this);
-
-
     }
 }

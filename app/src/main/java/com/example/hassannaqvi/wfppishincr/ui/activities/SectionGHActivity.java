@@ -7,8 +7,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import com.example.hassannaqvi.wfppishincr.R;
+import com.example.hassannaqvi.wfppishincr.core.DatabaseHelper;
 import com.example.hassannaqvi.wfppishincr.core.MainApp;
 import com.example.hassannaqvi.wfppishincr.databinding.ActivitySectionGHBinding;
 import com.example.hassannaqvi.wfppishincr.validation.ClearClass;
@@ -185,8 +187,17 @@ public class SectionGHActivity extends AppCompatActivity {
     }
 
     public boolean updateDb() {
+        DatabaseHelper db = new DatabaseHelper(this);
 
-        return true;
+        int updcount = db.updateSGH();
+
+        if (updcount == 1) {
+            Toast.makeText(this, "Updating Database... Successful!", Toast.LENGTH_SHORT).show();
+            return true;
+        } else {
+            Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
+            return false;
+        }
     }
 
     public void BtnContinue() {
@@ -211,43 +222,44 @@ public class SectionGHActivity extends AppCompatActivity {
 
     private void saveData() throws JSONException {
 
-        JSONObject sG = new JSONObject();
-        JSONObject sH = new JSONObject();
-        sG.put("ccg01a", bi.ccg0101a.isChecked() ? "1" : bi.ccg0101b.isChecked() ? "2" : "0");
-        sG.put("ccg01b", bi.ccg0102a.isChecked() ? "1" : bi.ccg0102b.isChecked() ? "2" : "0");
-        sG.put("ccg01c", bi.ccg0103a.isChecked() ? "1" : bi.ccg0103b.isChecked() ? "2" : "0");
-        sG.put("ccg01d", bi.ccg0104a.isChecked() ? "1" : bi.ccg0104b.isChecked() ? "2" : "0");
-        sG.put("ccg01e", bi.ccg0105a.isChecked() ? "1" : bi.ccg0105b.isChecked() ? "2" : "0");
-        sG.put("ccg01f", bi.ccg0106a.isChecked() ? "1" : bi.ccg0106b.isChecked() ? "2" : "0");
-        sG.put("ccg01g", bi.ccg0107a.isChecked() ? "1" : bi.ccg0107b.isChecked() ? "2" : "0");
-        sG.put("ccg01h", bi.ccg0108a.isChecked() ? "1" : bi.ccg0108b.isChecked() ? "2" : "0");
-        sG.put("ccg0196", bi.ccg0196x.getText().toString());
-        sG.put("ccg0197", bi.ccg0197.isChecked() ? "97" : "0");
+        JSONObject sGH = new JSONObject();
 
-        sG.put("ccg02", bi.ccg02a.isChecked() ? "1" : bi.ccg02b.isChecked() ? "2" : "0");
-        sG.put("ccg03", bi.ccg03a.isChecked() ? "1" : bi.ccg03b.isChecked() ? "2" : bi.ccg03c.isChecked() ? "3" : bi.ccg03d.isChecked() ? "4" : bi.ccg03e.isChecked() ? "5" : bi.ccg03f.isChecked() ? "6" : bi.ccg03g.isChecked() ? "7" : bi.ccg03h.isChecked() ? "8" : bi.ccg0396.isChecked() ? "96" : "0");
-        sG.put("ccg0396", bi.ccg0396x.getText().toString());
+        sGH.put("ccg01a", bi.ccg0101a.isChecked() ? "1" : bi.ccg0101b.isChecked() ? "2" : "0");
+        sGH.put("ccg01b", bi.ccg0102a.isChecked() ? "1" : bi.ccg0102b.isChecked() ? "2" : "0");
+        sGH.put("ccg01c", bi.ccg0103a.isChecked() ? "1" : bi.ccg0103b.isChecked() ? "2" : "0");
+        sGH.put("ccg01d", bi.ccg0104a.isChecked() ? "1" : bi.ccg0104b.isChecked() ? "2" : "0");
+        sGH.put("ccg01e", bi.ccg0105a.isChecked() ? "1" : bi.ccg0105b.isChecked() ? "2" : "0");
+        sGH.put("ccg01f", bi.ccg0106a.isChecked() ? "1" : bi.ccg0106b.isChecked() ? "2" : "0");
+        sGH.put("ccg01g", bi.ccg0107a.isChecked() ? "1" : bi.ccg0107b.isChecked() ? "2" : "0");
+        sGH.put("ccg01h", bi.ccg0108a.isChecked() ? "1" : bi.ccg0108b.isChecked() ? "2" : "0");
+        sGH.put("ccg0196", bi.ccg0196x.getText().toString());
+        sGH.put("ccg0197", bi.ccg0197.isChecked() ? "97" : "0");
 
-        sH.put("cch01", bi.cch01a.isChecked() ? "1" : bi.cch01b.isChecked() ? "2" : "0");
-        sH.put("hbcg", bi.cch0201a.isChecked() ? "1" : bi.cch0201b.isChecked() ? "2" : bi.cch0201c.isChecked() ? "3" : "0");
-        sH.put("hopvq", bi.cch0202a.isChecked() ? "1" : bi.cch0202b.isChecked() ? "2" : bi.cch0202c.isChecked() ? "3" : "0");
+        sGH.put("ccg02", bi.ccg02a.isChecked() ? "1" : bi.ccg02b.isChecked() ? "2" : "0");
+        sGH.put("ccg03", bi.ccg03a.isChecked() ? "1" : bi.ccg03b.isChecked() ? "2" : bi.ccg03c.isChecked() ? "3" : bi.ccg03d.isChecked() ? "4" : bi.ccg03e.isChecked() ? "5" : bi.ccg03f.isChecked() ? "6" : bi.ccg03g.isChecked() ? "7" : bi.ccg03h.isChecked() ? "8" : bi.ccg0396.isChecked() ? "96" : "0");
+        sGH.put("ccg0396", bi.ccg0396x.getText().toString());
 
-        sH.put("hp1", bi.cch0301a.isChecked() ? "1" : bi.cch0301b.isChecked() ? "2" : bi.cch0301c.isChecked() ? "3" : "0");
-        sH.put("hpcv1", bi.cch0302a.isChecked() ? "1" : bi.cch0302b.isChecked() ? "2" : bi.cch0302c.isChecked() ? "3" : "0");
-        sH.put("hopv1", bi.cch0303a.isChecked() ? "1" : bi.cch0303b.isChecked() ? "2" : bi.cch0303c.isChecked() ? "3" : "0");
+        sGH.put("cch01", bi.cch01a.isChecked() ? "1" : bi.cch01b.isChecked() ? "2" : "0");
+        sGH.put("cchbcg", bi.cch0201a.isChecked() ? "1" : bi.cch0201b.isChecked() ? "2" : bi.cch0201c.isChecked() ? "3" : "0");
+        sGH.put("cchopvq", bi.cch0202a.isChecked() ? "1" : bi.cch0202b.isChecked() ? "2" : bi.cch0202c.isChecked() ? "3" : "0");
 
-        sH.put("hp2", bi.cch0401a.isChecked() ? "1" : bi.cch0401b.isChecked() ? "2" : bi.cch0401c.isChecked() ? "3" : "0");
-        sH.put("hpcv2", bi.cch0402a.isChecked() ? "1" : bi.cch0402b.isChecked() ? "2" : bi.cch0402c.isChecked() ? "3" : "0");
-        sH.put("hopv2", bi.cch0403a.isChecked() ? "1" : bi.cch0403b.isChecked() ? "2" : bi.cch0403c.isChecked() ? "3" : "0");
+        sGH.put("cchp1", bi.cch0301a.isChecked() ? "1" : bi.cch0301b.isChecked() ? "2" : bi.cch0301c.isChecked() ? "3" : "0");
+        sGH.put("cchpcv1", bi.cch0302a.isChecked() ? "1" : bi.cch0302b.isChecked() ? "2" : bi.cch0302c.isChecked() ? "3" : "0");
+        sGH.put("cchopv1", bi.cch0303a.isChecked() ? "1" : bi.cch0303b.isChecked() ? "2" : bi.cch0303c.isChecked() ? "3" : "0");
 
-        sH.put("hp3", bi.cch0501a.isChecked() ? "1" : bi.cch0501b.isChecked() ? "2" : bi.cch0501c.isChecked() ? "3" : "0");
-        sH.put("hpcv3", bi.cch0502a.isChecked() ? "1" : bi.cch0502b.isChecked() ? "2" : bi.cch0502c.isChecked() ? "3" : "0");
-        sH.put("hopv3", bi.cch0503a.isChecked() ? "1" : bi.cch0503b.isChecked() ? "2" : bi.cch0503c.isChecked() ? "3" : "0");
-        sH.put("hipv", bi.cch0504a.isChecked() ? "1" : bi.cch0504b.isChecked() ? "2" : bi.cch0504c.isChecked() ? "3" : "0");
+        sGH.put("cchp2", bi.cch0401a.isChecked() ? "1" : bi.cch0401b.isChecked() ? "2" : bi.cch0401c.isChecked() ? "3" : "0");
+        sGH.put("cchpcv2", bi.cch0402a.isChecked() ? "1" : bi.cch0402b.isChecked() ? "2" : bi.cch0402c.isChecked() ? "3" : "0");
+        sGH.put("cchopv2", bi.cch0403a.isChecked() ? "1" : bi.cch0403b.isChecked() ? "2" : bi.cch0403c.isChecked() ? "3" : "0");
 
-        sH.put("hva", bi.cch0601a.isChecked() ? "1" : bi.cch0601b.isChecked() ? "2" : bi.cch0601c.isChecked() ? "3" : "0");
-        sH.put("hm1", bi.cch0701a.isChecked() ? "1" : bi.cch0701b.isChecked() ? "2" : bi.cch0701c.isChecked() ? "3" : "0");
+        sGH.put("cchp3", bi.cch0501a.isChecked() ? "1" : bi.cch0501b.isChecked() ? "2" : bi.cch0501c.isChecked() ? "3" : "0");
+        sGH.put("cchpcv3", bi.cch0502a.isChecked() ? "1" : bi.cch0502b.isChecked() ? "2" : bi.cch0502c.isChecked() ? "3" : "0");
+        sGH.put("cchopv3", bi.cch0503a.isChecked() ? "1" : bi.cch0503b.isChecked() ? "2" : bi.cch0503c.isChecked() ? "3" : "0");
+        sGH.put("cchipv", bi.cch0504a.isChecked() ? "1" : bi.cch0504b.isChecked() ? "2" : bi.cch0504c.isChecked() ? "3" : "0");
 
+        sGH.put("cchva", bi.cch0601a.isChecked() ? "1" : bi.cch0601b.isChecked() ? "2" : bi.cch0601c.isChecked() ? "3" : "0");
+        sGH.put("cchm1", bi.cch0701a.isChecked() ? "1" : bi.cch0701b.isChecked() ? "2" : bi.cch0701c.isChecked() ? "3" : "0");
+        MainApp.fc.setsGH(String.valueOf(sGH));
+        Toast.makeText(this, "Validation Successful", Toast.LENGTH_SHORT).show();
     }
 
     private boolean formValidate() {

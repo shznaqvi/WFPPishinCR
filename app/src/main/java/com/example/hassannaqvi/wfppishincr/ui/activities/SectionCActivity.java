@@ -5,8 +5,10 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import com.example.hassannaqvi.wfppishincr.R;
+import com.example.hassannaqvi.wfppishincr.core.DatabaseHelper;
 import com.example.hassannaqvi.wfppishincr.core.MainApp;
 import com.example.hassannaqvi.wfppishincr.databinding.ActivitySectionCBinding;
 import com.example.hassannaqvi.wfppishincr.validation.ClearClass;
@@ -67,8 +69,18 @@ public class SectionCActivity extends AppCompatActivity {
     }
 
     public boolean updateDb() {
+        DatabaseHelper db = new DatabaseHelper(this);
 
-        return true;
+        int updcount = db.updateSC();
+
+        if (updcount == 1) {
+            Toast.makeText(this, "Updating Database... Successful!", Toast.LENGTH_SHORT).show();
+            return true;
+        } else {
+            Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+
     }
 
     private void saveData() throws JSONException {
@@ -84,8 +96,10 @@ public class SectionCActivity extends AppCompatActivity {
         sC.put("ccc06", bi.ccc06a.isChecked() ? "1" : bi.ccc06b.isChecked() ? "2" : "0");
         sC.put("ccc07", bi.ccc07w.getText().toString());
         sC.put("ccc08", bi.ccc08a.isChecked() ? "1" : bi.ccc08b.isChecked() ? "2" : bi.ccc0898.isChecked() ? "98" : "0");
-        sC.put("ccc09", bi.ccc0898.isChecked() ? "98" : "0");
+        sC.put("ccc09", bi.ccc0998.isChecked() ? "98" : "0");
         sC.put("ccc09kg", bi.ccc09kg.getText().toString());
+        MainApp.fc.setsC(String.valueOf(sC));
+        Toast.makeText(this, "Validation Successful", Toast.LENGTH_SHORT).show();
 
     }
 

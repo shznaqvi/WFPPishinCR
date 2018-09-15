@@ -7,8 +7,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.CompoundButton;
+import android.widget.Toast;
 
 import com.example.hassannaqvi.wfppishincr.R;
+import com.example.hassannaqvi.wfppishincr.core.DatabaseHelper;
 import com.example.hassannaqvi.wfppishincr.core.MainApp;
 import com.example.hassannaqvi.wfppishincr.databinding.ActivitySectionDEFBinding;
 import com.example.hassannaqvi.wfppishincr.validation.validatorClass;
@@ -87,8 +89,17 @@ public class SectionDEFActivity extends AppCompatActivity {
     }
 
     public boolean updateDb() {
+        DatabaseHelper db = new DatabaseHelper(this);
 
-        return true;
+        int updcount = db.updateSDEF();
+
+        if (updcount == 1) {
+            Toast.makeText(this, "Updating Database... Successful!", Toast.LENGTH_SHORT).show();
+            return true;
+        } else {
+            Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
+            return false;
+        }
     }
 
     private boolean formValidate() {
@@ -293,42 +304,42 @@ public class SectionDEFActivity extends AppCompatActivity {
     }
 
     private void saveData() throws JSONException {
-
-        JSONObject sD = new JSONObject();
-        JSONObject sE = new JSONObject();
-        JSONObject sF = new JSONObject();
-
-        sD.put("ccd01cm01", bi.ccd01cm01.getText().toString());
-        sD.put("ccd01a", bi.ccd0101.getSelectedItem().toString());
-        sD.put("ccd01cm02", bi.ccd01cm02.getText().toString());
-        sD.put("ccd01b", bi.ccd0102.getSelectedItem().toString());
-
-        sD.put("ccd02kg01", bi.ccd02kg01.getText().toString());
-        sD.put("ccd02a", bi.ccd0201.getSelectedItem().toString());
-        sD.put("ccd02kg02", bi.ccd02kg02.getText().toString());
-        sD.put("ccd02b", bi.ccd0202.getSelectedItem().toString());
-
-        sE.put("cce01cm01", bi.cce01cm01.getText().toString());
-        sE.put("cce01a", bi.cce0101.getSelectedItem().toString());
-        sE.put("cce01cm02", bi.cce01cm02.getText().toString());
-        sE.put("cce01b", bi.cce0102.getSelectedItem().toString());
-
-        sE.put("cce02kg01", bi.cce02kg01.getText().toString());
-        sE.put("cce02a", bi.cce0201.getSelectedItem().toString());
-        sE.put("cce02kg02", bi.cce02kg02.getText().toString());
-        sE.put("cce02b", bi.cce0202.getSelectedItem().toString());
-
-        sF.put("ccf01cm01", bi.ccf01cm01.getText().toString());
-        sF.put("ccf01a", bi.ccf0101.getSelectedItem().toString());
-        sF.put("ccf01cm02", bi.ccf01cm02.getText().toString());
-        sF.put("ccf01b", bi.ccf0102.getSelectedItem().toString());
-
-        sF.put("ccf02kg01", bi.ccf02kg01.getText().toString());
-        sF.put("ccf02a", bi.ccf0201.getSelectedItem().toString());
-        sF.put("ccf02kg02", bi.ccf02kg02.getText().toString());
-        sF.put("ccf02b", bi.ccf0202.getSelectedItem().toString());
+        JSONObject sDEF = new JSONObject();
+/*
 
 
+        sDEF.put("ccd01cm01", bi.ccd01cm01.getText().toString());
+        sDEF.put("ccd01a", bi.ccd0101.getSelectedItem().toString());
+        sDEF.put("ccd01cm02", bi.ccd01cm02.getText().toString());
+        sDEF.put("ccd01b", bi.ccd0102.getSelectedItem().toString());
+
+        sDEF.put("ccd02kg01", bi.ccd02kg01.getText().toString());
+        sDEF.put("ccd02a", bi.ccd0201.getSelectedItem().toString());
+        sDEF.put("ccd02kg02", bi.ccd02kg02.getText().toString());
+        sDEF.put("ccd02b", bi.ccd0202.getSelectedItem().toString());
+
+        sDEF.put("cce01cm01", bi.cce01cm01.getText().toString());
+        sDEF.put("cce01a", bi.cce0101.getSelectedItem().toString());
+        sDEF.put("cce01cm02", bi.cce01cm02.getText().toString());
+        sDEF.put("cce01b", bi.cce0102.getSelectedItem().toString());
+
+        sDEF.put("cce02kg01", bi.cce02kg01.getText().toString());
+        sDEF.put("cce02a", bi.cce0201.getSelectedItem().toString());
+        sDEF.put("cce02kg02", bi.cce02kg02.getText().toString());
+        sDEF.put("cce02b", bi.cce0202.getSelectedItem().toString());
+
+        sDEF.put("ccf01cm01", bi.ccf01cm01.getText().toString());
+        sDEF.put("ccf01a", bi.ccf0101.getSelectedItem().toString());
+        sDEF.put("ccf01cm02", bi.ccf01cm02.getText().toString());
+        sDEF.put("ccf01b", bi.ccf0102.getSelectedItem().toString());
+
+        sDEF.put("ccf02kg01", bi.ccf02kg01.getText().toString());
+        sDEF.put("ccf02a", bi.ccf0201.getSelectedItem().toString());
+        sDEF.put("ccf02kg02", bi.ccf02kg02.getText().toString());
+        sDEF.put("ccf02b", bi.ccf0202.getSelectedItem().toString());
+*/
+        MainApp.fc.setsDEF(String.valueOf(sDEF));
+        Toast.makeText(this, "Validation Succecful", Toast.LENGTH_SHORT).show();
     }
 
     public void BtnEnd() {

@@ -497,95 +497,95 @@ ActivitySectionMBinding bi;
 
 
     private void SaveDraft() throws JSONException {
-        /*
+
         Toast.makeText(this, "Saving Draft for  This Section", Toast.LENGTH_SHORT).show();
 
-        JSONObject sk = new JSONObject();
+        JSONObject sM = new JSONObject();
 
-        sk.put("ccm01d", bi.ccm01d.getText().toString());
-        sk.put("ccm01s", bi.ccm01s01.isChecked() ? "1" : bi.ccm01s02.isChecked() ? "2" : bi.ccm01s03.isChecked() ? "3"
+        sM.put("ccm01d", bi.ccm01d.getText().toString());
+        sM.put("ccm01s", bi.ccm01s01.isChecked() ? "1" : bi.ccm01s02.isChecked() ? "2" : bi.ccm01s03.isChecked() ? "3"
                 : bi.ccm01s04.isChecked() ? "4" : bi.ccm01s05.isChecked() ? "5" : bi.ccm01s06.isChecked() ? "6" : bi.ccm01s07.isChecked() ? "7"
                 : bi.ccm01s08.isChecked() ? "8" : bi.ccm01s09.isChecked() ? "9" : bi.ccm01s10.isChecked() ? "10" : "0");
 
-        sk.put("ccm02d", bi.ccm02d.getText().toString());
-        sk.put("ccm02s", bi.ccm02s01.isChecked() ? "1" : bi.ccm02s02.isChecked() ? "2" : bi.ccm02s03.isChecked() ? "3"
+        sM.put("ccm02d", bi.ccm02d.getText().toString());
+        sM.put("ccm02s", bi.ccm02s01.isChecked() ? "1" : bi.ccm02s02.isChecked() ? "2" : bi.ccm02s03.isChecked() ? "3"
                 : bi.ccm02s04.isChecked() ? "4" : bi.ccm02s05.isChecked() ? "5" : bi.ccm02s06.isChecked() ? "6" : bi.ccm02s07.isChecked() ? "7"
                 : bi.ccm02s08.isChecked() ? "8" : bi.ccm02s09.isChecked() ? "9" : bi.ccm02s10.isChecked() ? "10" : "0");
 
-        sk.put("ccm03d", bi.ccm03d.getText().toString());
-        sk.put("ccm03s", bi.ccm03s01.isChecked() ? "1" : bi.ccm03s02.isChecked() ? "2" : bi.ccm03s03.isChecked() ? "3"
+        sM.put("ccm03d", bi.ccm03d.getText().toString());
+        sM.put("ccm03s", bi.ccm03s01.isChecked() ? "1" : bi.ccm03s02.isChecked() ? "2" : bi.ccm03s03.isChecked() ? "3"
                 : bi.ccm03s04.isChecked() ? "4" : bi.ccm03s05.isChecked() ? "5" : bi.ccm03s06.isChecked() ? "6" : bi.ccm03s07.isChecked() ? "7"
                 : bi.ccm03s08.isChecked() ? "8" : bi.ccm03s09.isChecked() ? "9" : bi.ccm03s10.isChecked() ? "10" : "0");
 
-        sk.put("ccm04d", bi.ccm04d.getText().toString());
-        sk.put("ccm04s", bi.ccm04s01.isChecked() ? "1" : bi.ccm04s02.isChecked() ? "2" : bi.ccm04s03.isChecked() ? "3"
+        sM.put("ccm04d", bi.ccm04d.getText().toString());
+        sM.put("ccm04s", bi.ccm04s01.isChecked() ? "1" : bi.ccm04s02.isChecked() ? "2" : bi.ccm04s03.isChecked() ? "3"
                 : bi.ccm04s04.isChecked() ? "4" : bi.ccm04s05.isChecked() ? "5" : bi.ccm04s06.isChecked() ? "6" : bi.ccm04s07.isChecked() ? "7"
                 : bi.ccm04s08.isChecked() ? "8" : bi.ccm04s09.isChecked() ? "9" : bi.ccm04s10.isChecked() ? "10" : "0");
 
-        sk.put("ccm0401d", bi.ccm0401d.getText().toString());
-        sk.put("ccm0401s", bi.ccm0401s01.isChecked() ? "1" : bi.ccm0401s02.isChecked() ? "2" : bi.ccm0401s03.isChecked() ? "3"
+        sM.put("ccm0401d", bi.ccm0401d.getText().toString());
+        sM.put("ccm0401s", bi.ccm0401s01.isChecked() ? "1" : bi.ccm0401s02.isChecked() ? "2" : bi.ccm0401s03.isChecked() ? "3"
                 : bi.ccm0401s04.isChecked() ? "4" : bi.ccm0401s05.isChecked() ? "5" : bi.ccm0401s06.isChecked() ? "6" : bi.ccm0401s07.isChecked() ? "7"
                 : bi.ccm0401s08.isChecked() ? "8" : bi.ccm0401s09.isChecked() ? "9" : bi.ccm0401s10.isChecked() ? "10" : "0");
 
-        sk.put("ccm0402d", bi.ccm0402d.getText().toString());
-        sk.put("ccm0402s", bi.ccm0402s01.isChecked() ? "1" : bi.ccm0402s02.isChecked() ? "2" : bi.ccm0402s03.isChecked() ? "3"
+        sM.put("ccm0402d", bi.ccm0402d.getText().toString());
+        sM.put("ccm0402s", bi.ccm0402s01.isChecked() ? "1" : bi.ccm0402s02.isChecked() ? "2" : bi.ccm0402s03.isChecked() ? "3"
                 : bi.ccm0402s04.isChecked() ? "4" : bi.ccm0402s05.isChecked() ? "5" : bi.ccm0402s06.isChecked() ? "6" : bi.ccm0402s07.isChecked() ? "7"
                 : bi.ccm0402s08.isChecked() ? "8" : bi.ccm0402s09.isChecked() ? "9" : bi.ccm0402s10.isChecked() ? "10" : "0");
 
-        sk.put("ccm0403d", bi.ccm0403d.getText().toString());
-        sk.put("ccm0403s", bi.ccm0403s01.isChecked() ? "1" : bi.ccm0403s02.isChecked() ? "2" : bi.ccm0403s03.isChecked() ? "3"
+        sM.put("ccm0403d", bi.ccm0403d.getText().toString());
+        sM.put("ccm0403s", bi.ccm0403s01.isChecked() ? "1" : bi.ccm0403s02.isChecked() ? "2" : bi.ccm0403s03.isChecked() ? "3"
                 : bi.ccm0403s04.isChecked() ? "4" : bi.ccm0403s05.isChecked() ? "5" : bi.ccm0403s06.isChecked() ? "6" : bi.ccm0403s07.isChecked() ? "7"
                 : bi.ccm0403s08.isChecked() ? "8" : bi.ccm0403s09.isChecked() ? "9" : bi.ccm0403s10.isChecked() ? "10" : "0");
 
-        sk.put("ccm0404d", bi.ccm0404d.getText().toString());
-        sk.put("ccm0404s", bi.ccm0404s01.isChecked() ? "1" : bi.ccm0404s02.isChecked() ? "2" : bi.ccm0404s03.isChecked() ? "3"
+        sM.put("ccm0404d", bi.ccm0404d.getText().toString());
+        sM.put("ccm0404s", bi.ccm0404s01.isChecked() ? "1" : bi.ccm0404s02.isChecked() ? "2" : bi.ccm0404s03.isChecked() ? "3"
                 : bi.ccm0404s04.isChecked() ? "4" : bi.ccm0404s05.isChecked() ? "5" : bi.ccm0404s06.isChecked() ? "6" : bi.ccm0404s07.isChecked() ? "7"
                 : bi.ccm0404s08.isChecked() ? "8" : bi.ccm0404s09.isChecked() ? "9" : bi.ccm0404s10.isChecked() ? "10" : "0");
 
-        sk.put("ccm05d", bi.ccm05d.getText().toString());
-        sk.put("ccm05s", bi.ccm05s01.isChecked() ? "1" : bi.ccm05s02.isChecked() ? "2" : bi.ccm05s03.isChecked() ? "3"
+        sM.put("ccm05d", bi.ccm05d.getText().toString());
+        sM.put("ccm05s", bi.ccm05s01.isChecked() ? "1" : bi.ccm05s02.isChecked() ? "2" : bi.ccm05s03.isChecked() ? "3"
                 : bi.ccm05s04.isChecked() ? "4" : bi.ccm05s05.isChecked() ? "5" : bi.ccm05s06.isChecked() ? "6" : bi.ccm05s07.isChecked() ? "7"
                 : bi.ccm05s08.isChecked() ? "8" : bi.ccm05s09.isChecked() ? "9" : bi.ccm05s10.isChecked() ? "10" : "0");
 
-        sk.put("ccm0501d", bi.ccm0501d.getText().toString());
-        sk.put("ccm0501s", bi.ccm0501s01.isChecked() ? "1" : bi.ccm0501s02.isChecked() ? "2" : bi.ccm0403s03.isChecked() ? "3"
+        sM.put("ccm0501d", bi.ccm0501d.getText().toString());
+        sM.put("ccm0501s", bi.ccm0501s01.isChecked() ? "1" : bi.ccm0501s02.isChecked() ? "2" : bi.ccm0403s03.isChecked() ? "3"
                 : bi.ccm0501s04.isChecked() ? "4" : bi.ccm0501s05.isChecked() ? "5" : bi.ccm0501s06.isChecked() ? "6" : bi.ccm0501s07.isChecked() ? "7"
                 : bi.ccm0501s08.isChecked() ? "8" : bi.ccm0501s09.isChecked() ? "9" : bi.ccm0501s10.isChecked() ? "10" : "0");
 
-        sk.put("ccm0502d", bi.ccm0502d.getText().toString());
-        sk.put("ccm0502s", bi.ccm0502s01.isChecked() ? "1" : bi.ccm0502s02.isChecked() ? "2" : bi.ccm0502s03.isChecked() ? "3"
+        sM.put("ccm0502d", bi.ccm0502d.getText().toString());
+        sM.put("ccm0502s", bi.ccm0502s01.isChecked() ? "1" : bi.ccm0502s02.isChecked() ? "2" : bi.ccm0502s03.isChecked() ? "3"
                 : bi.ccm0502s04.isChecked() ? "4" : bi.ccm0502s05.isChecked() ? "5" : bi.ccm0502s06.isChecked() ? "6" : bi.ccm0502s07.isChecked() ? "7"
                 : bi.ccm0502s08.isChecked() ? "8" : bi.ccm0502s09.isChecked() ? "9" : bi.ccm0502s10.isChecked() ? "10" : "0");
 
-        sk.put("ccm06d", bi.ccm06d.getText().toString());
-        sk.put("ccm06s", bi.ccm06s01.isChecked() ? "1" : bi.ccm06s02.isChecked() ? "2" : bi.ccm06s03.isChecked() ? "3"
+        sM.put("ccm06d", bi.ccm06d.getText().toString());
+        sM.put("ccm06s", bi.ccm06s01.isChecked() ? "1" : bi.ccm06s02.isChecked() ? "2" : bi.ccm06s03.isChecked() ? "3"
                 : bi.ccm06s04.isChecked() ? "4" : bi.ccm06s05.isChecked() ? "5" : bi.ccm06s06.isChecked() ? "6" : bi.ccm06s07.isChecked() ? "7"
                 : bi.ccm06s08.isChecked() ? "8" : bi.ccm06s09.isChecked() ? "9" : bi.ccm06s10.isChecked() ? "10" : "0");
 
-        sk.put("ccm0601d", bi.ccm0601d.getText().toString());
-        sk.put("ccm0601s", bi.ccm0601s01.isChecked() ? "1" : bi.ccm0601s02.isChecked() ? "2" : bi.ccm0601s03.isChecked() ? "3"
+        sM.put("ccm0601d", bi.ccm0601d.getText().toString());
+        sM.put("ccm0601s", bi.ccm0601s01.isChecked() ? "1" : bi.ccm0601s02.isChecked() ? "2" : bi.ccm0601s03.isChecked() ? "3"
                 : bi.ccm0601s04.isChecked() ? "4" : bi.ccm0601s05.isChecked() ? "5" : bi.ccm0601s06.isChecked() ? "6" : bi.ccm0601s07.isChecked() ? "7"
                 : bi.ccm0601s08.isChecked() ? "8" : bi.ccm0601s09.isChecked() ? "9" : bi.ccm0601s10.isChecked() ? "10" : "0");
 
-        sk.put("ccm07d", bi.ccm07d.getText().toString());
-        sk.put("ccm07s", bi.ccm07s01.isChecked() ? "1" : bi.ccm07s02.isChecked() ? "2" : bi.ccm07s03.isChecked() ? "3"
+        sM.put("ccm07d", bi.ccm07d.getText().toString());
+        sM.put("ccm07s", bi.ccm07s01.isChecked() ? "1" : bi.ccm07s02.isChecked() ? "2" : bi.ccm07s03.isChecked() ? "3"
                 : bi.ccm07s04.isChecked() ? "4" : bi.ccm07s05.isChecked() ? "5" : bi.ccm07s06.isChecked() ? "6" : bi.ccm07s07.isChecked() ? "7"
                 : bi.ccm07s08.isChecked() ? "8" : bi.ccm07s09.isChecked() ? "9" : bi.ccm07s10.isChecked() ? "10" : "0");
 
-        sk.put("ccm08d", bi.ccm08d.getText().toString());
-        sk.put("ccm08s", bi.ccm08s01.isChecked() ? "1" : bi.ccm08s02.isChecked() ? "2" : bi.ccm08s03.isChecked() ? "3"
+        sM.put("ccm08d", bi.ccm08d.getText().toString());
+        sM.put("ccm08s", bi.ccm08s01.isChecked() ? "1" : bi.ccm08s02.isChecked() ? "2" : bi.ccm08s03.isChecked() ? "3"
                 : bi.ccm08s04.isChecked() ? "4" : bi.ccm08s05.isChecked() ? "5" : bi.ccm08s06.isChecked() ? "6" : bi.ccm08s07.isChecked() ? "7"
                 : bi.ccm08s08.isChecked() ? "8" : bi.ccm08s09.isChecked() ? "9" : bi.ccm08s10.isChecked() ? "10" : "0");
 
-        sk.put("ccm09d", bi.ccm09d.getText().toString());
-        sk.put("ccm09s", bi.ccm09s01.isChecked() ? "1" : bi.ccm09s02.isChecked() ? "2" : bi.ccm09s03.isChecked() ? "3"
+        sM.put("ccm09d", bi.ccm09d.getText().toString());
+        sM.put("ccm09s", bi.ccm09s01.isChecked() ? "1" : bi.ccm09s02.isChecked() ? "2" : bi.ccm09s03.isChecked() ? "3"
                 : bi.ccm09s04.isChecked() ? "4" : bi.ccm09s05.isChecked() ? "5" : bi.ccm09s06.isChecked() ? "6" : bi.ccm09s07.isChecked() ? "7"
                 : bi.ccm09s08.isChecked() ? "8" : bi.ccm09s09.isChecked() ? "9" : bi.ccm09s10.isChecked() ? "10" : "0");
 
-        MainApp.fc.setsK(String.valueOf(sk));
+        MainApp.fc.setsM(String.valueOf(sM));
 
         Toast.makeText(this, "Validation Successful! - Saving Draft...", Toast.LENGTH_SHORT).show();
-        */
+
     }
 
     public boolean ValidateForm() {
@@ -1097,7 +1097,7 @@ ActivitySectionMBinding bi;
     }
 
     private boolean UpdateDB() {
-      /*  DatabaseHelper db = new DatabaseHelper(this);
+        DatabaseHelper db = new DatabaseHelper(this);
 
         int updcount = db.updateSM();
 
@@ -1108,7 +1108,6 @@ ActivitySectionMBinding bi;
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
             return false;
         }
-    */return true;
     }
 
 }

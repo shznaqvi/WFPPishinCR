@@ -50,18 +50,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             FormsTable.COLUMN_INTERVIEWER02 + " TEXT,"+
             FormsTable.COLUMN_ISTATUS + " TEXT," +
             FormsTable.COLUMN_ISTATUS88X + " TEXT," +
-            FormsTable.COLUMN_SINFO + " TEXT," +
-            FormsTable.COLUMN_sA + " TEXT," +
-            FormsTable.COLUMN_SC + " TEXT," +
-            FormsTable.COLUMN_SD + " TEXT," +
-            FormsTable.COLUMN_SG + " TEXT," +
-            FormsTable.COLUMN_SH + " TEXT," +
-            FormsTable.COLUMN_SI + " TEXT," +
-            FormsTable.COLUMN_SJ + " TEXT," +
-            FormsTable.COLUMN_SK + " TEXT," +
-            FormsTable.COLUMN_SLMO + " TEXT," +
-            FormsTable.COLUMN_SE + " TEXT," +
-            FormsTable.COLUMN_SF + " TEXT," +
+            FormsTable.COLUMN_SA + " TEXT,"+
+            FormsTable.COLUMN_SC + " TEXT,"+
+            FormsTable.COLUMN_SDEF + " TEXT,"+
+            FormsTable.COLUMN_SGH + " TEXT,"+
+            FormsTable.COLUMN_SI + " TEXT,"+
+            FormsTable.COLUMN_SJ + " TEXT,"+
+            FormsTable.COLUMN_SK + " TEXT,"+
+            FormsTable.COLUMN_SL + " TEXT,"+
+            FormsTable.COLUMN_SM + " TEXT,"+
+            FormsTable.COLUMN_SNOP + " TEXT,"+
             FormsTable.COLUMN_COUNT + " TEXT," +
             FormsTable.COLUMN_ENDINGDATETIME + " TEXT," +
             FormsTable.COLUMN_GPSLAT + " TEXT," +
@@ -545,18 +543,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(FormsTable.COLUMN_INTERVIEWER02, fc.getInterviewer02());
         values.put(FormsTable.COLUMN_ISTATUS, fc.getIstatus());
         values.put(FormsTable.COLUMN_ISTATUS88X, fc.getIstatus88x());
-        values.put(FormsTable.COLUMN_SINFO, fc.getsInfo());
-        values.put(FormsTable.COLUMN_sA, fc.getsA());
+        values.put(FormsTable.COLUMN_SA, fc.getsA());
         values.put(FormsTable.COLUMN_SC, fc.getsC());
-        values.put(FormsTable.COLUMN_SD, fc.getsD());
-        values.put(FormsTable.COLUMN_SG, fc.getsG());
-        values.put(FormsTable.COLUMN_SH, fc.getsH());
+        values.put(FormsTable.COLUMN_SDEF, fc.getsDEF());
+        values.put(FormsTable.COLUMN_SGH, fc.getsGH());
         values.put(FormsTable.COLUMN_SI, fc.getsI());
         values.put(FormsTable.COLUMN_SJ, fc.getsJ());
         values.put(FormsTable.COLUMN_SK, fc.getsK());
-        values.put(FormsTable.COLUMN_SLMO, fc.getsLMO());
-        values.put(FormsTable.COLUMN_SE, fc.getsE());
-        values.put(FormsTable.COLUMN_SF, fc.getsF());
+        values.put(FormsTable.COLUMN_SL, fc.getsL());
+        values.put(FormsTable.COLUMN_SM, fc.getsM());
+        values.put(FormsTable.COLUMN_SNOP, fc.getsNOP());
         values.put(FormsTable.COLUMN_ENDINGDATETIME, fc.getEndingdatetime());
         values.put(FormsTable.COLUMN_GPSLAT, fc.getGpsLat());
         values.put(FormsTable.COLUMN_GPSLNG, fc.getGpsLng());
@@ -748,18 +744,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 FormsTable.COLUMN_INTERVIEWER02,
                 FormsTable.COLUMN_ISTATUS,
                 FormsTable.COLUMN_ISTATUS88X,
-                FormsTable.COLUMN_SINFO,
-                FormsTable.COLUMN_sA,
+                FormsTable.COLUMN_SA,
                 FormsTable.COLUMN_SC,
-                FormsTable.COLUMN_SD,
-                FormsTable.COLUMN_SG,
-                FormsTable.COLUMN_SH,
+                FormsTable.COLUMN_SDEF,
+                FormsTable.COLUMN_SGH,
                 FormsTable.COLUMN_SI,
                 FormsTable.COLUMN_SJ,
                 FormsTable.COLUMN_SK,
-                FormsTable.COLUMN_SLMO,
-                FormsTable.COLUMN_SE,
-                FormsTable.COLUMN_SF,
+                FormsTable.COLUMN_SL,
+                FormsTable.COLUMN_SM,
+                FormsTable.COLUMN_SNOP,
                 FormsTable.COLUMN_COUNT,
                 FormsTable.COLUMN_ENDINGDATETIME,
                 FormsTable.COLUMN_GPSLAT,
@@ -910,7 +904,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 // New value for one column
         ContentValues values = new ContentValues();
-        values.put(FormsTable.COLUMN_sA, MainApp.fc.getsA());
+        values.put(FormsTable.COLUMN_SA, MainApp.fc.getsA());
 
 // Which row to update, based on the ID
         String selection = FormsTable._ID + " = ?";
@@ -941,12 +935,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return count;
     }
 
-    public int updateSD() {
+    public int updateSDEF() {
         SQLiteDatabase db = this.getReadableDatabase();
 
 // New value for one column
         ContentValues values = new ContentValues();
-        values.put(FormsTable.COLUMN_SD, MainApp.fc.getsD());
+        values.put(FormsTable.COLUMN_SDEF, MainApp.fc.getsDEF());
 
 // Which row to update, based on the ID
         String selection = FormsTable._ID + " = ?";
@@ -959,66 +953,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return count;
     }
 
-    public int updateSE() {
+
+
+    public int updateSGH() {
         SQLiteDatabase db = this.getReadableDatabase();
 
 // New value for one column
         ContentValues values = new ContentValues();
-        values.put(FormsTable.COLUMN_SE, MainApp.fc.getsE());
-
-// Which row to update, based on the ID
-        String selection = FormsTable._ID + " = ?";
-        String[] selectionArgs = {String.valueOf(MainApp.fc.get_ID())};
-
-        int count = db.update(FormsTable.TABLE_NAME,
-                values,
-                selection,
-                selectionArgs);
-        return count;
-    }
-
-    public int updateSF() {
-        SQLiteDatabase db = this.getReadableDatabase();
-
-// New value for one column
-        ContentValues values = new ContentValues();
-        values.put(FormsTable.COLUMN_SF, MainApp.fc.getsF());
-
-// Which row to update, based on the ID
-        String selection = FormsTable._ID + " = ?";
-        String[] selectionArgs = {String.valueOf(MainApp.fc.get_ID())};
-
-        int count = db.update(FormsTable.TABLE_NAME,
-                values,
-                selection,
-                selectionArgs);
-        return count;
-    }
-
-    public int updateSG() {
-        SQLiteDatabase db = this.getReadableDatabase();
-
-// New value for one column
-        ContentValues values = new ContentValues();
-        values.put(FormsTable.COLUMN_SG, MainApp.fc.getsG());
-
-// Which row to update, based on the ID
-        String selection = FormsTable._ID + " = ?";
-        String[] selectionArgs = {String.valueOf(MainApp.fc.get_ID())};
-
-        int count = db.update(FormsTable.TABLE_NAME,
-                values,
-                selection,
-                selectionArgs);
-        return count;
-    }
-
-    public int updateSH() {
-        SQLiteDatabase db = this.getReadableDatabase();
-
-// New value for one column
-        ContentValues values = new ContentValues();
-        values.put(FormsTable.COLUMN_SH, MainApp.fc.getsH());
+        values.put(FormsTable.COLUMN_SGH, MainApp.fc.getsGH());
 
 // Which row to update, based on the ID
         String selection = FormsTable._ID + " = ?";
@@ -1085,12 +1027,44 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return count;
     }
 
-    public int updateSLMO() {
+    public int updateSL() {
         SQLiteDatabase db = this.getReadableDatabase();
 
 // New value for one column
         ContentValues values = new ContentValues();
-        values.put(FormsTable.COLUMN_SLMO, MainApp.fc.getsLMO());
+        values.put(FormsTable.COLUMN_SL, MainApp.fc.getsL());
+
+// Which row to update, based on the ID
+        String selection = FormsTable._ID + " = ?";
+        String[] selectionArgs = {String.valueOf(MainApp.fc.get_ID())};
+
+        int count = db.update(FormsTable.TABLE_NAME,
+                values,
+                selection,
+                selectionArgs);
+        return count;
+    }    public int updateSM() {
+        SQLiteDatabase db = this.getReadableDatabase();
+
+// New value for one column
+        ContentValues values = new ContentValues();
+        values.put(FormsTable.COLUMN_SM, MainApp.fc.getsM());
+
+// Which row to update, based on the ID
+        String selection = FormsTable._ID + " = ?";
+        String[] selectionArgs = {String.valueOf(MainApp.fc.get_ID())};
+
+        int count = db.update(FormsTable.TABLE_NAME,
+                values,
+                selection,
+                selectionArgs);
+        return count;
+    }   public int updateSNOP() {
+        SQLiteDatabase db = this.getReadableDatabase();
+
+// New value for one column
+        ContentValues values = new ContentValues();
+        values.put(FormsTable.COLUMN_SNOP, MainApp.fc.getsNOP());
 
 // Which row to update, based on the ID
         String selection = FormsTable._ID + " = ?";

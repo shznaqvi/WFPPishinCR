@@ -7,13 +7,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import com.example.hassannaqvi.wfppishincr.R;
+import com.example.hassannaqvi.wfppishincr.core.DatabaseHelper;
 import com.example.hassannaqvi.wfppishincr.core.MainApp;
 import com.example.hassannaqvi.wfppishincr.databinding.ActivitySectionJBinding;
 import com.example.hassannaqvi.wfppishincr.validation.ClearClass;
 
 import org.json.JSONException;
+import org.json.JSONObject;
 
 public class SectionJActivity extends AppCompatActivity {
 
@@ -243,12 +246,24 @@ public class SectionJActivity extends AppCompatActivity {
     }
 
     public boolean updateDb() {
+        DatabaseHelper db = new DatabaseHelper(this);
 
-        return true;
+        int updcount = db.updateSJ();
+
+        if (updcount == 1) {
+            Toast.makeText(this, "Updating Database... Successful!", Toast.LENGTH_SHORT).show();
+            return true;
+        } else {
+            Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
+            return false;
+        }
     }
 
     public void saveData() throws JSONException {
+        JSONObject sJ = new JSONObject();
 
+        MainApp.fc.setsJ(String.valueOf(sJ));
+        Toast.makeText(this, "Validation Successful", Toast.LENGTH_SHORT).show();
 
     }
 
