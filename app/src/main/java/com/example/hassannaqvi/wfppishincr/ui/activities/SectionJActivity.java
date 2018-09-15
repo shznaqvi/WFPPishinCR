@@ -7,13 +7,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import com.example.hassannaqvi.wfppishincr.R;
+import com.example.hassannaqvi.wfppishincr.core.DatabaseHelper;
 import com.example.hassannaqvi.wfppishincr.core.MainApp;
 import com.example.hassannaqvi.wfppishincr.databinding.ActivitySectionJBinding;
 import com.example.hassannaqvi.wfppishincr.validation.ClearClass;
+import com.example.hassannaqvi.wfppishincr.validation.validatorClass;
 
 import org.json.JSONException;
+import org.json.JSONObject;
 
 public class SectionJActivity extends AppCompatActivity {
 
@@ -426,13 +430,219 @@ public class SectionJActivity extends AppCompatActivity {
 
     private boolean formValidate() {
 
-//        if(!validatorClass.EmptyTextBox(this,bi.ccj01a,getString(R.string.ccj01))){
-//            return false;
-//        }
-//
-//        if(!validatorClass.EmptyTextBox(this,bi.ccj01a,getString(R.string.ccj01))){
-//            return false;
-//        }
+        if (!validatorClass.EmptyTextBox(this, bi.ccj01a, getString(R.string.ccj01))) {
+            return false;
+        }
+
+        if (!validatorClass.EmptyTextBox(this, bi.ccj02a, getString(R.string.ccj02))) {
+            return false;
+        }
+        if (!validatorClass.EmptyRadioButton(this, bi.ccj03, bi.ccj03a, getString(R.string.ccj03))) {
+            return false;
+        }
+
+        if (bi.ccj03a.isChecked()) {
+
+            if (!validatorClass.EmptyCheckBox(this, bi.fldgrpccj04, bi.ccj04a, getString(R.string.ccj04))) {
+
+                return false;
+            }
+            if (!validatorClass.EmptyCheckBox(this, bi.fldgrpccj04, bi.ccj04a, getString(R.string.ccj04))) {
+
+                return false;
+            }
+            if (!validatorClass.EmptyCheckBox(this, bi.fldgrpccj05, bi.ccj05a, getString(R.string.ccj05))) {
+
+                return false;
+            }
+
+            if (!bi.ccj0698.isChecked()) {
+                if (!validatorClass.EmptyTextBox(this, bi.ccj06m, getString(R.string.ccj06))) {
+                    return false;
+                }
+            }
+            if (!bi.ccj0798.isChecked()) {
+                if (!validatorClass.EmptyTextBox(this, bi.ccj07t, getString(R.string.ccj07))) {
+                    return false;
+                }
+            }
+            if (!validatorClass.EmptyCheckBox(this, bi.fldgrpccj08, bi.ccj08a, getString(R.string.ccj08))) {
+
+                return false;
+            }
+            if (!validatorClass.EmptyRadioButton(this, bi.ccj09, bi.ccj09a, getString(R.string.ccj09))) {
+                return false;
+            }
+            if (bi.ccj09a.isChecked()) {
+                if (!bi.ccj1098.isChecked()) {
+                    if (!validatorClass.EmptyTextBox(this, bi.ccj10t, getString(R.string.ccj10))) {
+                        return false;
+                    }
+                }
+            }
+        }
+        if (!validatorClass.EmptyRadioButton(this, bi.ccj11, bi.ccj11a, getString(R.string.ccj11))) {
+            return false;
+        }
+        if (bi.ccj11a.isChecked()) {
+            if (!bi.ccj1298.isChecked()) {
+                if (!validatorClass.EmptyTextBox(this, bi.ccj12t, getString(R.string.ccj12))) {
+                    return false;
+                }
+            }
+            if (!validatorClass.EmptyTextBox(this, bi.ccj13, getString(R.string.ccj13))) {
+                return false;
+            }
+        }
+        if (!validatorClass.EmptyRadioButton(this, bi.ccj14, bi.ccj14a, getString(R.string.ccj14))) {
+            return false;
+        }
+        if (bi.ccj14a.isChecked()) {
+
+            if (!bi.ccj1597.isChecked() || !bi.ccj1598.isChecked()) {
+                if (!validatorClass.EmptyTextBox(this, bi.ccj15d, getString(R.string.ccj15))) {
+                    return false;
+                }
+            }
+        }
+        if (!validatorClass.EmptyRadioButton(this, bi.ccj16, bi.ccj16a, getString(R.string.ccj16))) {
+            return false;
+        }
+
+        if (!bi.ccj1597.isChecked()) {
+
+            if (!validatorClass.EmptyRadioButton(this, bi.ccj17a, bi.ccj17a01, getString(R.string.ccj17a))) {
+                return false;
+            }
+            if (!validatorClass.EmptyRadioButton(this, bi.ccj17b, bi.ccj17b01, getString(R.string.ccj17b))) {
+                return false;
+            }
+            if (!validatorClass.EmptyRadioButton(this, bi.ccj17c, bi.ccj17c01, getString(R.string.ccj17c))) {
+                return false;
+            }
+            if (!validatorClass.EmptyRadioButton(this, bi.ccj17d, bi.ccj17d01, getString(R.string.ccj17d))) {
+                return false;
+            }
+            if (!validatorClass.EmptyRadioButton(this, bi.ccj17e, bi.ccj17e01, getString(R.string.ccj17e))) {
+                return false;
+            }
+            if (!validatorClass.EmptyRadioButton(this, bi.ccj17f, bi.ccj17f01, getString(R.string.ccj17f))) {
+                return false;
+            }
+            if (!validatorClass.EmptyRadioButton(this, bi.ccj17g, bi.ccj17g01, getString(R.string.ccj17g))) {
+                return false;
+            }
+            if (!validatorClass.EmptyRadioButton(this, bi.ccj17h, bi.ccj17h01, getString(R.string.ccj17h))) {
+                return false;
+            }
+            if (!validatorClass.EmptyRadioButton(this, bi.ccj17i, bi.ccj17i01, getString(R.string.ccj17i))) {
+                return false;
+            }
+            if (!validatorClass.EmptyRadioButton(this, bi.ccj17j, bi.ccj17j01, getString(R.string.ccj17j))) {
+                return false;
+            }
+            if (!validatorClass.EmptyRadioButton(this, bi.ccj17k, bi.ccj17k01, getString(R.string.ccj17k))) {
+                return false;
+            }
+            if (!validatorClass.EmptyRadioButton(this, bi.ccj17l, bi.ccj17l01, getString(R.string.ccj17l))) {
+                return false;
+            }
+            if (!validatorClass.EmptyRadioButton(this, bi.ccj17m, bi.ccj17m01, getString(R.string.ccj17m))) {
+                return false;
+            }
+            if (!validatorClass.EmptyRadioButton(this, bi.ccj17n, bi.ccj17n01, getString(R.string.ccj17n))) {
+                return false;
+            }
+
+            if (bi.ccj179601.isChecked()) {
+                if (!validatorClass.EmptyTextBox(this, bi.ccj1796x, getString(R.string.ccj1796))) {
+                    return false;
+                }
+            }
+
+            if (!validatorClass.EmptyRadioButton(this, bi.ccj18, bi.ccj18a, getString(R.string.ccj18))) {
+                return false;
+            }
+
+            if (bi.ccj18a.isChecked()) {
+                if (!validatorClass.EmptyCheckBox(this, bi.fldgrpccj19, bi.ccj19a, getString(R.string.ccj19))) {
+
+                    return false;
+                }
+                if (bi.ccj1996.isChecked()) {
+                    if (!validatorClass.EmptyTextBox(this, bi.ccj1996x, getString(R.string.ccj19))) {
+                        return false;
+                    }
+                }
+
+                if (!validatorClass.EmptyRadioButton(this, bi.ccj20, bi.ccj20a, getString(R.string.ccj20))) {
+                    return false;
+                }
+                if (bi.ccj2096.isChecked()) {
+                    if (!validatorClass.EmptyTextBox(this, bi.ccj2096x, getString(R.string.ccj20))) {
+                        return false;
+                    }
+                }
+
+                if (!validatorClass.EmptyCheckBox(this, bi.fldgrpccj21, bi.ccj21a, getString(R.string.ccj21))) {
+
+                    return false;
+                }
+
+                if (!bi.ccj2298.isChecked()) {
+                    if (!validatorClass.EmptyTextBox(this, bi.ccj22h, getString(R.string.ccj22))) {
+                        return false;
+                    }
+                    if (!validatorClass.EmptyTextBox(this, bi.ccj22d, getString(R.string.ccj22))) {
+                        return false;
+                    }
+                    if (!validatorClass.EmptyTextBox(this, bi.ccj22w, getString(R.string.ccj22))) {
+                        return false;
+                    }
+                    if (!validatorClass.EmptyCheckBox(this, bi.fldgrpccj23, bi.ccj23a, getString(R.string.ccj23))) {
+
+                        return false;
+                    }
+                    if (bi.ccj2396.isChecked()) {
+                        if (!validatorClass.EmptyTextBox(this, bi.ccj2396x, getString(R.string.ccj23))) {
+                            return false;
+                        }
+                    }
+                }
+                if (!validatorClass.EmptyRadioButton(this, bi.ccj24, bi.ccj24a, getString(R.string.ccj24))) {
+                    return false;
+                }
+
+                if (bi.ccj24a.isChecked()) {
+
+                    if (!validatorClass.EmptyTextBox(this, bi.ccj25d, getString(R.string.ccj25))) {
+                        return false;
+                    }
+                    if (!validatorClass.EmptyTextBox(this, bi.ccj25ss, getString(R.string.ccj25))) {
+                        return false;
+                    }
+                }
+
+                if (!bi.ccj2697.isChecked()) {
+
+                    if (!validatorClass.EmptyTextBox(this, bi.ccj26m, getString(R.string.ccj26))) {
+                        return false;
+                    }
+                    if (!validatorClass.EmptyTextBox(this, bi.ccj26d, getString(R.string.ccj26))) {
+                        return false;
+                    }
+                    if (!validatorClass.EmptyRadioButton(this, bi.ccj27, bi.ccj27a, getString(R.string.ccj27))) {
+                        return false;
+                    }
+                    return validatorClass.EmptyCheckBox(this, bi.fldgrpccj28, bi.ccj28a, getString(R.string.ccj28));
+
+                }
+
+
+            }
+
+
+        }
 
 
         return true;
