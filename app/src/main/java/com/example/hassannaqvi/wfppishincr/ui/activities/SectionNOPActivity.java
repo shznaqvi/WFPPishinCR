@@ -4,16 +4,13 @@ import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.Toast;
 
 import com.example.hassannaqvi.wfppishincr.R;
-import com.example.hassannaqvi.wfppishincr.core.DatabaseHelper;
 import com.example.hassannaqvi.wfppishincr.core.MainApp;
 import com.example.hassannaqvi.wfppishincr.databinding.ActivitySectionNopBinding;
 import com.example.hassannaqvi.wfppishincr.validation.validatorClass;
 
 import org.json.JSONException;
-import org.json.JSONObject;
 
 public class SectionNOPActivity extends AppCompatActivity {
 
@@ -63,7 +60,7 @@ public class SectionNOPActivity extends AppCompatActivity {
         }
     }
 
-    public void saveData() throws JSONException{
+    public void saveData() {
 
         JSONObject sNOP = new JSONObject();
         sNOP.put("ccn01", bi.ccn01b.isChecked() ? "1"
@@ -404,13 +401,10 @@ public class SectionNOPActivity extends AppCompatActivity {
         }
         if (bi.ccp12yes.isChecked()) {
 
-            if (!validatorClass.EmptyTextBox(this, bi.ccp1296x, getString(R.string.other))) {
+            if (!validatorClass.EmptyTextBox(this, bi.ccp1296b, getString(R.string.ccp01b))) {
                 return false;
             }
-            if (!validatorClass.EmptyTextBox(this, bi.ccp12b, getString(R.string.ccp01b))) {
-                return false;
-            }
-            return validatorClass.EmptyTextBox(this, bi.ccp12ngo, getString(R.string.ccp01ngo));
+            return validatorClass.EmptyTextBox(this, bi.ccp1296ngo, getString(R.string.ccp01ngo));
         }
 
 

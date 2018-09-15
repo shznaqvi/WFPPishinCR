@@ -839,13 +839,14 @@
                         android:textSize="25sp" />
 
                     <android.support.design.widget.TextInputLayout
+                        android:id="@+id/ccj15Layout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
-                        android:visibility="visible">
+                       >
 
                         <android.support.design.widget.TextInputEditText
-                            android:id="@+id/ccj15"
+                            android:id="@+id/ccj15d"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="دن"
@@ -1810,6 +1811,7 @@
                             android:text="Health Personnel"
                             android:textColor="@color/white"
                             android:textSize="25sp" />
+
 
                         <CheckBox
                             android:id="@+id/ccj21a"

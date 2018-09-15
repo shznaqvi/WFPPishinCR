@@ -7,16 +7,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.RadioGroup;
-import android.widget.Toast;
 
 import com.example.hassannaqvi.wfppishincr.R;
-import com.example.hassannaqvi.wfppishincr.core.DatabaseHelper;
 import com.example.hassannaqvi.wfppishincr.core.MainApp;
 import com.example.hassannaqvi.wfppishincr.databinding.ActivitySectionJBinding;
 import com.example.hassannaqvi.wfppishincr.validation.ClearClass;
 
 import org.json.JSONException;
-import org.json.JSONObject;
 
 public class SectionJActivity extends AppCompatActivity {
 
@@ -104,6 +101,36 @@ public class SectionJActivity extends AppCompatActivity {
                     ClearClass.ClearAllFields(bi.fldgrpccj12, true);
                     bi.fldgrpccj13.setVisibility(View.VISIBLE);
                     ClearClass.ClearAllFields(bi.fldgrpccj13, true);
+                }
+            }
+        });
+
+        bi.ccj1597.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+
+                if (b) {
+
+                    bi.ccj15Layout.setVisibility(View.GONE);
+                    bi.ccj15d.setText(null);
+
+                } else {
+                    bi.ccj15Layout.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
+        bi.ccj1598.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+
+                if (b) {
+
+                    bi.ccj15Layout.setVisibility(View.GONE);
+                    bi.ccj15d.setText(null);
+
+                } else {
+                    bi.ccj15Layout.setVisibility(View.VISIBLE);
                 }
             }
         });
@@ -260,10 +287,140 @@ public class SectionJActivity extends AppCompatActivity {
     }
 
     public void saveData() throws JSONException {
+
         JSONObject sJ = new JSONObject();
 
-        MainApp.fc.setsJ(String.valueOf(sJ));
-        Toast.makeText(this, "Validation Successful", Toast.LENGTH_SHORT).show();
+        sJ.put("ccj01", bi.ccj01a.getText().toString());
+        sJ.put("ccj02", bi.ccj02a.getText().toString());
+        sJ.put("ccj03", bi.ccj03a.isChecked() ? "1" : bi.ccj03b.isChecked() ? "2" : bi.ccj0398.isChecked() ? "98" : "0");
+        sJ.put("ccj04a", bi.ccj04a.isChecked() ? "1" : "0");
+        sJ.put("ccj04b", bi.ccj04b.isChecked() ? "2" : "0");
+        sJ.put("ccj04c", bi.ccj04c.isChecked() ? "3" : "0");
+        sJ.put("ccj04d", bi.ccj04d.isChecked() ? "4" : "0");
+        sJ.put("ccj04e", bi.ccj04e.isChecked() ? "5" : "0");
+        sJ.put("ccj04f", bi.ccj04f.isChecked() ? "6" : "0");
+        sJ.put("ccj04g", bi.ccj04g.isChecked() ? "7" : "0");
+        sJ.put("ccj04h", bi.ccj04h.isChecked() ? "8" : "0");
+        sJ.put("ccj0496", bi.ccj0496.isChecked() ? "96" : "0");
+        sJ.put("ccj0496x", bi.ccj0496x.getText().toString());
+
+        sJ.put("ccj05a", bi.ccj05a.isChecked() ? "1" : "0");
+        sJ.put("ccj05b", bi.ccj05b.isChecked() ? "2" : "0");
+        sJ.put("ccj05c", bi.ccj05c.isChecked() ? "3" : "0");
+        sJ.put("ccj05d", bi.ccj05d.isChecked() ? "4" : "0");
+        sJ.put("ccj0596", bi.ccj0596.isChecked() ? "96" : "0");
+        sJ.put("ccj0596x", bi.ccj0596x.getText().toString());
+
+        sJ.put("ccj06m", bi.ccj06m.getText().toString());
+        sJ.put("ccj0698", bi.ccj0698.isChecked() ? "98" : "0");
+
+        sJ.put("ccj07t", bi.ccj07t.getText().toString());
+        sJ.put("ccj0798", bi.ccj0798.isChecked() ? "98" : "0");
+
+        sJ.put("ccj08a", bi.ccj08a.isChecked() ? "1" : "0");
+        sJ.put("ccj08b", bi.ccj08b.isChecked() ? "2" : "0");
+        sJ.put("ccj08c", bi.ccj08c.isChecked() ? "3" : "0");
+        sJ.put("ccj08d", bi.ccj08d.isChecked() ? "4" : "0");
+        sJ.put("ccj08e", bi.ccj08e.isChecked() ? "5" : "0");
+        sJ.put("ccj0896", bi.ccj0896.isChecked() ? "96" : "0");
+        sJ.put("ccj0896x", bi.ccj0896x.getText().toString());
+
+        sJ.put("ccj09", bi.ccj09a.isChecked() ? "1" : bi.ccj09b.isChecked() ? "2" : bi.ccj0998.isChecked() ? "98" : "0");
+
+        sJ.put("ccj10t", bi.ccj10t.getText().toString());
+        sJ.put("ccj1098", bi.ccj1098.isChecked() ? "98" : "0");
+
+        sJ.put("ccj11", bi.ccj11a.isChecked() ? "1" : bi.ccj11b.isChecked() ? "2" : bi.ccj1198.isChecked() ? "98" : "0");
+        sJ.put("ccj12t", bi.ccj12t.getText().toString());
+        sJ.put("ccj1298", bi.ccj1298.isChecked() ? "98" : "0");
+        sJ.put("ccj13", bi.ccj13.getText().toString());
+
+        sJ.put("ccj14", bi.ccj14a.isChecked() ? "1" : bi.ccj14b.isChecked() ? "2" : bi.ccj1498.isChecked() ? "98" : "0");
+        sJ.put("ccj15", bi.ccj1597.isChecked() ? "97" : bi.ccj1598.isChecked() ? "98" : "0");
+        sJ.put("ccj15d", bi.ccj15d.getText().toString());
+
+        sJ.put("ccj16", bi.ccj16a.isChecked() ? "1" : bi.ccj16b.isChecked() ? "2" : bi.ccj1698.isChecked() ? "98" : "0");
+
+        sJ.put("ccj17a", bi.ccj17a01.isChecked() ? "1" : bi.ccj17a02.isChecked() ? "2" : "0");
+        sJ.put("ccj17b", bi.ccj17b01.isChecked() ? "1" : bi.ccj17b02.isChecked() ? "2" : "0");
+        sJ.put("ccj17c", bi.ccj17c01.isChecked() ? "1" : bi.ccj17c02.isChecked() ? "2" : "0");
+        sJ.put("ccj17d", bi.ccj17d01.isChecked() ? "1" : bi.ccj17d02.isChecked() ? "2" : "0");
+        sJ.put("ccj17e", bi.ccj17e01.isChecked() ? "1" : bi.ccj17e02.isChecked() ? "2" : "0");
+        sJ.put("ccj17f", bi.ccj17f01.isChecked() ? "1" : bi.ccj17f02.isChecked() ? "2" : "0");
+        sJ.put("ccj17g", bi.ccj17g01.isChecked() ? "1" : bi.ccj17g02.isChecked() ? "2" : "0");
+        sJ.put("ccj17h", bi.ccj17h01.isChecked() ? "1" : bi.ccj17h02.isChecked() ? "2" : "0");
+        sJ.put("ccj17i", bi.ccj17i01.isChecked() ? "1" : bi.ccj17i02.isChecked() ? "2" : "0");
+        sJ.put("ccj17j", bi.ccj17j01.isChecked() ? "1" : bi.ccj17j02.isChecked() ? "2" : "0");
+        sJ.put("ccj17k", bi.ccj17k01.isChecked() ? "1" : bi.ccj17k02.isChecked() ? "2" : "0");
+        sJ.put("ccj17l", bi.ccj17l01.isChecked() ? "1" : bi.ccj17l02.isChecked() ? "2" : "0");
+        sJ.put("ccj17m", bi.ccj17m01.isChecked() ? "1" : bi.ccj17m02.isChecked() ? "2" : "0");
+        sJ.put("ccj17n", bi.ccj17n01.isChecked() ? "1" : bi.ccj17n02.isChecked() ? "2" : "0");
+        sJ.put("ccj1796", bi.ccj179601.isChecked() ? "1" : bi.ccj179602.isChecked() ? "2" : "0");
+        sJ.put("ccj1796x", bi.ccj1796x.getText().toString());
+        sJ.put("ccj1797", bi.ccj1797.isChecked() ? "97" : "0");
+
+        sJ.put("ccj18", bi.ccj18a.isChecked() ? "1" : bi.ccj18b.isChecked() ? "2" : bi.ccj1898.isChecked() ? "98" : "0");
+
+        sJ.put("ccj19a", bi.ccj19a.isChecked() ? "1" : "0");
+        sJ.put("ccj19b", bi.ccj19b.isChecked() ? "1" : "0");
+        sJ.put("ccj19c", bi.ccj19c.isChecked() ? "1" : "0");
+        sJ.put("ccj19d", bi.ccj19d.isChecked() ? "1" : "0");
+        sJ.put("ccj19e", bi.ccj19e.isChecked() ? "1" : "0");
+        sJ.put("ccj19f", bi.ccj19f.isChecked() ? "1" : "0");
+        sJ.put("ccj19g", bi.ccj19g.isChecked() ? "1" : "0");
+        sJ.put("ccj19h", bi.ccj19h.isChecked() ? "1" : "0");
+        sJ.put("ccj1996", bi.ccj1996.isChecked() ? "96" : "0");
+        sJ.put("ccj1996x", bi.ccj1996x.getText().toString());
+
+        sJ.put("ccj20", bi.ccj20a.isChecked() ? "1" : bi.ccj20b.isChecked() ? "2" : bi.ccj20c.isChecked() ? "3" : bi.ccj2096.isChecked() ? "96" : "0");
+        sJ.put("ccj2096", bi.ccj2096x.getText().toString());
+
+        sJ.put("ccj21a", bi.ccj21a.isChecked() ? "1" : "0");
+        sJ.put("ccj21b", bi.ccj21b.isChecked() ? "1" : "0");
+        sJ.put("ccj21c", bi.ccj21c.isChecked() ? "1" : "0");
+        sJ.put("ccj21d", bi.ccj21d.isChecked() ? "1" : "0");
+        sJ.put("ccj21e", bi.ccj21e.isChecked() ? "1" : "0");
+        sJ.put("ccj21f", bi.ccj21f.isChecked() ? "1" : "0");
+        sJ.put("ccj21g", bi.ccj21g.isChecked() ? "1" : "0");
+        sJ.put("ccj21h", bi.ccj21h.isChecked() ? "1" : "0");
+        sJ.put("ccj2196", bi.ccj2196.isChecked() ? "96" : "0");
+        sJ.put("ccj2196x", bi.ccj2196x.getText().toString());
+
+        sJ.put("ccj22h", bi.ccj22h.getText().toString());
+        sJ.put("ccj22d", bi.ccj22d.getText().toString());
+        sJ.put("ccj22w", bi.ccj22w.getText().toString());
+        sJ.put("ccj2297", bi.ccj2298.isChecked() ? "97" : "0");
+
+        sJ.put("ccj23a", bi.ccj23a.isChecked() ? "1" : "0");
+        sJ.put("ccj23b", bi.ccj23b.isChecked() ? "2" : "0");
+        sJ.put("ccj23c", bi.ccj23c.isChecked() ? "3" : "0");
+        sJ.put("ccj23d", bi.ccj23d.isChecked() ? "4" : "0");
+        sJ.put("ccj23e", bi.ccj23e.isChecked() ? "5" : "0");
+        sJ.put("ccj23f", bi.ccj23f.isChecked() ? "6" : "0");
+        sJ.put("ccj23g", bi.ccj23g.isChecked() ? "7" : "0");
+        sJ.put("ccj23h", bi.ccj23h.isChecked() ? "8" : "0");
+        sJ.put("ccj2396", bi.ccj2396.isChecked() ? "96" : "0");
+        sJ.put("ccj2396x", bi.ccj2396x.getText().toString());
+
+        sJ.put("ccj24", bi.ccj24a.isChecked() ? "1" : bi.ccj24b.isChecked() ? "2" : "0");
+        sJ.put("ccj25d", bi.ccj25d.getText().toString());
+        sJ.put("ccj25ss", bi.ccj25ss.getText().toString());
+
+        sJ.put("ccj26m", bi.ccj26m.getText().toString());
+        sJ.put("ccj26d", bi.ccj26d.getText().toString());
+        sJ.put("ccj2697", bi.ccj2697.isChecked() ? "97" : "0");
+        sJ.put("ccj27", bi.ccj27a.isChecked() ? "1" : bi.ccj27b.isChecked() ? "2" : bi.ccj27c.isChecked() ? "3" : bi.ccj27d.isChecked() ? "4" : bi.ccj27e.isChecked() ? "5" : bi.ccj2796.isChecked() ? "96" : "0");
+
+        sJ.put("ccj2796", bi.ccj2796.getText().toString());
+
+        sJ.put("ccj28a", bi.ccj28a.isChecked() ? "1" : "0");
+        sJ.put("ccj28b", bi.ccj28b.isChecked() ? "2" : "0");
+        sJ.put("ccj28c", bi.ccj28c.isChecked() ? "3" : "0");
+        sJ.put("ccj28d", bi.ccj28d.isChecked() ? "4" : "0");
+        sJ.put("ccj28e", bi.ccj28e.isChecked() ? "5" : "0");
+        sJ.put("ccj28f", bi.ccj28f.isChecked() ? "6" : "0");
+        sJ.put("ccj28g", bi.ccj28g.isChecked() ? "7" : "0");
+        sJ.put("ccj28h", bi.ccj28h.isChecked() ? "8" : "0");
 
     }
 

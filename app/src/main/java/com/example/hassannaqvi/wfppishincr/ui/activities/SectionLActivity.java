@@ -6,17 +6,14 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.RadioGroup;
-import android.widget.Toast;
 
 import com.example.hassannaqvi.wfppishincr.R;
-import com.example.hassannaqvi.wfppishincr.core.DatabaseHelper;
 import com.example.hassannaqvi.wfppishincr.core.MainApp;
 import com.example.hassannaqvi.wfppishincr.databinding.ActivitySectionLBinding;
 import com.example.hassannaqvi.wfppishincr.validation.ClearClass;
 import com.example.hassannaqvi.wfppishincr.validation.validatorClass;
 
 import org.json.JSONException;
-import org.json.JSONObject;
 
 public class SectionLActivity extends AppCompatActivity {
 
@@ -103,6 +100,8 @@ public class SectionLActivity extends AppCompatActivity {
         }
     }
 
+    public void saveData() {
+
     public void saveData() throws JSONException {
         JSONObject sL = new JSONObject();
         sL.put("ccl01", bi.ccl01a.isChecked() ? "1" : bi.ccl01b.isChecked() ? "2" : bi.ccl01c.isChecked() ? "3"
@@ -180,5 +179,7 @@ public class SectionLActivity extends AppCompatActivity {
 
     public void BtnEnd() {
         MainApp.endActivity(this, this);
+
+
     }
 }

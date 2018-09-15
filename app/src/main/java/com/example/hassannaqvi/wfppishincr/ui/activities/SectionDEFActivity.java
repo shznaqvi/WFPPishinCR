@@ -135,7 +135,7 @@ public class SectionDEFActivity extends AppCompatActivity {
             bi.ccd01cm02.clearFocus();
         }
 
-        ///------------------------Weight------------------------------------------
+        ///---------------------------Weight------------------------------------------
 
         if (!validatorClass.EmptySpinner(this, bi.ccd0201, getString(R.string.ccd02))) {
             return false;
