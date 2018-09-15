@@ -404,10 +404,10 @@ public class SectionNOPActivity extends AppCompatActivity {
         }
         if (bi.ccp12yes.isChecked()) {
 
-            if (!validatorClass.EmptyTextBox(this, bi.ccp1296b, getString(R.string.ccp01b))) {
+            if (!validatorClass.EmptyTextBox(this, bi.ccp12b, getString(R.string.ccp01b))) {
                 return false;
             }
-            return validatorClass.EmptyTextBox(this, bi.ccp1296ngo, getString(R.string.ccp01ngo));
+            return validatorClass.EmptyTextBox(this, bi.ccp12ngo, getString(R.string.ccp01ngo));
         }
 
 

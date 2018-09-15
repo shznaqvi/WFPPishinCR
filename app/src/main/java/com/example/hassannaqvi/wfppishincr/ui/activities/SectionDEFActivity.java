@@ -43,6 +43,10 @@ public class SectionDEFActivity extends AppCompatActivity {
         bi.cce0102.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, Arrays.asList(MainActivity.usersArray)));
         bi.cce0201.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, Arrays.asList(MainActivity.usersArray)));
         bi.cce0202.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, Arrays.asList(MainActivity.usersArray)));
+        bi.ccf0101.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, Arrays.asList(MainActivity.usersArray)));
+        bi.ccf0102.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, Arrays.asList(MainActivity.usersArray)));
+        bi.ccf0201.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, Arrays.asList(MainActivity.usersArray)));
+        bi.ccf0202.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, Arrays.asList(MainActivity.usersArray)));
 
 
         bi.ccf01.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -303,7 +307,7 @@ public class SectionDEFActivity extends AppCompatActivity {
         return true;
     }
 
-    private void saveData() throws JSONException {
+    private void saveData() {
         JSONObject sDEF = new JSONObject();
 /*
 
