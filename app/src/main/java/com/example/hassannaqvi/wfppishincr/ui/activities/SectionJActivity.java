@@ -425,7 +425,8 @@ public class SectionJActivity extends AppCompatActivity {
         sJ.put("ccj28f", bi.ccj28f.isChecked() ? "6" : "0");
         sJ.put("ccj28g", bi.ccj28g.isChecked() ? "7" : "0");
         sJ.put("ccj28h", bi.ccj28h.isChecked() ? "8" : "0");
-
+        MainApp.fc.setsJ(String.valueOf(sJ));
+        Toast.makeText(this, "Validation Successful", Toast.LENGTH_SHORT).show();
     }
 
     private boolean formValidate() {

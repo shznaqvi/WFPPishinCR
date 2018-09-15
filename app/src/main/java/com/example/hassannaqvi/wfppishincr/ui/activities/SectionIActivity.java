@@ -580,7 +580,7 @@ public class SectionIActivity extends AppCompatActivity {
         sI.put("cci16", bi.cci16m.isChecked() ? "1" : bi.cci16d.isChecked() ? "2" : bi.cci1697.isChecked() ? "97" : "0");
         sI.put("cci16m", bi.cci16mx.getText().toString());
         sI.put("cci16d", bi.cci16dx.getText().toString());
-        MainApp.fc.setsC(String.valueOf(sI));
+        MainApp.fc.setsI(String.valueOf(sI));
         Toast.makeText(this, "Validation Successful", Toast.LENGTH_SHORT).show();
 
     }

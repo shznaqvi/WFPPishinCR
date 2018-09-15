@@ -307,7 +307,7 @@ public class SectionDEFActivity extends AppCompatActivity {
         return true;
     }
 
-    private void saveData() {
+    private void saveData() throws JSONException {
         JSONObject sDEF = new JSONObject();
 /*
 
