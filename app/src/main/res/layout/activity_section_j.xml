@@ -1924,9 +1924,7 @@
                             android:layout_height="wrap_content"
                             android:hint="گھنٹے"
                             android:inputType="number"
-                            android:maxLength="2"
-                            android:text='@{ccj2298.checked? "" : ccj22h.getText.toString}'
-                            android:visibility='@{ccj2298.checked? View.GONE : View.VISIBLE}' />
+                            android:maxLength="2" />
 
                         <EditText
                             android:id="@+id/ccj22d"
@@ -1934,9 +1932,7 @@
                             android:layout_height="wrap_content"
                             android:hint="دن"
                             android:inputType="number"
-                            android:maxLength="2"
-                            android:text='@{ccj2298.checked? "" : ccj22d.getText.toString}'
-                            android:visibility='@{ccj2298.checked? View.GONE : View.VISIBLE}' />
+                            android:maxLength="2" />
 
                         <EditText
                             android:id="@+id/ccj22w"
@@ -1944,9 +1940,7 @@
                             android:layout_height="wrap_content"
                             android:hint="ہفتے"
                             android:inputType="number"
-                            android:maxLength="2"
-                            android:text='@{ccj2298.checked? "" : ccj22w.getText.toString}'
-                            android:visibility='@{ccj2298.checked? View.GONE : View.VISIBLE}' />
+                            android:maxLength="2" />
 
                         <CheckBox
                             android:id="@+id/ccj2298"
@@ -2178,9 +2172,7 @@
                             android:layout_height="wrap_content"
                             android:hint="@string/ccj26m"
                             android:inputType="number"
-                            android:maxLength="2"
-                            android:text='@{ccj2697.checked? "" : ccj22d.getText.toString}'
-                            android:visibility='@{ccj2697.checked? View.GONE : View.VISIBLE}' />
+                            android:maxLength="2" />
 
                         <EditText
                             android:id="@+id/ccj26d"
@@ -2188,9 +2180,7 @@
                             android:layout_height="wrap_content"
                             android:hint="@string/ccj26d"
                             android:inputType="number"
-                            android:maxLength="2"
-                            android:text='@{ccj2697.checked? "" : ccj22w.getText.toString}'
-                            android:visibility='@{ccj2697.checked? View.GONE : View.VISIBLE}' />
+                            android:maxLength="2" />
 
                         <CheckBox
                             android:id="@+id/ccj2697"

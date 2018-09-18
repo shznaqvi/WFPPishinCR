@@ -307,10 +307,8 @@ public class SectionDEFActivity extends AppCompatActivity {
         return true;
     }
 
-    private void saveData() {
+    private void saveData() throws JSONException {
         JSONObject sDEF = new JSONObject();
-/*
-
 
         sDEF.put("ccd01cm01", bi.ccd01cm01.getText().toString());
         sDEF.put("ccd01a", bi.ccd0101.getSelectedItem().toString());
@@ -341,7 +339,6 @@ public class SectionDEFActivity extends AppCompatActivity {
         sDEF.put("ccf02a", bi.ccf0201.getSelectedItem().toString());
         sDEF.put("ccf02kg02", bi.ccf02kg02.getText().toString());
         sDEF.put("ccf02b", bi.ccf0202.getSelectedItem().toString());
-*/
         MainApp.fc.setsDEF(String.valueOf(sDEF));
         Toast.makeText(this, "Validation Succecful", Toast.LENGTH_SHORT).show();
     }

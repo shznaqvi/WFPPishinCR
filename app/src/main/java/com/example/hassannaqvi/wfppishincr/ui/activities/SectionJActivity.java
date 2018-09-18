@@ -118,6 +118,7 @@ public class SectionJActivity extends AppCompatActivity {
 
                     bi.ccj15Layout.setVisibility(View.GONE);
                     bi.ccj15d.setText(null);
+                    //bi.ccj1598.setChecked(false);
 
                 } else {
                     bi.ccj15Layout.setVisibility(View.VISIBLE);
@@ -133,6 +134,7 @@ public class SectionJActivity extends AppCompatActivity {
 
                     bi.ccj15Layout.setVisibility(View.GONE);
                     bi.ccj15d.setText(null);
+                    //bi.ccj1597.setChecked(false);
 
                 } else {
                     bi.ccj15Layout.setVisibility(View.VISIBLE);
@@ -153,11 +155,644 @@ public class SectionJActivity extends AppCompatActivity {
                 }
             }
         });
+
+        bi.ccj1797.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+
+                if (b) {
+                    bi.ccj17a.clearCheck();
+                    bi.ccj17b.clearCheck();
+                    bi.ccj17c.clearCheck();
+                    bi.ccj17d.clearCheck();
+                    bi.ccj17e.clearCheck();
+                    bi.ccj17f.clearCheck();
+                    bi.ccj17g.clearCheck();
+                    bi.ccj17h.clearCheck();
+                    bi.ccj17i.clearCheck();
+                    bi.ccj17j.clearCheck();
+                    bi.ccj17k.clearCheck();
+                    bi.ccj17l.clearCheck();
+                    bi.ccj17m.clearCheck();
+                    bi.ccj17n.clearCheck();
+                    bi.ccj1796.clearCheck();
+                    bi.ccj1796x.setText(null);
+                    bi.fldgrpccj18.setVisibility(View.GONE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj18, false);
+                    bi.fldgrpccj19.setVisibility(View.GONE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj19, false);
+                    bi.fldgrpccj20.setVisibility(View.GONE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj20, false);
+                    bi.fldgrpccj21.setVisibility(View.GONE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj21, false);
+                    bi.fldgrpccj22.setVisibility(View.GONE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj22, false);
+                    bi.fldgrpccj23.setVisibility(View.GONE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj23, false);
+                    bi.fldgrpccj24.setVisibility(View.GONE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj24, false);
+                    bi.fldgrpccj25.setVisibility(View.GONE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj25, false);
+                    bi.fldgrpccj26.setVisibility(View.GONE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj26, false);
+                    bi.fldgrpccj27.setVisibility(View.GONE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj27, false);
+                    bi.fldgrpccj28.setVisibility(View.GONE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj28, false);
+
+                } else {
+                    bi.fldgrpccj18.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj18, true);
+                    bi.fldgrpccj19.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj19, true);
+                    bi.fldgrpccj20.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj20, true);
+                    bi.fldgrpccj21.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj21, true);
+                    bi.fldgrpccj22.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj22, true);
+                    bi.fldgrpccj23.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj23, true);
+                    bi.fldgrpccj24.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj24, true);
+                    bi.fldgrpccj25.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj25, true);
+                    bi.fldgrpccj26.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj26, true);
+                    bi.fldgrpccj27.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj27, true);
+                    bi.fldgrpccj28.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj28, true);
+                }
+
+            }
+        });
+
+        bi.ccj17a.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+
+                if (i == R.id.ccj17a01 || i == R.id.ccj17a02) {
+
+                    bi.ccj1797.setChecked(false);
+                    bi.fldgrpccj18.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj18, true);
+                    bi.fldgrpccj19.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj19, true);
+                    bi.fldgrpccj20.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj20, true);
+                    bi.fldgrpccj21.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj21, true);
+                    bi.fldgrpccj22.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj22, true);
+                    bi.fldgrpccj23.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj23, true);
+                    bi.fldgrpccj24.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj24, true);
+                    bi.fldgrpccj25.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj25, true);
+                    bi.fldgrpccj26.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj26, true);
+                    bi.fldgrpccj27.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj27, true);
+                    bi.fldgrpccj28.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj28, true);
+
+                } else {
+                    bi.ccj1797.setChecked(true);
+                }
+            }
+        });
+        bi.ccj17b.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+
+                if (i == R.id.ccj17b01 || i == R.id.ccj17b02) {
+
+                    bi.ccj1797.setChecked(false);
+                    bi.fldgrpccj18.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj18, true);
+                    bi.fldgrpccj19.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj19, true);
+                    bi.fldgrpccj20.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj20, true);
+                    bi.fldgrpccj21.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj21, true);
+                    bi.fldgrpccj22.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj22, true);
+                    bi.fldgrpccj23.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj23, true);
+                    bi.fldgrpccj24.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj24, true);
+                    bi.fldgrpccj25.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj25, true);
+                    bi.fldgrpccj26.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj26, true);
+                    bi.fldgrpccj27.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj27, true);
+                    bi.fldgrpccj28.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj28, true);
+
+                } else {
+                    bi.ccj1797.setChecked(true);
+                }
+            }
+        });
+        bi.ccj17c.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+
+                if (i == R.id.ccj17c01 || i == R.id.ccj17c02) {
+
+                    bi.ccj1797.setChecked(false);
+                    bi.fldgrpccj18.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj18, true);
+                    bi.fldgrpccj19.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj19, true);
+                    bi.fldgrpccj20.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj20, true);
+                    bi.fldgrpccj21.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj21, true);
+                    bi.fldgrpccj22.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj22, true);
+                    bi.fldgrpccj23.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj23, true);
+                    bi.fldgrpccj24.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj24, true);
+                    bi.fldgrpccj25.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj25, true);
+                    bi.fldgrpccj26.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj26, true);
+                    bi.fldgrpccj27.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj27, true);
+                    bi.fldgrpccj28.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj28, true);
+
+                } else {
+                    bi.ccj1797.setChecked(true);
+                }
+            }
+        });
+        bi.ccj17d.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+
+                if (i == R.id.ccj17d01 || i == R.id.ccj17d02) {
+
+                    bi.ccj1797.setChecked(false);
+                    bi.fldgrpccj18.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj18, true);
+                    bi.fldgrpccj19.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj19, true);
+                    bi.fldgrpccj20.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj20, true);
+                    bi.fldgrpccj21.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj21, true);
+                    bi.fldgrpccj22.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj22, true);
+                    bi.fldgrpccj23.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj23, true);
+                    bi.fldgrpccj24.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj24, true);
+                    bi.fldgrpccj25.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj25, true);
+                    bi.fldgrpccj26.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj26, true);
+                    bi.fldgrpccj27.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj27, true);
+                    bi.fldgrpccj28.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj28, true);
+
+                } else {
+                    bi.ccj1797.setChecked(true);
+                }
+            }
+        });
+        bi.ccj17e.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+
+                if (i == R.id.ccj17e01 || i == R.id.ccj17e02) {
+
+                    bi.ccj1797.setChecked(false);
+                    bi.fldgrpccj18.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj18, true);
+                    bi.fldgrpccj19.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj19, true);
+                    bi.fldgrpccj20.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj20, true);
+                    bi.fldgrpccj21.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj21, true);
+                    bi.fldgrpccj22.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj22, true);
+                    bi.fldgrpccj23.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj23, true);
+                    bi.fldgrpccj24.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj24, true);
+                    bi.fldgrpccj25.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj25, true);
+                    bi.fldgrpccj26.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj26, true);
+                    bi.fldgrpccj27.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj27, true);
+                    bi.fldgrpccj28.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj28, true);
+
+                } else {
+                    bi.ccj1797.setChecked(true);
+                }
+            }
+        });
+        bi.ccj17e.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+
+                if (i == R.id.ccj17e01 || i == R.id.ccj17e02) {
+
+                    bi.ccj1797.setChecked(false);
+                    bi.fldgrpccj18.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj18, true);
+                    bi.fldgrpccj19.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj19, true);
+                    bi.fldgrpccj20.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj20, true);
+                    bi.fldgrpccj21.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj21, true);
+                    bi.fldgrpccj22.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj22, true);
+                    bi.fldgrpccj23.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj23, true);
+                    bi.fldgrpccj24.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj24, true);
+                    bi.fldgrpccj25.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj25, true);
+                    bi.fldgrpccj26.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj26, true);
+                    bi.fldgrpccj27.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj27, true);
+                    bi.fldgrpccj28.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj28, true);
+
+                } else {
+                    bi.ccj1797.setChecked(true);
+                }
+            }
+        });
+        bi.ccj17f.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+
+                if (i == R.id.ccj17f01 || i == R.id.ccj17f02) {
+
+                    bi.ccj1797.setChecked(false);
+                    bi.fldgrpccj18.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj18, true);
+                    bi.fldgrpccj19.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj19, true);
+                    bi.fldgrpccj20.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj20, true);
+                    bi.fldgrpccj21.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj21, true);
+                    bi.fldgrpccj22.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj22, true);
+                    bi.fldgrpccj23.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj23, true);
+                    bi.fldgrpccj24.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj24, true);
+                    bi.fldgrpccj25.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj25, true);
+                    bi.fldgrpccj26.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj26, true);
+                    bi.fldgrpccj27.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj27, true);
+                    bi.fldgrpccj28.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj28, true);
+
+                } else {
+                    bi.ccj1797.setChecked(true);
+                }
+            }
+        });
+        bi.ccj17g.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+
+                if (i == R.id.ccj17g01 || i == R.id.ccj17g02) {
+
+                    bi.ccj1797.setChecked(false);
+                    bi.fldgrpccj18.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj18, true);
+                    bi.fldgrpccj19.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj19, true);
+                    bi.fldgrpccj20.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj20, true);
+                    bi.fldgrpccj21.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj21, true);
+                    bi.fldgrpccj22.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj22, true);
+                    bi.fldgrpccj23.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj23, true);
+                    bi.fldgrpccj24.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj24, true);
+                    bi.fldgrpccj25.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj25, true);
+                    bi.fldgrpccj26.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj26, true);
+                    bi.fldgrpccj27.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj27, true);
+                    bi.fldgrpccj28.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj28, true);
+
+                } else {
+                    bi.ccj1797.setChecked(true);
+                }
+            }
+        });
+        bi.ccj17h.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+
+                if (i == R.id.ccj17h01 || i == R.id.ccj17h02) {
+
+                    bi.ccj1797.setChecked(false);
+                    bi.fldgrpccj18.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj18, true);
+                    bi.fldgrpccj19.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj19, true);
+                    bi.fldgrpccj20.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj20, true);
+                    bi.fldgrpccj21.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj21, true);
+                    bi.fldgrpccj22.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj22, true);
+                    bi.fldgrpccj23.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj23, true);
+                    bi.fldgrpccj24.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj24, true);
+                    bi.fldgrpccj25.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj25, true);
+                    bi.fldgrpccj26.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj26, true);
+                    bi.fldgrpccj27.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj27, true);
+                    bi.fldgrpccj28.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj28, true);
+
+                } else {
+                    bi.ccj1797.setChecked(true);
+                }
+            }
+        });
+        bi.ccj17i.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+
+                if (i == R.id.ccj17i01 || i == R.id.ccj17i02) {
+
+                    bi.ccj1797.setChecked(false);
+                    bi.fldgrpccj18.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj18, true);
+                    bi.fldgrpccj19.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj19, true);
+                    bi.fldgrpccj20.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj20, true);
+                    bi.fldgrpccj21.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj21, true);
+                    bi.fldgrpccj22.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj22, true);
+                    bi.fldgrpccj23.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj23, true);
+                    bi.fldgrpccj24.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj24, true);
+                    bi.fldgrpccj25.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj25, true);
+                    bi.fldgrpccj26.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj26, true);
+                    bi.fldgrpccj27.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj27, true);
+                    bi.fldgrpccj28.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj28, true);
+
+                } else {
+                    bi.ccj1797.setChecked(true);
+                }
+            }
+        });
+        bi.ccj17j.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+
+                if (i == R.id.ccj17j01 || i == R.id.ccj17j02) {
+
+                    bi.ccj1797.setChecked(false);
+                    bi.fldgrpccj18.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj18, true);
+                    bi.fldgrpccj19.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj19, true);
+                    bi.fldgrpccj20.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj20, true);
+                    bi.fldgrpccj21.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj21, true);
+                    bi.fldgrpccj22.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj22, true);
+                    bi.fldgrpccj23.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj23, true);
+                    bi.fldgrpccj24.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj24, true);
+                    bi.fldgrpccj25.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj25, true);
+                    bi.fldgrpccj26.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj26, true);
+                    bi.fldgrpccj27.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj27, true);
+                    bi.fldgrpccj28.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj28, true);
+
+                } else {
+                    bi.ccj1797.setChecked(true);
+                }
+            }
+        });
+        bi.ccj17k.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+
+                if (i == R.id.ccj17k01 || i == R.id.ccj17k02) {
+
+                    bi.ccj1797.setChecked(false);
+                    bi.fldgrpccj18.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj18, true);
+                    bi.fldgrpccj19.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj19, true);
+                    bi.fldgrpccj20.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj20, true);
+                    bi.fldgrpccj21.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj21, true);
+                    bi.fldgrpccj22.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj22, true);
+                    bi.fldgrpccj23.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj23, true);
+                    bi.fldgrpccj24.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj24, true);
+                    bi.fldgrpccj25.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj25, true);
+                    bi.fldgrpccj26.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj26, true);
+                    bi.fldgrpccj27.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj27, true);
+                    bi.fldgrpccj28.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj28, true);
+
+                } else {
+                    bi.ccj1797.setChecked(true);
+                }
+            }
+        });
+        bi.ccj17l.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+
+                if (i == R.id.ccj17l01 || i == R.id.ccj17l02) {
+
+                    bi.ccj1797.setChecked(false);
+                    bi.fldgrpccj18.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj18, true);
+                    bi.fldgrpccj19.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj19, true);
+                    bi.fldgrpccj20.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj20, true);
+                    bi.fldgrpccj21.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj21, true);
+                    bi.fldgrpccj22.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj22, true);
+                    bi.fldgrpccj23.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj23, true);
+                    bi.fldgrpccj24.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj24, true);
+                    bi.fldgrpccj25.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj25, true);
+                    bi.fldgrpccj26.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj26, true);
+                    bi.fldgrpccj27.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj27, true);
+                    bi.fldgrpccj28.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj28, true);
+
+                } else {
+                    bi.ccj1797.setChecked(true);
+                }
+            }
+        });
+        bi.ccj17m.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+
+                if (i == R.id.ccj17m01 || i == R.id.ccj17m02) {
+
+                    bi.ccj1797.setChecked(false);
+                    bi.fldgrpccj18.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj18, true);
+                    bi.fldgrpccj19.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj19, true);
+                    bi.fldgrpccj20.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj20, true);
+                    bi.fldgrpccj21.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj21, true);
+                    bi.fldgrpccj22.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj22, true);
+                    bi.fldgrpccj23.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj23, true);
+                    bi.fldgrpccj24.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj24, true);
+                    bi.fldgrpccj25.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj25, true);
+                    bi.fldgrpccj26.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj26, true);
+                    bi.fldgrpccj27.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj27, true);
+                    bi.fldgrpccj28.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj28, true);
+
+                } else {
+                    bi.ccj1797.setChecked(true);
+                }
+            }
+        });
+        bi.ccj17n.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+
+                if (i == R.id.ccj17n01 || i == R.id.ccj17n02) {
+
+                    bi.ccj1797.setChecked(false);
+                    bi.fldgrpccj18.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj18, true);
+                    bi.fldgrpccj19.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj19, true);
+                    bi.fldgrpccj20.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj20, true);
+                    bi.fldgrpccj21.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj21, true);
+                    bi.fldgrpccj22.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj22, true);
+                    bi.fldgrpccj23.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj23, true);
+                    bi.fldgrpccj24.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj24, true);
+                    bi.fldgrpccj25.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj25, true);
+                    bi.fldgrpccj26.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj26, true);
+                    bi.fldgrpccj27.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj27, true);
+                    bi.fldgrpccj28.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj28, true);
+
+                } else {
+                    bi.ccj1797.setChecked(true);
+                }
+            }
+        });
+        bi.ccj1796.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+
+                if (i == R.id.ccj179601 || i == R.id.ccj179602) {
+
+                    bi.ccj1797.setChecked(false);
+                    bi.fldgrpccj18.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj18, true);
+                    bi.fldgrpccj19.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj19, true);
+                    bi.fldgrpccj20.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj20, true);
+                    bi.fldgrpccj21.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj21, true);
+                    bi.fldgrpccj22.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj22, true);
+                    bi.fldgrpccj23.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj23, true);
+                    bi.fldgrpccj24.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj24, true);
+                    bi.fldgrpccj25.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj25, true);
+                    bi.fldgrpccj26.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj26, true);
+                    bi.fldgrpccj27.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj27, true);
+                    bi.fldgrpccj28.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccj28, true);
+
+                } else {
+                    bi.ccj1797.setChecked(true);
+                }
+            }
+        });
         bi.ccj18.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
 
-                if (i == R.id.ccj18a) {
+                if (i != R.id.ccj18a) {
                     bi.fldgrpccj19.setVisibility(View.GONE);
                     ClearClass.ClearAllFields(bi.fldgrpccj19, false);
                     bi.fldgrpccj20.setVisibility(View.GONE);
@@ -210,6 +845,9 @@ public class SectionJActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
 
                 if (b) {
+                    bi.ccj22d.setText(null);
+                    bi.ccj22w.setText(null);
+                    bi.ccj22h.setText(null);
                     bi.fldgrpccj23.setVisibility(View.GONE);
                     ClearClass.ClearAllFields(bi.fldgrpccj23, false);
                 } else {
@@ -239,6 +877,8 @@ public class SectionJActivity extends AppCompatActivity {
 
                 if (b) {
 
+                    bi.ccj26d.setText(null);
+                    bi.ccj26m.setText(null);
                     bi.fldgrpccj27.setVisibility(View.GONE);
                     ClearClass.ClearAllFields(bi.fldgrpccj27, false);
                     bi.fldgrpccj28.setVisibility(View.GONE);
@@ -448,13 +1088,19 @@ public class SectionJActivity extends AppCompatActivity {
 
                 return false;
             }
-            if (!validatorClass.EmptyCheckBox(this, bi.fldgrpccj04, bi.ccj04a, getString(R.string.ccj04))) {
-
-                return false;
+            if (bi.ccj0496.isChecked()) {
+                if (!validatorClass.EmptyTextBox(this, bi.ccj0496x, getString(R.string.ccj04))) {
+                    return false;
+                }
             }
             if (!validatorClass.EmptyCheckBox(this, bi.fldgrpccj05, bi.ccj05a, getString(R.string.ccj05))) {
 
                 return false;
+            }
+            if (bi.ccj0596.isChecked()) {
+                if (!validatorClass.EmptyTextBox(this, bi.ccj0596x, getString(R.string.ccj05))) {
+                    return false;
+                }
             }
 
             if (!bi.ccj0698.isChecked()) {
@@ -470,6 +1116,11 @@ public class SectionJActivity extends AppCompatActivity {
             if (!validatorClass.EmptyCheckBox(this, bi.fldgrpccj08, bi.ccj08a, getString(R.string.ccj08))) {
 
                 return false;
+            }
+            if (bi.ccj0896.isChecked()) {
+                if (!validatorClass.EmptyTextBox(this, bi.ccj0896x, getString(R.string.ccj08))) {
+                    return false;
+                }
             }
             if (!validatorClass.EmptyRadioButton(this, bi.ccj09, bi.ccj09a, getString(R.string.ccj09))) {
                 return false;
@@ -500,7 +1151,7 @@ public class SectionJActivity extends AppCompatActivity {
         }
         if (bi.ccj14a.isChecked()) {
 
-            if (!bi.ccj1597.isChecked() || !bi.ccj1598.isChecked()) {
+            if (!bi.ccj1597.isChecked() && !bi.ccj1598.isChecked()) {
                 if (!validatorClass.EmptyTextBox(this, bi.ccj15d, getString(R.string.ccj15))) {
                     return false;
                 }
@@ -510,7 +1161,7 @@ public class SectionJActivity extends AppCompatActivity {
             return false;
         }
 
-        if (!bi.ccj1597.isChecked()) {
+        if (!bi.ccj1797.isChecked()) {
 
             if (!validatorClass.EmptyRadioButton(this, bi.ccj17a, bi.ccj17a01, getString(R.string.ccj17a))) {
                 return false;
@@ -588,6 +1239,11 @@ public class SectionJActivity extends AppCompatActivity {
                 if (!validatorClass.EmptyCheckBox(this, bi.fldgrpccj21, bi.ccj21a, getString(R.string.ccj21))) {
 
                     return false;
+                }
+                if (bi.ccj2196.isChecked()) {
+                    if (!validatorClass.EmptyTextBox(this, bi.ccj2196x, getString(R.string.ccj21))) {
+                        return false;
+                    }
                 }
 
                 if (!bi.ccj2298.isChecked()) {
