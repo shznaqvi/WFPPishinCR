@@ -728,7 +728,7 @@ public class SectionBActivity extends AppCompatActivity {
         if (!validatorClass.EmptyTextBox(this, bi.ccb04, getString(R.string.ccb04))) {
             return false;
         }
-        if (!validatorClass.RangeTextBox(this, bi.ccb04, 0, 99, getString(R.string.ccb04), " AGE")) {
+        if (!validatorClass.RangeTextBox(this, bi.ccb04, 1, 4, getString(R.string.ccb04), " AGE")) {
             return false;
         }
 //        03

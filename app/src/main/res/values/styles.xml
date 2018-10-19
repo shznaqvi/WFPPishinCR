@@ -67,12 +67,12 @@
     </style>
     <style name="BackgroundStyle" parent="android:Widget.Material.Light.ScrollView">
     <item name="android:background">@drawable/background_inner</item>
-    <item name="android:padding">24dp</item>
+        <item name="android:padding">10dp</item>
 </style>
     <style name="labels" parent="android:Widget.Material.Light.TextView">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:layout_marginTop">15dp</item>
         <!--<item name="android:background">@drawable/background_grad</item>-->
         <item name="android:paddingBottom">8dp</item>
         <item name="android:paddingStart">8dp</item>

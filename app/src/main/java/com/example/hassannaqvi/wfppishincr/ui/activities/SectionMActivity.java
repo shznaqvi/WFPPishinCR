@@ -594,7 +594,7 @@ ActivitySectionMBinding bi;
 
         //======================= Q 1 ===============
         if (bi.ccm01d.getText().toString().isEmpty()) {
-            Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccmrec), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccm01), Toast.LENGTH_SHORT).show();
             bi.ccm01d.setError("This data is Required!");
             Log.i(TAG, "ccm01d: This data is Required!");
             return false;
@@ -603,7 +603,7 @@ ActivitySectionMBinding bi;
         }
 
         if (Integer.valueOf(bi.ccm01d.getText().toString()) < 0 || Integer.valueOf(bi.ccm01d.getText().toString()) > 7) {
-            Toast.makeText(this, "ERROR(Invalid): " + getString(R.string.ccmrec), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "ERROR(Invalid): " + getString(R.string.ccm01), Toast.LENGTH_SHORT).show();
             bi.ccm01d.setError("Range is 0 - 7 days");
             Log.i(TAG, "ccm01d: This data is Required!");
             return false;
@@ -613,7 +613,7 @@ ActivitySectionMBinding bi;
 
         if (Integer.valueOf(bi.ccm01d.getText().toString()) > 0) {
             if (bi.ccm01s.getCheckedRadioButtonId() == -1) {
-                Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccmsource), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccm01), Toast.LENGTH_SHORT).show();
                 bi.ccm01s10.setError("This data is Required!");
                 Log.i(TAG, "ccm01s: This data is Required!");
                 return false;
@@ -625,7 +625,7 @@ ActivitySectionMBinding bi;
 
         //======================= Q 2 ===============
         if (bi.ccm02d.getText().toString().isEmpty()) {
-            Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccmrec), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccm02), Toast.LENGTH_SHORT).show();
             bi.ccm02d.setError("This data is Required!");
             Log.i(TAG, "ccm02d: This data is Required!");
             return false;
@@ -634,7 +634,7 @@ ActivitySectionMBinding bi;
         }
 
         if (Integer.valueOf(bi.ccm02d.getText().toString()) < 0 || Integer.valueOf(bi.ccm02d.getText().toString()) > 7) {
-            Toast.makeText(this, "ERROR(Invalid): " + getString(R.string.ccmrec), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "ERROR(Invalid): " + getString(R.string.ccm02), Toast.LENGTH_SHORT).show();
             bi.ccm02d.setError("Range is 0 - 7 days");
             Log.i(TAG, "ccm02d: This data is Required!");
             return false;
@@ -644,7 +644,7 @@ ActivitySectionMBinding bi;
 
         if (Integer.valueOf(bi.ccm02d.getText().toString()) > 0) {
             if (bi.ccm02s.getCheckedRadioButtonId() == -1) {
-                Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccmsource), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccm02), Toast.LENGTH_SHORT).show();
                 bi.ccm02s10.setError("This data is Required!");
                 Log.i(TAG, "ccm02s: This data is Required!");
                 return false;
@@ -657,7 +657,7 @@ ActivitySectionMBinding bi;
 
         //======================= Q 3 ===============
         if (bi.ccm03d.getText().toString().isEmpty()) {
-            Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccmrec), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccm03), Toast.LENGTH_SHORT).show();
             bi.ccm03d.setError("This data is Required!");
             Log.i(TAG, "ccm03d: This data is Required!");
             return false;
@@ -666,7 +666,7 @@ ActivitySectionMBinding bi;
         }
 
         if (Integer.valueOf(bi.ccm03d.getText().toString()) < 0 || Integer.valueOf(bi.ccm03d.getText().toString()) > 7) {
-            Toast.makeText(this, "ERROR(Invalid): " + getString(R.string.ccmrec), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "ERROR(Invalid): " + getString(R.string.ccm03), Toast.LENGTH_SHORT).show();
             bi.ccm03d.setError("Range is 0 - 7 days");
             Log.i(TAG, "ccm03d: This data is Required!");
             return false;
@@ -676,7 +676,7 @@ ActivitySectionMBinding bi;
 
         if (Integer.valueOf(bi.ccm03d.getText().toString()) > 0) {
             if (bi.ccm03s.getCheckedRadioButtonId() == -1) {
-                Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccmsource), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccm03), Toast.LENGTH_SHORT).show();
                 bi.ccm03s10.setError("This data is Required!");
                 Log.i(TAG, "ccm03s: This data is Required!");
                 return false;
@@ -688,7 +688,7 @@ ActivitySectionMBinding bi;
 
         //======================= Q 4 ===============
         if (bi.ccm04d.getText().toString().isEmpty()) {
-            Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccmrec), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccm04), Toast.LENGTH_SHORT).show();
             bi.ccm04d.setError("This data is Required!");
             Log.i(TAG, "ccm01d: This data is Required!");
             return false;
@@ -697,7 +697,7 @@ ActivitySectionMBinding bi;
         }
 
         if (Integer.valueOf(bi.ccm04d.getText().toString()) < 0 || Integer.valueOf(bi.ccm04d.getText().toString()) > 7) {
-            Toast.makeText(this, "ERROR(Invalid): " + getString(R.string.ccmrec), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "ERROR(Invalid): " + getString(R.string.ccm04), Toast.LENGTH_SHORT).show();
             bi.ccm04d.setError("Range is 0 - 7 days");
             Log.i(TAG, "ccm04d: This data is Required!");
             return false;
@@ -707,7 +707,7 @@ ActivitySectionMBinding bi;
 
         if (Integer.valueOf(bi.ccm04d.getText().toString()) > 0) {
             if (bi.ccm04s.getCheckedRadioButtonId() == -1) {
-                Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccmsource), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccm04), Toast.LENGTH_SHORT).show();
                 bi.ccm04s10.setError("This data is Required!");
                 Log.i(TAG, "ccm04s: This data is Required!");
                 return false;
@@ -717,7 +717,7 @@ ActivitySectionMBinding bi;
 
             //======================= Q 4.1 ===============
             if (bi.ccm0401d.getText().toString().isEmpty()) {
-                Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccmrec), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccm0401), Toast.LENGTH_SHORT).show();
                 bi.ccm0401d.setError("This data is Required!");
                 Log.i(TAG, "ccm0401d: This data is Required!");
                 return false;
@@ -726,7 +726,7 @@ ActivitySectionMBinding bi;
             }
 
             if (Integer.valueOf(bi.ccm0401d.getText().toString()) < 0 || Integer.valueOf(bi.ccm0401d.getText().toString()) > 7) {
-                Toast.makeText(this, "ERROR(Invalid): " + getString(R.string.ccmrec), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "ERROR(Invalid): " + getString(R.string.ccm0401), Toast.LENGTH_SHORT).show();
                 bi.ccm0401d.setError("Range is 0 - 7 days");
                 Log.i(TAG, "ccm01d: This data is Required!");
                 return false;
@@ -736,7 +736,7 @@ ActivitySectionMBinding bi;
 
             if (Integer.valueOf(bi.ccm0401d.getText().toString()) > 0) {
                 if (bi.ccm0401s.getCheckedRadioButtonId() == -1) {
-                    Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccmsource), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccm0401), Toast.LENGTH_SHORT).show();
                     bi.ccm0401s10.setError("This data is Required!");
                     Log.i(TAG, "ccm0401s: This data is Required!");
                     return false;
@@ -748,7 +748,7 @@ ActivitySectionMBinding bi;
 
             //======================= Q 4.2 ===============
             if (bi.ccm0402d.getText().toString().isEmpty()) {
-                Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccmrec), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccm0402), Toast.LENGTH_SHORT).show();
                 bi.ccm0402d.setError("This data is Required!");
                 Log.i(TAG, "ccm0402d: This data is Required!");
                 return false;
@@ -757,7 +757,7 @@ ActivitySectionMBinding bi;
             }
 
             if (Integer.valueOf(bi.ccm0402d.getText().toString()) < 0 || Integer.valueOf(bi.ccm0402d.getText().toString()) > 7) {
-                Toast.makeText(this, "ERROR(Invalid): " + getString(R.string.ccmrec), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "ERROR(Invalid): " + getString(R.string.ccm0402), Toast.LENGTH_SHORT).show();
                 bi.ccm0402d.setError("Range is 0 - 7 days");
                 Log.i(TAG, "ccm0402d: This data is Required!");
                 return false;
@@ -767,7 +767,7 @@ ActivitySectionMBinding bi;
 
             if (Integer.valueOf(bi.ccm0402d.getText().toString()) > 0) {
                 if (bi.ccm0402s.getCheckedRadioButtonId() == -1) {
-                    Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccmsource), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccm0402), Toast.LENGTH_SHORT).show();
                     bi.ccm0402s10.setError("This data is Required!");
                     Log.i(TAG, "ccm0402s: This data is Required!");
                     return false;
@@ -779,7 +779,7 @@ ActivitySectionMBinding bi;
 
             //======================= Q 4.3 ===============
             if (bi.ccm0403d.getText().toString().isEmpty()) {
-                Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccmrec), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccm0403), Toast.LENGTH_SHORT).show();
                 bi.ccm0403d.setError("This data is Required!");
                 Log.i(TAG, "ccm0403d: This data is Required!");
                 return false;
@@ -788,7 +788,7 @@ ActivitySectionMBinding bi;
             }
 
             if (Integer.valueOf(bi.ccm0403d.getText().toString()) < 0 || Integer.valueOf(bi.ccm0403d.getText().toString()) > 7) {
-                Toast.makeText(this, "ERROR(Invalid): " + getString(R.string.ccmrec), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "ERROR(Invalid): " + getString(R.string.ccm0403), Toast.LENGTH_SHORT).show();
                 bi.ccm0403d.setError("Range is 0 - 7 days");
                 Log.i(TAG, "ccm0403d: This data is Required!");
                 return false;
@@ -798,7 +798,7 @@ ActivitySectionMBinding bi;
 
             if (Integer.valueOf(bi.ccm0403d.getText().toString()) > 0) {
                 if (bi.ccm0403s.getCheckedRadioButtonId() == -1) {
-                    Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccmsource), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccm0403), Toast.LENGTH_SHORT).show();
                     bi.ccm0403s10.setError("This data is Required!");
                     Log.i(TAG, "ccm0403s: This data is Required!");
                     return false;
@@ -810,7 +810,7 @@ ActivitySectionMBinding bi;
 
             //======================= Q 4.4 ===============
             if (bi.ccm0404d.getText().toString().isEmpty()) {
-                Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccmrec), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccm0404), Toast.LENGTH_SHORT).show();
                 bi.ccm0404d.setError("This data is Required!");
                 Log.i(TAG, "bi.ccm0404d: This data is Required!");
                 return false;
@@ -819,7 +819,7 @@ ActivitySectionMBinding bi;
             }
 
             if (Integer.valueOf(bi.ccm0404d.getText().toString()) < 0 || Integer.valueOf(bi.ccm0404d.getText().toString()) > 7) {
-                Toast.makeText(this, "ERROR(Invalid): " + getString(R.string.ccmrec), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "ERROR(Invalid): " + getString(R.string.ccm0404), Toast.LENGTH_SHORT).show();
                 bi.ccm0404d.setError("Range is 0 - 7 days");
                 Log.i(TAG, "bi.ccm0404d: This data is Required!");
                 return false;
@@ -829,7 +829,7 @@ ActivitySectionMBinding bi;
 
             if (Integer.valueOf(bi.ccm0404d.getText().toString()) > 0) {
                 if (bi.ccm0404s.getCheckedRadioButtonId() == -1) {
-                    Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccmsource), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccm0404), Toast.LENGTH_SHORT).show();
                     bi.ccm0404s10.setError("This data is Required!");
                     Log.i(TAG, "ccm0404s: This data is Required!");
                     return false;
@@ -843,7 +843,7 @@ ActivitySectionMBinding bi;
 
         //======================= Q 5 ===============
         if (bi.ccm05d.getText().toString().isEmpty()) {
-            Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccmrec), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccm05), Toast.LENGTH_SHORT).show();
             bi.ccm05d.setError("This data is Required!");
             Log.i(TAG, "bi.ccm05d: This data is Required!");
             return false;
@@ -852,7 +852,7 @@ ActivitySectionMBinding bi;
         }
 
         if (Integer.valueOf(bi.ccm05d.getText().toString()) < 0 || Integer.valueOf(bi.ccm05d.getText().toString()) > 7) {
-            Toast.makeText(this, "ERROR(Invalid): " + getString(R.string.ccmrec), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "ERROR(Invalid): " + getString(R.string.ccm05), Toast.LENGTH_SHORT).show();
             bi.ccm05d.setError("Range is 0 - 7 days");
             Log.i(TAG, "ccm05d: This data is Required!");
             return false;
@@ -862,7 +862,7 @@ ActivitySectionMBinding bi;
 
         if (Integer.valueOf(bi.ccm05d.getText().toString()) > 0) {
             if (bi.ccm05s.getCheckedRadioButtonId() == -1) {
-                Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccmsource), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccm05), Toast.LENGTH_SHORT).show();
                 bi.ccm05s10.setError("This data is Required!");
                 Log.i(TAG, "ccm05s: This data is Required!");
                 return false;
@@ -872,7 +872,7 @@ ActivitySectionMBinding bi;
 
             //======================= Q 5.1 ===============
             if (bi.ccm0501d.getText().toString().isEmpty()) {
-                Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccmrec), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccm0501), Toast.LENGTH_SHORT).show();
                 bi.ccm0501d.setError("This data is Required!");
                 Log.i(TAG, "ccm0501d: This data is Required!");
                 return false;
@@ -881,7 +881,7 @@ ActivitySectionMBinding bi;
             }
 
             if (Integer.valueOf(bi.ccm0501d.getText().toString()) < 0 || Integer.valueOf(bi.ccm0501d.getText().toString()) > 7) {
-                Toast.makeText(this, "ERROR(Invalid): " + getString(R.string.ccmrec), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "ERROR(Invalid): " + getString(R.string.ccm0501), Toast.LENGTH_SHORT).show();
                 bi.ccm0501d.setError("Range is 0 - 7 days");
                 Log.i(TAG, "ccm0501d: This data is Required!");
                 return false;
@@ -891,7 +891,7 @@ ActivitySectionMBinding bi;
 
             if (Integer.valueOf(bi.ccm0501d.getText().toString()) > 0) {
                 if (bi.ccm0501s.getCheckedRadioButtonId() == -1) {
-                    Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccmsource), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccm0501), Toast.LENGTH_SHORT).show();
                     bi.ccm0501s10.setError("This data is Required!");
                     Log.i(TAG, "ccm0501s: This data is Required!");
                     return false;
@@ -903,7 +903,7 @@ ActivitySectionMBinding bi;
 
             //======================= Q 5.2 ===============
             if (bi.ccm0502d.getText().toString().isEmpty()) {
-                Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccmrec), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccm0502), Toast.LENGTH_SHORT).show();
                 bi.ccm0502d.setError("This data is Required!");
                 Log.i(TAG, "ccm0502d: This data is Required!");
                 return false;
@@ -913,7 +913,7 @@ ActivitySectionMBinding bi;
 
 
             if (Integer.valueOf(bi.ccm0502d.getText().toString()) < 0 || Integer.valueOf(bi.ccm0502d.getText().toString()) > 7) {
-                Toast.makeText(this, "ERROR(Invalid): " + getString(R.string.ccmrec), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "ERROR(Invalid): " + getString(R.string.ccm0502), Toast.LENGTH_SHORT).show();
                 bi.ccm0502d.setError("Range is 0 - 7 days");
                 Log.i(TAG, "ccm0502d: This data is Required!");
                 return false;
@@ -923,7 +923,7 @@ ActivitySectionMBinding bi;
 
             if (Integer.valueOf(bi.ccm0502d.getText().toString()) > 0) {
                 if (bi.ccm0502s.getCheckedRadioButtonId() == -1) {
-                    Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccmsource), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccm0502), Toast.LENGTH_SHORT).show();
                     bi.ccm0502s10.setError("This data is Required!");
                     Log.i(TAG, "ccm0502s: This data is Required!");
                     return false;
@@ -938,7 +938,7 @@ ActivitySectionMBinding bi;
 
         //======================= Q 6 ===============
         if (bi.ccm06d.getText().toString().isEmpty()) {
-            Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccmrec), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccm06), Toast.LENGTH_SHORT).show();
             bi.ccm06d.setError("This data is Required!");
             Log.i(TAG, "ccm06d: This data is Required!");
             return false;
@@ -947,7 +947,7 @@ ActivitySectionMBinding bi;
         }
 
         if (Integer.valueOf(bi.ccm06d.getText().toString()) < 0 || Integer.valueOf(bi.ccm06d.getText().toString()) > 7) {
-            Toast.makeText(this, "ERROR(Invalid): " + getString(R.string.ccmrec), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "ERROR(Invalid): " + getString(R.string.ccm06), Toast.LENGTH_SHORT).show();
             bi.ccm06d.setError("Range is 0 - 7 days");
             Log.i(TAG, "ccm06d: This data is Required!");
             return false;
@@ -957,7 +957,7 @@ ActivitySectionMBinding bi;
 
         if (Integer.valueOf(bi.ccm06d.getText().toString()) > 0) {
             if (bi.ccm06s.getCheckedRadioButtonId() == -1) {
-                Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccmsource), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccm06), Toast.LENGTH_SHORT).show();
                 bi.ccm06s10.setError("This data is Required!");
                 Log.i(TAG, "ccm06s: This data is Required!");
                 return false;
@@ -967,7 +967,7 @@ ActivitySectionMBinding bi;
 
             //======================= Q 6.1 ===============
             if (bi.ccm0601d.getText().toString().isEmpty()) {
-                Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccmrec), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccm0601), Toast.LENGTH_SHORT).show();
                 bi.ccm0601d.setError("This data is Required!");
                 Log.i(TAG, "ccm0601d: This data is Required!");
                 return false;
@@ -976,7 +976,7 @@ ActivitySectionMBinding bi;
             }
 
             if (Integer.valueOf(bi.ccm0601d.getText().toString()) < 0 || Integer.valueOf(bi.ccm0601d.getText().toString()) > 7) {
-                Toast.makeText(this, "ERROR(Invalid): " + getString(R.string.ccmrec), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "ERROR(Invalid): " + getString(R.string.ccm0601), Toast.LENGTH_SHORT).show();
                 bi.ccm0601d.setError("Range is 0 - 7 days");
                 Log.i(TAG, "ccm0601d: This data is Required!");
                 return false;
@@ -986,7 +986,7 @@ ActivitySectionMBinding bi;
 
             if (Integer.valueOf(bi.ccm0601d.getText().toString()) > 0) {
                 if (bi.ccm0601s.getCheckedRadioButtonId() == -1) {
-                    Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccmsource), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccm0601), Toast.LENGTH_SHORT).show();
                     bi.ccm0601s10.setError("This data is Required!");
                     Log.i(TAG, "bi.ccm0601s: This data is Required!");
                     return false;
@@ -1001,7 +1001,7 @@ ActivitySectionMBinding bi;
 
         //======================= Q 7 ===============
         if (bi.ccm07d.getText().toString().isEmpty()) {
-            Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccmrec), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccm07), Toast.LENGTH_SHORT).show();
             bi.ccm07d.setError("This data is Required!");
             Log.i(TAG, "bi.ccm07d: This data is Required!");
             return false;
@@ -1010,7 +1010,7 @@ ActivitySectionMBinding bi;
         }
 
         if (Integer.valueOf(bi.ccm07d.getText().toString()) < 0 || Integer.valueOf(bi.ccm07d.getText().toString()) > 7) {
-            Toast.makeText(this, "ERROR(Invalid): " + getString(R.string.ccmrec), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "ERROR(Invalid): " + getString(R.string.ccm07), Toast.LENGTH_SHORT).show();
             bi.ccm07d.setError("Range is 0 - 7 days");
             Log.i(TAG, "bi.ccm07d: This data is Required!");
             return false;
@@ -1020,7 +1020,7 @@ ActivitySectionMBinding bi;
 
         if (Integer.valueOf(bi.ccm07d.getText().toString()) > 0) {
             if (bi.ccm07s.getCheckedRadioButtonId() == -1) {
-                Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccmsource), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccm07), Toast.LENGTH_SHORT).show();
                 bi.ccm07s10.setError("This data is Required!");
                 Log.i(TAG, "bi.ccm07s: This data is Required!");
                 return false;
@@ -1032,7 +1032,7 @@ ActivitySectionMBinding bi;
 
         //======================= Q 8 ===============
         if (bi.ccm08d.getText().toString().isEmpty()) {
-            Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccmrec), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccm08), Toast.LENGTH_SHORT).show();
             bi.ccm08d.setError("This data is Required!");
             Log.i(TAG, "bi.ccm08d: This data is Required!");
             return false;
@@ -1041,7 +1041,7 @@ ActivitySectionMBinding bi;
         }
 
         if (Integer.valueOf(bi.ccm08d.getText().toString()) < 0 || Integer.valueOf(bi.ccm08d.getText().toString()) > 7) {
-            Toast.makeText(this, "ERROR(Invalid): " + getString(R.string.ccmrec), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "ERROR(Invalid): " + getString(R.string.ccm08), Toast.LENGTH_SHORT).show();
             bi.ccm08d.setError("Range is 0 - 7 days");
             Log.i(TAG, "bi.ccm08d: This data is Required!");
             return false;
@@ -1051,7 +1051,7 @@ ActivitySectionMBinding bi;
 
         if (Integer.valueOf(bi.ccm08d.getText().toString()) > 0) {
             if (bi.ccm08s.getCheckedRadioButtonId() == -1) {
-                Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccmsource), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccm08), Toast.LENGTH_SHORT).show();
                 bi.ccm08s10.setError("This data is Required!");
                 Log.i(TAG, "bi.ccm08s: This data is Required!");
                 return false;
@@ -1063,7 +1063,7 @@ ActivitySectionMBinding bi;
 
         //======================= Q 9 ===============
         if (bi.ccm09d.getText().toString().isEmpty()) {
-            Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccmrec), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccm09), Toast.LENGTH_SHORT).show();
             bi.ccm09d.setError("This data is Required!");
             Log.i(TAG, "ccm09d: This data is Required!");
             return false;
@@ -1072,7 +1072,7 @@ ActivitySectionMBinding bi;
         }
 
         if (Integer.valueOf(bi.ccm09d.getText().toString()) < 0 || Integer.valueOf(bi.ccm09d.getText().toString()) > 7) {
-            Toast.makeText(this, "ERROR(Invalid): " + getString(R.string.ccmrec), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "ERROR(Invalid): " + getString(R.string.ccm09), Toast.LENGTH_SHORT).show();
             bi.ccm09d.setError("Range is 0 - 7 days");
             Log.i(TAG, "ccm09d: This data is Required!");
             return false;
@@ -1082,7 +1082,7 @@ ActivitySectionMBinding bi;
 
         if (Integer.valueOf(bi.ccm09d.getText().toString()) > 0) {
             if (bi.ccm09s.getCheckedRadioButtonId() == -1) {
-                Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccmsource), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "ERROR(empty): " + getString(R.string.ccm09), Toast.LENGTH_SHORT).show();
                 bi.ccm09s10.setError("This data is Required!");
                 Log.i(TAG, "ccm09s: This data is Required!");
                 return false;

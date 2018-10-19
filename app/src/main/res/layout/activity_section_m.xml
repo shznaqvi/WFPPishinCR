@@ -17,22 +17,20 @@
         android:orientation="vertical">
 
         <TextView
+            android:layout_margin="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
             android:background="@color/colorPrimaryDark"
             android:gravity="center"
-            android:padding="5dp"
             android:text="@string/ccmHeading"
             android:textColor="@color/white"
             android:textSize="25sp" />
 
         <TextView
+            android:layout_margin="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
             android:background="@color/colorPrimaryDark"
-            android:padding="5dp"
             android:text="@string/ccmsubHeading"
             android:textColor="@color/white"
             android:textSize="25sp" />
@@ -56,9 +54,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimary"
-                        android:padding="5dp"
                         android:text="@string/ccm01"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -66,9 +62,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/ccmrec"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -101,9 +95,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
                             android:background="@color/colorPrimaryDark"
-                            android:padding="5dp"
                             android:text="@string/ccmsource"
                             android:textColor="@color/white"
                             android:textSize="25sp" />
@@ -193,6 +185,7 @@
                 <!--Q2-->
 
                 <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -200,9 +193,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimary"
-                        android:padding="5dp"
                         android:text="@string/ccm02"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -210,9 +201,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/ccmrec"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -243,9 +232,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
                             android:background="@color/colorPrimaryDark"
-                            android:padding="5dp"
                             android:text="@string/ccmsource"
                             android:textColor="@color/white"
                             android:textSize="25sp" />
@@ -335,6 +322,7 @@
                 <!--Q3-->
 
                 <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -342,9 +330,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimary"
-                        android:padding="5dp"
                         android:text="@string/ccm03"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -352,9 +338,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/ccmrec"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -385,9 +369,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
                             android:background="@color/colorPrimaryDark"
-                            android:padding="5dp"
                             android:text="@string/ccmsource"
                             android:textColor="@color/white"
                             android:textSize="25sp" />
@@ -476,6 +458,7 @@
                 <!--Q4-->
 
                 <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -483,9 +466,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimary"
-                        android:padding="5dp"
                         android:text="@string/ccm04"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -493,9 +474,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/ccmrec"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -530,9 +509,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
                             android:background="@color/colorPrimaryDark"
-                            android:padding="5dp"
                             android:text="@string/ccmsource"
                             android:textColor="@color/white"
                             android:textSize="25sp" />
@@ -618,6 +595,7 @@
 
                 <!--Q 4.1-->
                 <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -625,9 +603,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimary"
-                        android:padding="5dp"
                         android:text="@string/ccm0401"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -635,9 +611,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/ccmrec"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -668,9 +642,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
                             android:background="@color/colorPrimaryDark"
-                            android:padding="5dp"
                             android:text="@string/ccmsource"
                             android:textColor="@color/white"
                             android:textSize="25sp" />
@@ -756,6 +728,7 @@
 
                 <!--Q4.2-->
                 <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -763,9 +736,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimary"
-                        android:padding="5dp"
                         android:text="@string/ccm0402"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -773,9 +744,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/ccmrec"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -806,9 +775,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
                             android:background="@color/colorPrimaryDark"
-                            android:padding="5dp"
                             android:text="@string/ccmsource"
                             android:textColor="@color/white"
                             android:textSize="25sp" />
@@ -894,6 +861,7 @@
 
                 <!--Q4.3-->
                 <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -901,9 +869,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimary"
-                        android:padding="5dp"
                         android:text="@string/ccm0403"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -911,9 +877,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/ccmrec"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -944,9 +908,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
                             android:background="@color/colorPrimaryDark"
-                            android:padding="5dp"
                             android:text="@string/ccmsource"
                             android:textColor="@color/white"
                             android:textSize="25sp" />
@@ -1032,6 +994,7 @@
 
                 <!--Q4.4-->
                 <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -1039,9 +1002,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimary"
-                        android:padding="5dp"
                         android:text="@string/ccm0404"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -1049,9 +1010,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/ccmrec"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -1073,6 +1032,7 @@
                     </android.support.design.widget.TextInputLayout>
 
                     <LinearLayout
+                        android:layout_marginTop="5dp"
                         android:id="@+id/fldGrpccm0404s"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -1082,9 +1042,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
                             android:background="@color/colorPrimaryDark"
-                            android:padding="5dp"
                             android:text="@string/ccmsource"
                             android:textColor="@color/white"
                             android:textSize="25sp" />
@@ -1171,6 +1129,7 @@
                 <!--Q5-->
 
                 <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -1178,9 +1137,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimary"
-                        android:padding="5dp"
                         android:text="@string/ccm05"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -1188,9 +1145,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/ccmrec"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -1211,11 +1166,13 @@
 
                     </android.support.design.widget.TextInputLayout>
                     <LinearLayout
+                        android:layout_marginTop="5dp"
                         android:id="@+id/fldGrpccm05"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
                     <LinearLayout
+                        android:layout_marginTop="5dp"
                         android:id="@+id/fldGrpccm05s"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -1225,9 +1182,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
                             android:background="@color/colorPrimaryDark"
-                            android:padding="5dp"
                             android:text="@string/ccmsource"
                             android:textColor="@color/white"
                             android:textSize="25sp" />
@@ -1314,6 +1269,7 @@
 
                 <!--Q5.1-->
                 <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -1321,9 +1277,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimary"
-                        android:padding="5dp"
                         android:text="@string/ccm0501"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -1331,9 +1285,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/ccmrec"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -1355,6 +1307,7 @@
                     </android.support.design.widget.TextInputLayout>
 
                     <LinearLayout
+                        android:layout_marginTop="5dp"
                         android:id="@+id/fldGrpccm0501s"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -1364,9 +1317,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
                             android:background="@color/colorPrimaryDark"
-                            android:padding="5dp"
                             android:text="@string/ccmsource"
                             android:textColor="@color/white"
                             android:textSize="25sp" />
@@ -1453,6 +1404,7 @@
 
                 <!--Q5.2-->
                 <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -1460,9 +1412,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimary"
-                        android:padding="5dp"
                         android:text="@string/ccm0502"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -1470,9 +1420,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/ccmrec"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -1494,6 +1442,7 @@
                     </android.support.design.widget.TextInputLayout>
 
                     <LinearLayout
+                        android:layout_marginTop="5dp"
                         android:id="@+id/fldGrpccm0502s"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -1503,9 +1452,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
                             android:background="@color/colorPrimaryDark"
-                            android:padding="5dp"
                             android:text="@string/ccmsource"
                             android:textColor="@color/white"
                             android:textSize="25sp" />
@@ -1594,6 +1541,7 @@
                 <!--Q6-->
 
                 <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -1601,9 +1549,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimary"
-                        android:padding="5dp"
                         android:text="@string/ccm06"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -1611,9 +1557,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/ccmrec"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -1635,11 +1579,13 @@
                     </android.support.design.widget.TextInputLayout>
 
                     <LinearLayout
+                        android:layout_marginTop="5dp"
                         android:id="@+id/fldGrpccm06"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
                     <LinearLayout
+                        android:layout_marginTop="5dp"
                         android:id="@+id/fldGrpccm06s"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -1649,9 +1595,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
                             android:background="@color/colorPrimaryDark"
-                            android:padding="5dp"
                             android:text="@string/ccmsource"
                             android:textColor="@color/white"
                             android:textSize="25sp" />
@@ -1739,6 +1683,7 @@
                 <!--Q6.1-->
 
                 <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -1746,9 +1691,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimary"
-                        android:padding="5dp"
                         android:text="@string/ccm0601"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -1756,9 +1699,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/ccmrec"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -1780,6 +1721,7 @@
                     </android.support.design.widget.TextInputLayout>
 
                     <LinearLayout
+                        android:layout_marginTop="5dp"
                         android:id="@+id/fldGrpccm0601s"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -1789,9 +1731,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
                             android:background="@color/colorPrimaryDark"
-                            android:padding="5dp"
                             android:text="@string/ccmsource"
                             android:textColor="@color/white"
                             android:textSize="25sp" />
@@ -1878,6 +1818,7 @@
                 </LinearLayout>
                 <!--Q7-->
                 <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -1885,9 +1826,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimary"
-                        android:padding="5dp"
                         android:text="@string/ccm07"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -1895,9 +1834,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/ccmrec"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -1919,6 +1856,7 @@
                     </android.support.design.widget.TextInputLayout>
 
                     <LinearLayout
+                        android:layout_marginTop="5dp"
                         android:id="@+id/fldGrpccm07s"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -1928,9 +1866,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
                             android:background="@color/colorPrimaryDark"
-                            android:padding="5dp"
                             android:text="@string/ccmsource"
                             android:textColor="@color/white"
                             android:textSize="25sp" />
@@ -2017,6 +1953,7 @@
 
                 <!--Q8-->
                 <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -2024,9 +1961,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimary"
-                        android:padding="5dp"
                         android:text="@string/ccm08"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -2034,9 +1969,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/ccmrec"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -2058,6 +1991,7 @@
                     </android.support.design.widget.TextInputLayout>
 
                     <LinearLayout
+                        android:layout_marginTop="5dp"
                         android:id="@+id/fldGrpccm08s"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -2067,9 +2001,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
                             android:background="@color/colorPrimaryDark"
-                            android:padding="5dp"
                             android:text="@string/ccmsource"
                             android:textColor="@color/white"
                             android:textSize="25sp" />
@@ -2156,6 +2088,7 @@
 
                 <!--Q9-->
                 <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -2163,9 +2096,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimary"
-                        android:padding="5dp"
                         android:text="@string/ccm09"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -2173,9 +2104,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/ccmrec"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -2197,6 +2126,7 @@
                     </android.support.design.widget.TextInputLayout>
 
                     <LinearLayout
+                        android:layout_marginTop="5dp"
                         android:id="@+id/fldGrpccm09s"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -2206,9 +2136,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
                             android:background="@color/colorPrimaryDark"
-                            android:padding="5dp"
                             android:text="@string/ccmsource"
                             android:textColor="@color/white"
                             android:textSize="25sp" />

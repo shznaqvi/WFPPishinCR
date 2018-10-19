@@ -18,12 +18,11 @@
         android:orientation="vertical">
 
         <TextView
+            android:layout_margin="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
             android:background="@color/colorPrimaryDark"
             android:gravity="center"
-            android:padding="5dp"
             android:text="@string/cciHeading"
             android:textColor="@color/white"
             android:textSize="25sp" />
@@ -43,9 +42,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
                     android:background="@color/colorPrimary"
-                    android:padding="5dp"
                     android:text="@string/cci01"
                     android:textColor="@color/white"
                     android:textSize="25sp" />
@@ -55,8 +52,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layoutDirection="rtl"
-                    android:orientation="vertical"
-                    android:padding="16dp">
+                    android:orientation="vertical">
 
                     <RadioButton
                         android:id="@+id/cci01a"
@@ -88,6 +84,7 @@
 
                 <!--Q 1.1-->
                 <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:id="@+id/fldgrpcci02"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -96,19 +93,16 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:background="@color/colorPrimary"
-                        android:padding="5dp"
+                        android:background="@color/colorPrimaryDark"
                         android:text="@string/cci02sub"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
 
                     <TextView
+                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimary"
-                        android:padding="5dp"
                         android:text="@string/cci02"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -118,8 +112,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci02a"
@@ -153,16 +146,16 @@
                 <!--Q2-->
 
                 <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <TextView
+
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimary"
-                        android:padding="5dp"
                         android:text="@string/cci03"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -172,8 +165,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci03a"
@@ -223,6 +215,7 @@
 
                 <!--Q3-->
                 <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -230,9 +223,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimary"
-                        android:padding="5dp"
                         android:text="@string/cci04"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -242,8 +233,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci04a"
@@ -277,6 +267,7 @@
                 <!--Q4-->
 
                 <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -285,9 +276,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimary"
-                        android:padding="5dp"
                         android:text="@string/cci05"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -297,8 +286,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci05a"
@@ -333,6 +321,7 @@
                 <!--Q5-->
 
                 <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -341,9 +330,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimary"
-                        android:padding="5dp"
                         android:text="@string/cci06"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -353,8 +340,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci06a"
@@ -388,6 +374,7 @@
 
                 <!--Q6-->
                 <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -396,19 +383,16 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:background="@color/colorPrimary"
-                        android:padding="5dp"
+                        android:background="@color/colorPrimaryDark"
                         android:text="@string/cci07"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
 
                     <TextView
+                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimary"
-                        android:padding="5dp"
                         android:text="@string/cci07sub"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -416,9 +400,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/cci07a"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -428,8 +410,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci07a01"
@@ -460,11 +441,10 @@
                     </RadioGroup>
 
                     <TextView
+                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/cci07b"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -474,8 +454,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci07b01"
@@ -487,6 +466,8 @@
                             android:textSize="20sp" />
 
                         <EditText
+                            android:inputType="number"
+                            android:maxLength="2"
                             android:id="@+id/cci07bx"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -513,11 +494,10 @@
                     </RadioGroup>
 
                     <TextView
+                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/cci07c"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -527,8 +507,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci07c01"
@@ -540,6 +519,8 @@
                             android:textSize="20sp" />
 
                         <EditText
+                            android:inputType="number"
+                            android:maxLength="2"
                             android:id="@+id/cci07c01x"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -566,11 +547,10 @@
                     </RadioGroup>
 
                     <TextView
+                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/cci07d"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -580,8 +560,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci07d01"
@@ -612,11 +591,10 @@
                     </RadioGroup>
 
                     <TextView
+                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/cci07e"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -626,8 +604,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci07e01"
@@ -658,11 +635,10 @@
                     </RadioGroup>
 
                     <TextView
+                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/cci07f"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -672,8 +648,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci07f01"
@@ -685,6 +660,8 @@
                             android:textSize="20sp" />
 
                         <EditText
+                            android:inputType="number"
+                            android:maxLength="2"
                             android:id="@+id/cci07f01x"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -711,11 +688,10 @@
                     </RadioGroup>
 
                     <TextView
+                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/cci07g"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -725,8 +701,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci07g01"
@@ -757,11 +732,10 @@
                     </RadioGroup>
 
                     <TextView
+                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/cci07h"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -771,8 +745,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci07h01"
@@ -803,11 +776,10 @@
                     </RadioGroup>
 
                     <TextView
+                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/cci07i"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -817,8 +789,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci07i01"
@@ -852,6 +823,7 @@
                 <!--Q7-->
 
                 <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -859,19 +831,16 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimary"
-                        android:padding="5dp"
                         android:text="@string/cci08"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
 
                     <TextView
+                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/cci08a"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -881,8 +850,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci08a01"
@@ -913,11 +881,10 @@
                     </RadioGroup>
 
                     <TextView
+                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/cci08b"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -927,8 +894,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci08b01"
@@ -959,11 +925,10 @@
                     </RadioGroup>
 
                     <TextView
+                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/cci08c"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -973,8 +938,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci08c01"
@@ -1005,11 +969,10 @@
                     </RadioGroup>
 
                     <TextView
+                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/cci08d"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -1019,8 +982,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci08d01"
@@ -1051,11 +1013,10 @@
                     </RadioGroup>
 
                     <TextView
+                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/cci08e"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -1065,8 +1026,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci08e01"
@@ -1097,11 +1057,10 @@
                     </RadioGroup>
 
                     <TextView
+                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/cci08f"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -1111,8 +1070,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci08f01"
@@ -1143,11 +1101,10 @@
                     </RadioGroup>
 
                     <TextView
+                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/cci08g"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -1157,8 +1114,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci08g01"
@@ -1189,11 +1145,10 @@
                     </RadioGroup>
 
                     <TextView
+                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/cci08h"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -1203,8 +1158,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci08h01"
@@ -1235,11 +1189,10 @@
                     </RadioGroup>
 
                     <TextView
+                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/cci08i"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -1249,8 +1202,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci08i01"
@@ -1281,11 +1233,10 @@
                     </RadioGroup>
 
                     <TextView
+                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/cci08j"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -1295,8 +1246,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci08j01"
@@ -1327,11 +1277,10 @@
                     </RadioGroup>
 
                     <TextView
+                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/cci08k"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -1341,8 +1290,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci08k01"
@@ -1373,11 +1321,10 @@
                     </RadioGroup>
 
                     <TextView
+                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/cci08l"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -1387,8 +1334,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci08l01"
@@ -1419,11 +1365,10 @@
                     </RadioGroup>
 
                     <TextView
+                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/cci08m"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -1433,8 +1378,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci08m01"
@@ -1465,11 +1409,10 @@
                     </RadioGroup>
 
                     <TextView
+                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/cci08n"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -1479,8 +1422,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci08n01"
@@ -1511,11 +1453,10 @@
                     </RadioGroup>
 
                     <TextView
+                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/cci08o"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -1525,8 +1466,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci08o01"
@@ -1557,11 +1497,10 @@
                     </RadioGroup>
 
                     <TextView
+                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/cci08p"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -1571,8 +1510,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci08p01"
@@ -1603,11 +1541,10 @@
                     </RadioGroup>
 
                     <TextView
+                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/cci08q"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -1617,8 +1554,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci08q01"
@@ -1652,6 +1588,7 @@
                 <!--Q8-->
 
                 <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:id="@+id/fldgrpcci08"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -1660,9 +1597,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/cci09"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -1670,9 +1605,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
+                        android:background="@color/colorPrimary"
                         android:text="@string/cci09sub"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -1683,8 +1616,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci09a"
@@ -1718,6 +1650,7 @@
                 <!--Q9-->
 
                 <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:id="@+id/fldgrpcci09"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -1726,14 +1659,14 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
+                        android:background="@color/colorPrimary"
                         android:text="@string/cci10"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
 
                     <EditText
+                        android:inputType="number"
+                        android:maxLength="2"
                         android:id="@+id/cci10t"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -1751,6 +1684,7 @@
 
                 <!--Q10-->
                 <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -1759,9 +1693,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
+                        android:background="@color/colorPrimary"
                         android:text="@string/cci11"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -1771,8 +1703,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci11a"
@@ -1805,6 +1736,7 @@
 
                 <!--Q11-->
                 <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -1812,19 +1744,16 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/cci12sub"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
 
                     <TextView
+                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
+                        android:background="@color/colorPrimary"
                         android:text="@string/cci12"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -1834,8 +1763,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci12a"
@@ -1868,6 +1796,7 @@
 
                 <!--Q12-->
                 <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -1875,9 +1804,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
+                        android:background="@color/colorPrimary"
                         android:text="@string/cci13"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -1887,8 +1814,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci13a"
@@ -1921,6 +1847,7 @@
 
                 <!--Q13-->
                 <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -1929,19 +1856,16 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
                         android:text="@string/cci14sub"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
 
                     <TextView
+                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
+                        android:background="@color/colorPrimary"
                         android:text="@string/cci14"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -1951,8 +1875,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci14a"
@@ -1985,6 +1908,7 @@
 
                 <!--Q14-->
                 <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -1992,9 +1916,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
+                        android:background="@color/colorPrimary"
                         android:text="@string/cci15"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -2004,8 +1926,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci15a"
@@ -2038,6 +1959,7 @@
 
                 <!--Q15-->
                 <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -2045,9 +1967,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:background="@color/colorPrimaryDark"
-                        android:padding="5dp"
+                        android:background="@color/colorPrimary"
                         android:text="@string/cci16"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
@@ -2057,8 +1977,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layoutDirection="rtl"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/cci16m"
@@ -2092,7 +2011,7 @@
                             android:id="@+id/cci16dx"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="@string/cci16m"
+                            android:hint="@string/cci16d"
                             android:inputType="number"
                             android:maxLength="2"
                             android:text='@{cci16d.checked? cci16dx.getText.toString : ""}'

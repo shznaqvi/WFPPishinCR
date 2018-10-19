@@ -1002,6 +1002,10 @@ public class SectionKActivity extends AppCompatActivity {
                 bi.cck20a.setError(null);
             }
 
+            if (!validatorClass.RangeTextBox(this, bi.cck20a, 0, 20, getString(R.string.cck20a), "Number")) {
+                return false;
+            }
+
             // =================== Q20.02 ====================
             if (bi.cck20b.getText().toString().isEmpty()) {
                 Toast.makeText(this, "ERROR(Empty)" + getString(R.string.cck20) + getString(R.string.cck20b), Toast.LENGTH_SHORT).show();
@@ -1010,6 +1014,9 @@ public class SectionKActivity extends AppCompatActivity {
                 return false;
             } else {
                 bi.cck20b.setError(null);
+            }
+            if (!validatorClass.RangeTextBox(this, bi.cck20b, 0, 20, getString(R.string.cck20b), "Number")) {
+                return false;
             }
 
             // =================== Q20.03 ====================
@@ -1021,6 +1028,9 @@ public class SectionKActivity extends AppCompatActivity {
             } else {
                 bi.cck20c.setError(null);
             }
+            if (!validatorClass.RangeTextBox(this, bi.cck20c, 0, 20, getString(R.string.cck20c), "Number")) {
+                return false;
+            }
 
             // =================== Q20.04 ====================
             if (bi.cck20d.getText().toString().isEmpty()) {
@@ -1030,6 +1040,9 @@ public class SectionKActivity extends AppCompatActivity {
                 return false;
             } else {
                 bi.cck20d.setError(null);
+            }
+            if (!validatorClass.RangeTextBox(this, bi.cck20d, 0, 20, getString(R.string.cck20d), "Number")) {
+                return false;
             }
 
 
@@ -1042,6 +1055,9 @@ public class SectionKActivity extends AppCompatActivity {
             } else {
                 bi.cck20e.setError(null);
             }
+            if (!validatorClass.RangeTextBox(this, bi.cck20e, 0, 20, getString(R.string.cck20e), "Number")) {
+                return false;
+            }
 
             // =================== Q20.06 ====================
             if (bi.cck20f.getText().toString().isEmpty()) {
@@ -1051,6 +1067,9 @@ public class SectionKActivity extends AppCompatActivity {
                 return false;
             } else {
                 bi.cck20f.setError(null);
+            }
+            if (!validatorClass.RangeTextBox(this, bi.cck20f, 0, 20, getString(R.string.cck20f), "Number")) {
+                return false;
             }
 
             // =================== Q20.07 ====================
@@ -1062,6 +1081,7 @@ public class SectionKActivity extends AppCompatActivity {
             } else {
                 bi.cck20g.setError(null);
             }
+            return validatorClass.RangeTextBox(this, bi.cck20g, 0, 20, getString(R.string.cck20g), "Number");
 
         }
 

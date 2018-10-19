@@ -1076,7 +1076,14 @@ public class SectionJActivity extends AppCompatActivity {
             return false;
         }
 
+        if (!validatorClass.RangeTextBox(this, bi.ccj01a, 1, 15, getString(R.string.ccj01), "Number")) {
+            return false;
+        }
+
         if (!validatorClass.EmptyTextBox(this, bi.ccj02a, getString(R.string.ccj02))) {
+            return false;
+        }
+        if (!validatorClass.RangeTextBox(this, bi.ccj02a, 1, 15, getString(R.string.ccj02), "Number")) {
             return false;
         }
         if (!validatorClass.EmptyRadioButton(this, bi.ccj03, bi.ccj03a, getString(R.string.ccj03))) {
@@ -1108,9 +1115,15 @@ public class SectionJActivity extends AppCompatActivity {
                 if (!validatorClass.EmptyTextBox(this, bi.ccj06m, getString(R.string.ccj06))) {
                     return false;
                 }
+                if (!validatorClass.RangeTextBox(this, bi.ccj06m, 1, 9, getString(R.string.ccj06), "Number")) {
+                    return false;
+                }
             }
             if (!bi.ccj0798.isChecked()) {
                 if (!validatorClass.EmptyTextBox(this, bi.ccj07t, getString(R.string.ccj07))) {
+                    return false;
+                }
+                if (!validatorClass.RangeTextBox(this, bi.ccj07t, 1, 9, getString(R.string.ccj07), "Number")) {
                     return false;
                 }
             }
@@ -1131,6 +1144,9 @@ public class SectionJActivity extends AppCompatActivity {
                     if (!validatorClass.EmptyTextBox(this, bi.ccj10t, getString(R.string.ccj10))) {
                         return false;
                     }
+                    if (!validatorClass.RangeTextBox(this, bi.ccj07t, 1, 5, getString(R.string.ccj10), "Number")) {
+                        return false;
+                    }
                 }
             }
         }
@@ -1142,8 +1158,14 @@ public class SectionJActivity extends AppCompatActivity {
                 if (!validatorClass.EmptyTextBox(this, bi.ccj12t, getString(R.string.ccj12))) {
                     return false;
                 }
+                if (!validatorClass.RangeTextBox(this, bi.ccj12t, 1, 5, getString(R.string.ccj12), "Number")) {
+                    return false;
+                }
             }
             if (!validatorClass.EmptyTextBox(this, bi.ccj13, getString(R.string.ccj13))) {
+                return false;
+            }
+            if (!validatorClass.RangeTextBox(this, bi.ccj13, 1, 5, getString(R.string.ccj13), "Number")) {
                 return false;
             }
         }
@@ -1154,6 +1176,9 @@ public class SectionJActivity extends AppCompatActivity {
 
             if (!bi.ccj1597.isChecked() && !bi.ccj1598.isChecked()) {
                 if (!validatorClass.EmptyTextBox(this, bi.ccj15d, getString(R.string.ccj15))) {
+                    return false;
+                }
+                if (!validatorClass.RangeTextBox(this, bi.ccj15d, 1, 60, getString(R.string.ccj15), "Number")) {
                     return false;
                 }
             }

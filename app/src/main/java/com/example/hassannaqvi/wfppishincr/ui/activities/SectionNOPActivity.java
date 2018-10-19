@@ -264,6 +264,9 @@ public class SectionNOPActivity extends AppCompatActivity {
             if (!validatorClass.EmptyTextBox(this, bi.ccp01b, getString(R.string.ccp01b))) {
                 return false;
             }
+            if (!validatorClass.RangeTextBox(this, bi.ccp01b, 1, 10, getString(R.string.ccp01b), "Number")) {
+                return false;
+            }
             if (!validatorClass.EmptyTextBox(this, bi.ccp01ngo, getString(R.string.ccp01ngo))) {
                 return false;
             }
@@ -274,140 +277,173 @@ public class SectionNOPActivity extends AppCompatActivity {
         }
         if (bi.ccp02yes.isChecked()) {
 
-            if (!validatorClass.EmptyTextBox(this, bi.ccp02b, getString(R.string.ccp01b))) {
+            if (!validatorClass.EmptyTextBox(this, bi.ccp02b, getString(R.string.ccp02))) {
                 return false;
             }
-            if (!validatorClass.EmptyTextBox(this, bi.ccp02ngo, getString(R.string.ccp01ngo))) {
+            if (!validatorClass.RangeTextBox(this, bi.ccp02b, 1, 10, getString(R.string.ccp02), "Number")) {
+                return false;
+            }
+            if (!validatorClass.EmptyTextBox(this, bi.ccp02ngo, getString(R.string.ccp02))) {
                 return false;
             }
         }
 
-        if (!validatorClass.EmptyRadioButton(this, bi.ccp03, bi.ccp03no, getString(R.string.ccp01))) {
+        if (!validatorClass.EmptyRadioButton(this, bi.ccp03, bi.ccp03no, getString(R.string.ccp03))) {
             return false;
         }
         if (bi.ccp03yes.isChecked()) {
 
-            if (!validatorClass.EmptyTextBox(this, bi.ccp03b, getString(R.string.ccp01b))) {
+            if (!validatorClass.EmptyTextBox(this, bi.ccp03b, getString(R.string.ccp03))) {
                 return false;
             }
-            if (!validatorClass.EmptyTextBox(this, bi.ccp03ngo, getString(R.string.ccp01ngo))) {
+            if (!validatorClass.RangeTextBox(this, bi.ccp03b, 1, 10, getString(R.string.ccp03), "Number")) {
+                return false;
+            }
+            if (!validatorClass.EmptyTextBox(this, bi.ccp03ngo, getString(R.string.ccp03))) {
                 return false;
             }
         }
 
-        if (!validatorClass.EmptyRadioButton(this, bi.ccp04, bi.ccp04no, getString(R.string.ccp01))) {
+        if (!validatorClass.EmptyRadioButton(this, bi.ccp04, bi.ccp04no, getString(R.string.ccp04))) {
             return false;
         }
         if (bi.ccp04yes.isChecked()) {
 
-            if (!validatorClass.EmptyTextBox(this, bi.ccp04b, getString(R.string.ccp01b))) {
+            if (!validatorClass.EmptyTextBox(this, bi.ccp04b, getString(R.string.ccp04))) {
                 return false;
             }
-            if (!validatorClass.EmptyTextBox(this, bi.ccp04ngo, getString(R.string.ccp01ngo))) {
+            if (!validatorClass.RangeTextBox(this, bi.ccp04b, 1, 10, getString(R.string.ccp04), "Number")) {
+                return false;
+            }
+            if (!validatorClass.EmptyTextBox(this, bi.ccp04ngo, getString(R.string.ccp04))) {
                 return false;
             }
         }
 
-        if (!validatorClass.EmptyRadioButton(this, bi.ccp05, bi.ccp05no, getString(R.string.ccp01))) {
+        if (!validatorClass.EmptyRadioButton(this, bi.ccp05, bi.ccp05no, getString(R.string.ccp05))) {
             return false;
         }
         if (bi.ccp05yes.isChecked()) {
 
-            if (!validatorClass.EmptyTextBox(this, bi.ccp05b, getString(R.string.ccp01b))) {
+            if (!validatorClass.EmptyTextBox(this, bi.ccp05b, getString(R.string.ccp05))) {
                 return false;
             }
-            if (!validatorClass.EmptyTextBox(this, bi.ccp05ngo, getString(R.string.ccp01ngo))) {
+            if (!validatorClass.RangeTextBox(this, bi.ccp05b, 1, 10, getString(R.string.ccp05), "Number")) {
+                return false;
+            }
+            if (!validatorClass.EmptyTextBox(this, bi.ccp05ngo, getString(R.string.ccp05))) {
                 return false;
             }
         }
 
-        if (!validatorClass.EmptyRadioButton(this, bi.ccp06, bi.ccp06no, getString(R.string.ccp01))) {
+        if (!validatorClass.EmptyRadioButton(this, bi.ccp06, bi.ccp06no, getString(R.string.ccp06))) {
             return false;
         }
         if (bi.ccp06yes.isChecked()) {
 
-            if (!validatorClass.EmptyTextBox(this, bi.ccp06b, getString(R.string.ccp01b))) {
+            if (!validatorClass.EmptyTextBox(this, bi.ccp06b, getString(R.string.ccp06))) {
                 return false;
             }
-            if (!validatorClass.EmptyTextBox(this, bi.ccp06ngo, getString(R.string.ccp01ngo))) {
+            if (!validatorClass.RangeTextBox(this, bi.ccp06b, 1, 10, getString(R.string.ccp06), "Number")) {
+                return false;
+            }
+            if (!validatorClass.EmptyTextBox(this, bi.ccp06ngo, getString(R.string.ccp06))) {
                 return false;
             }
         }
 
-        if (!validatorClass.EmptyRadioButton(this, bi.ccp07, bi.ccp07no, getString(R.string.ccp01))) {
+        if (!validatorClass.EmptyRadioButton(this, bi.ccp07, bi.ccp07no, getString(R.string.ccp07))) {
             return false;
         }
         if (bi.ccp07yes.isChecked()) {
 
-            if (!validatorClass.EmptyTextBox(this, bi.ccp07b, getString(R.string.ccp01b))) {
+            if (!validatorClass.EmptyTextBox(this, bi.ccp07b, getString(R.string.ccp07))) {
                 return false;
             }
-            if (!validatorClass.EmptyTextBox(this, bi.ccp07ngo, getString(R.string.ccp01ngo))) {
+            if (!validatorClass.RangeTextBox(this, bi.ccp07b, 1, 10, getString(R.string.ccp07), "Number")) {
+                return false;
+            }
+            if (!validatorClass.EmptyTextBox(this, bi.ccp07ngo, getString(R.string.ccp07))) {
                 return false;
             }
         }
 
-        if (!validatorClass.EmptyRadioButton(this, bi.ccp08, bi.ccp08no, getString(R.string.ccp01))) {
+        if (!validatorClass.EmptyRadioButton(this, bi.ccp08, bi.ccp08no, getString(R.string.ccp08))) {
             return false;
         }
         if (bi.ccp08yes.isChecked()) {
 
-            if (!validatorClass.EmptyTextBox(this, bi.ccp08b, getString(R.string.ccp01b))) {
+            if (!validatorClass.EmptyTextBox(this, bi.ccp08b, getString(R.string.ccp08))) {
                 return false;
             }
-            if (!validatorClass.EmptyTextBox(this, bi.ccp08ngo, getString(R.string.ccp01ngo))) {
+            if (!validatorClass.RangeTextBox(this, bi.ccp08b, 1, 10, getString(R.string.ccp08), "Number")) {
+                return false;
+            }
+            if (!validatorClass.EmptyTextBox(this, bi.ccp08ngo, getString(R.string.ccp08))) {
                 return false;
             }
         }
 
-        if (!validatorClass.EmptyRadioButton(this, bi.ccp09, bi.ccp09no, getString(R.string.ccp01))) {
+        if (!validatorClass.EmptyRadioButton(this, bi.ccp09, bi.ccp09no, getString(R.string.ccp09))) {
             return false;
         }
         if (bi.ccp09yes.isChecked()) {
 
-            if (!validatorClass.EmptyTextBox(this, bi.ccp09b, getString(R.string.ccp01b))) {
+            if (!validatorClass.EmptyTextBox(this, bi.ccp09b, getString(R.string.ccp09))) {
                 return false;
             }
-            if (!validatorClass.EmptyTextBox(this, bi.ccp09ngo, getString(R.string.ccp01ngo))) {
+            if (!validatorClass.RangeTextBox(this, bi.ccp09b, 1, 10, getString(R.string.ccp09), "Number")) {
+                return false;
+            }
+            if (!validatorClass.EmptyTextBox(this, bi.ccp09ngo, getString(R.string.ccp09))) {
                 return false;
             }
         }
 
-        if (!validatorClass.EmptyRadioButton(this, bi.ccp10, bi.ccp10no, getString(R.string.ccp01))) {
+        if (!validatorClass.EmptyRadioButton(this, bi.ccp10, bi.ccp10no, getString(R.string.ccp10))) {
             return false;
         }
         if (bi.ccp10yes.isChecked()) {
 
-            if (!validatorClass.EmptyTextBox(this, bi.ccp10b, getString(R.string.ccp01b))) {
+            if (!validatorClass.EmptyTextBox(this, bi.ccp10b, getString(R.string.ccp10))) {
                 return false;
             }
-            if (!validatorClass.EmptyTextBox(this, bi.ccp10ngo, getString(R.string.ccp01ngo))) {
+            if (!validatorClass.RangeTextBox(this, bi.ccp10b, 1, 10, getString(R.string.ccp10), "Number")) {
+                return false;
+            }
+            if (!validatorClass.EmptyTextBox(this, bi.ccp10ngo, getString(R.string.ccp10))) {
                 return false;
             }
         }
 
-        if (!validatorClass.EmptyRadioButton(this, bi.ccp11, bi.ccp11no, getString(R.string.ccp01))) {
+        if (!validatorClass.EmptyRadioButton(this, bi.ccp11, bi.ccp11no, getString(R.string.ccp11))) {
             return false;
         }
         if (bi.ccp11yes.isChecked()) {
 
-            if (!validatorClass.EmptyTextBox(this, bi.ccp11b, getString(R.string.ccp01b))) {
+            if (!validatorClass.EmptyTextBox(this, bi.ccp11b, getString(R.string.ccp11))) {
                 return false;
             }
-            if (!validatorClass.EmptyTextBox(this, bi.ccp11ngo, getString(R.string.ccp01ngo))) {
+            if (!validatorClass.RangeTextBox(this, bi.ccp11b, 1, 10, getString(R.string.ccp11), "Number")) {
+                return false;
+            }
+            if (!validatorClass.EmptyTextBox(this, bi.ccp11ngo, getString(R.string.ccp11))) {
                 return false;
             }
         }
 
-        if (!validatorClass.EmptyRadioButton(this, bi.ccp12, bi.ccp12no, getString(R.string.ccp01))) {
+        if (!validatorClass.EmptyRadioButton(this, bi.ccp12, bi.ccp12no, getString(R.string.ccp12))) {
             return false;
         }
         if (bi.ccp12yes.isChecked()) {
 
-            if (!validatorClass.EmptyTextBox(this, bi.ccp12b, getString(R.string.ccp01b))) {
+            if (!validatorClass.EmptyTextBox(this, bi.ccp12b, getString(R.string.ccp12))) {
                 return false;
             }
-            return validatorClass.EmptyTextBox(this, bi.ccp12ngo, getString(R.string.ccp01ngo));
+            if (!validatorClass.RangeTextBox(this, bi.ccp12b, 1, 10, getString(R.string.ccp12), "Number")) {
+                return false;
+            }
+            return validatorClass.EmptyTextBox(this, bi.ccp12ngo, getString(R.string.ccp12));
         }
 
 

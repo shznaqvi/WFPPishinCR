@@ -66,12 +66,12 @@ public class SectionIActivity extends AppCompatActivity {
 
                 for (int j = 0; j < answersArray.size(); j++) {
                     if (answersArray.get(j) == 2) {
-                        bi.fldgrpcci08.setVisibility(View.GONE);
-                        ClearClass.ClearAllFields(bi.fldgrpcci08, false);
-
-                    } else {
                         bi.fldgrpcci08.setVisibility(View.VISIBLE);
                         ClearClass.ClearAllFields(bi.fldgrpcci08, true);
+
+                    } else {
+                        bi.fldgrpcci08.setVisibility(View.GONE);
+                        ClearClass.ClearAllFields(bi.fldgrpcci08, false);
                     }
                 }
 
@@ -91,12 +91,12 @@ public class SectionIActivity extends AppCompatActivity {
                 for (int j = 0; j < answersArray.size(); j++) {
 
                     if (answersArray.get(j) == 2) {
-                        bi.fldgrpcci08.setVisibility(View.GONE);
-                        ClearClass.ClearAllFields(bi.fldgrpcci08, false);
-
-                    } else {
                         bi.fldgrpcci08.setVisibility(View.VISIBLE);
                         ClearClass.ClearAllFields(bi.fldgrpcci08, true);
+
+                    } else {
+                        bi.fldgrpcci08.setVisibility(View.GONE);
+                        ClearClass.ClearAllFields(bi.fldgrpcci08, false);
                     }
                 }
 
@@ -191,12 +191,12 @@ public class SectionIActivity extends AppCompatActivity {
                 for (int j = 0; j < answersArray.size(); j++) {
 
                     if (answersArray.get(j) == 2) {
-                        bi.fldgrpcci08.setVisibility(View.GONE);
-                        ClearClass.ClearAllFields(bi.fldgrpcci08, false);
-
-                    } else {
                         bi.fldgrpcci08.setVisibility(View.VISIBLE);
                         ClearClass.ClearAllFields(bi.fldgrpcci08, true);
+
+                    } else {
+                        bi.fldgrpcci08.setVisibility(View.GONE);
+                        ClearClass.ClearAllFields(bi.fldgrpcci08, false);
                     }
                 }
             }
@@ -215,12 +215,13 @@ public class SectionIActivity extends AppCompatActivity {
                 for (int j = 0; j < answersArray.size(); j++) {
 
                     if (answersArray.get(j) == 2) {
-                        bi.fldgrpcci08.setVisibility(View.GONE);
-                        ClearClass.ClearAllFields(bi.fldgrpcci08, false);
-
-                    } else {
                         bi.fldgrpcci08.setVisibility(View.VISIBLE);
                         ClearClass.ClearAllFields(bi.fldgrpcci08, true);
+
+
+                    } else {
+                        bi.fldgrpcci08.setVisibility(View.GONE);
+                        ClearClass.ClearAllFields(bi.fldgrpcci08, false);
                     }
                 }
 
@@ -240,12 +241,13 @@ public class SectionIActivity extends AppCompatActivity {
                 for (int j = 0; j < answersArray.size(); j++) {
 
                     if (answersArray.get(j) == 2) {
-                        bi.fldgrpcci08.setVisibility(View.GONE);
-                        ClearClass.ClearAllFields(bi.fldgrpcci08, false);
-
-                    } else {
                         bi.fldgrpcci08.setVisibility(View.VISIBLE);
                         ClearClass.ClearAllFields(bi.fldgrpcci08, true);
+
+                    } else {
+
+                        bi.fldgrpcci08.setVisibility(View.GONE);
+                        ClearClass.ClearAllFields(bi.fldgrpcci08, false);
                     }
                 }
 
@@ -290,12 +292,13 @@ public class SectionIActivity extends AppCompatActivity {
                 for (int j = 0; j < answersArray.size(); j++) {
 
                     if (answersArray.get(j) == 2) {
-                        bi.fldgrpcci08.setVisibility(View.GONE);
-                        ClearClass.ClearAllFields(bi.fldgrpcci08, false);
 
-                    } else {
                         bi.fldgrpcci08.setVisibility(View.VISIBLE);
                         ClearClass.ClearAllFields(bi.fldgrpcci08, true);
+
+                    } else {
+                        bi.fldgrpcci08.setVisibility(View.GONE);
+                        ClearClass.ClearAllFields(bi.fldgrpcci08, false);
                     }
                 }
 
@@ -315,12 +318,13 @@ public class SectionIActivity extends AppCompatActivity {
                 for (int j = 0; j < answersArray.size(); j++) {
 
                     if (answersArray.get(j) == 2) {
-                        bi.fldgrpcci08.setVisibility(View.GONE);
-                        ClearClass.ClearAllFields(bi.fldgrpcci08, false);
-
-                    } else {
                         bi.fldgrpcci08.setVisibility(View.VISIBLE);
                         ClearClass.ClearAllFields(bi.fldgrpcci08, true);
+
+                    } else {
+
+                        bi.fldgrpcci08.setVisibility(View.GONE);
+                        ClearClass.ClearAllFields(bi.fldgrpcci08, false);
                     }
                 }
 
@@ -340,12 +344,14 @@ public class SectionIActivity extends AppCompatActivity {
                 for (int j = 0; j < answersArray.size(); j++) {
 
                     if (answersArray.get(j) == 2) {
+
+                        bi.fldgrpcci08.setVisibility(View.VISIBLE);
+                        ClearClass.ClearAllFields(bi.fldgrpcci08, true);
+
+                    } else {
                         bi.fldgrpcci08.setVisibility(View.GONE);
                         ClearClass.ClearAllFields(bi.fldgrpcci08, false);
 
-                    } else {
-                        bi.fldgrpcci08.setVisibility(View.VISIBLE);
-                        ClearClass.ClearAllFields(bi.fldgrpcci08, true);
                     }
                 }
 
@@ -365,12 +371,14 @@ public class SectionIActivity extends AppCompatActivity {
                 for (int j = 0; j < answersArray.size(); j++) {
 
                     if (answersArray.get(j) == 2) {
-                        bi.fldgrpcci08.setVisibility(View.GONE);
-                        ClearClass.ClearAllFields(bi.fldgrpcci08, false);
 
-                    } else {
                         bi.fldgrpcci08.setVisibility(View.VISIBLE);
                         ClearClass.ClearAllFields(bi.fldgrpcci08, true);
+
+
+                    } else {
+                        bi.fldgrpcci08.setVisibility(View.GONE);
+                        ClearClass.ClearAllFields(bi.fldgrpcci08, false);
                     }
                 }
 
@@ -390,12 +398,13 @@ public class SectionIActivity extends AppCompatActivity {
                 for (int j = 0; j < answersArray.size(); j++) {
 
                     if (answersArray.get(j) == 2) {
-                        bi.fldgrpcci08.setVisibility(View.GONE);
-                        ClearClass.ClearAllFields(bi.fldgrpcci08, false);
 
-                    } else {
                         bi.fldgrpcci08.setVisibility(View.VISIBLE);
                         ClearClass.ClearAllFields(bi.fldgrpcci08, true);
+
+                    } else {
+                        bi.fldgrpcci08.setVisibility(View.GONE);
+                        ClearClass.ClearAllFields(bi.fldgrpcci08, false);
                     }
                 }
 
@@ -415,12 +424,14 @@ public class SectionIActivity extends AppCompatActivity {
                 for (int j = 0; j < answersArray.size(); j++) {
 
                     if (answersArray.get(j) == 2) {
-                        bi.fldgrpcci08.setVisibility(View.GONE);
-                        ClearClass.ClearAllFields(bi.fldgrpcci08, false);
 
-                    } else {
                         bi.fldgrpcci08.setVisibility(View.VISIBLE);
                         ClearClass.ClearAllFields(bi.fldgrpcci08, true);
+
+                    } else {
+
+                        bi.fldgrpcci08.setVisibility(View.GONE);
+                        ClearClass.ClearAllFields(bi.fldgrpcci08, false);
                     }
                 }
 
@@ -440,12 +451,14 @@ public class SectionIActivity extends AppCompatActivity {
                 for (int j = 0; j < answersArray.size(); j++) {
 
                     if (answersArray.get(j) == 2) {
-                        bi.fldgrpcci08.setVisibility(View.GONE);
-                        ClearClass.ClearAllFields(bi.fldgrpcci08, false);
 
-                    } else {
                         bi.fldgrpcci08.setVisibility(View.VISIBLE);
                         ClearClass.ClearAllFields(bi.fldgrpcci08, true);
+
+
+                    } else {
+                        bi.fldgrpcci08.setVisibility(View.GONE);
+                        ClearClass.ClearAllFields(bi.fldgrpcci08, false);
                     }
                 }
 
@@ -465,11 +478,13 @@ public class SectionIActivity extends AppCompatActivity {
                 for (int j = 0; j < answersArray.size(); j++) {
 
                     if (answersArray.get(j) == 2) {
-                        bi.fldgrpcci08.setVisibility(View.GONE);
-                        ClearClass.ClearAllFields(bi.fldgrpcci08, false);
-                    } else {
                         bi.fldgrpcci08.setVisibility(View.VISIBLE);
                         ClearClass.ClearAllFields(bi.fldgrpcci08, true);
+
+                    } else {
+
+                        bi.fldgrpcci08.setVisibility(View.GONE);
+                        ClearClass.ClearAllFields(bi.fldgrpcci08, false);
                     }
                 }
 
@@ -487,6 +502,17 @@ public class SectionIActivity extends AppCompatActivity {
                 } else {
                     bi.fldgrpcci09.setVisibility(View.GONE);
                     ClearClass.ClearAllFields(bi.fldgrpcci09, false);
+                }
+            }
+        });
+
+        bi.cci16.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+
+                if (i == R.id.cci16m) {
+                    bi.cci16mx.setVisibility(View.VISIBLE);
+
                 }
             }
         });
@@ -538,36 +564,36 @@ public class SectionIActivity extends AppCompatActivity {
         sI.put("cci04", bi.cci04a.isChecked() ? "1" : bi.cci04b.isChecked() ? "2" : bi.cci0498.isChecked() ? "98" : "0");
         sI.put("cci05", bi.cci05a.isChecked() ? "1" : bi.cci05b.isChecked() ? "2" : bi.cci0598.isChecked() ? "98" : "0");
         sI.put("cci06", bi.cci06a.isChecked() ? "1" : bi.cci06b.isChecked() ? "2" : bi.cci0698.isChecked() ? "98" : "0");
-        sI.put("cci07a", bi.cci07a01.isChecked() ? "1" : bi.cci07a02.isChecked() ? "1" : bi.cci07a98.isChecked() ? "98" : "0");
-        sI.put("cci07b", bi.cci07b01.isChecked() ? "1" : bi.cci07b02.isChecked() ? "1" : bi.cci07b98.isChecked() ? "98" : "0");
+        sI.put("cci07a", bi.cci07a01.isChecked() ? "1" : bi.cci07a02.isChecked() ? "2" : bi.cci07a98.isChecked() ? "98" : "0");
+        sI.put("cci07b", bi.cci07b01.isChecked() ? "1" : bi.cci07b02.isChecked() ? "2" : bi.cci07b98.isChecked() ? "98" : "0");
         sI.put("cci07bt", bi.cci07bx.getText().toString());
-        sI.put("cci07c", bi.cci07c01.isChecked() ? "1" : bi.cci07c02.isChecked() ? "1" : bi.cci07c98.isChecked() ? "98" : "0");
+        sI.put("cci07c", bi.cci07c01.isChecked() ? "1" : bi.cci07c02.isChecked() ? "2" : bi.cci07c98.isChecked() ? "98" : "0");
         sI.put("cci07ct", bi.cci07c01x.getText().toString());
-        sI.put("cci07d", bi.cci07d01.isChecked() ? "1" : bi.cci07d02.isChecked() ? "1" : bi.cci07d98.isChecked() ? "98" : "0");
-        sI.put("cci07e", bi.cci07e01.isChecked() ? "1" : bi.cci07e02.isChecked() ? "1" : bi.cci07e98.isChecked() ? "98" : "0");
-        sI.put("cci07f", bi.cci07f01.isChecked() ? "1" : bi.cci07f02.isChecked() ? "1" : bi.cci07f98.isChecked() ? "98" : "0");
+        sI.put("cci07d", bi.cci07d01.isChecked() ? "1" : bi.cci07d02.isChecked() ? "2" : bi.cci07d98.isChecked() ? "98" : "0");
+        sI.put("cci07e", bi.cci07e01.isChecked() ? "1" : bi.cci07e02.isChecked() ? "2" : bi.cci07e98.isChecked() ? "98" : "0");
+        sI.put("cci07f", bi.cci07f01.isChecked() ? "1" : bi.cci07f02.isChecked() ? "2" : bi.cci07f98.isChecked() ? "98" : "0");
         sI.put("cci07ft", bi.cci07f01x.getText().toString());
-        sI.put("cci07g", bi.cci07g01.isChecked() ? "1" : bi.cci07g02.isChecked() ? "1" : bi.cci07g98.isChecked() ? "98" : "0");
-        sI.put("cci07h", bi.cci07h01.isChecked() ? "1" : bi.cci07h02.isChecked() ? "1" : bi.cci07h98.isChecked() ? "98" : "0");
-        sI.put("cci07i", bi.cci07i01.isChecked() ? "1" : bi.cci07i02.isChecked() ? "1" : bi.cci07i98.isChecked() ? "98" : "0");
+        sI.put("cci07g", bi.cci07g01.isChecked() ? "1" : bi.cci07g02.isChecked() ? "2" : bi.cci07g98.isChecked() ? "98" : "0");
+        sI.put("cci07h", bi.cci07h01.isChecked() ? "1" : bi.cci07h02.isChecked() ? "2" : bi.cci07h98.isChecked() ? "98" : "0");
+        sI.put("cci07i", bi.cci07i01.isChecked() ? "1" : bi.cci07i02.isChecked() ? "2" : bi.cci07i98.isChecked() ? "98" : "0");
 
-        sI.put("cci08a", bi.cci08a01.isChecked() ? "1" : bi.cci08a02.isChecked() ? "1" : bi.cci08a98.isChecked() ? "98" : "0");
-        sI.put("cci08b", bi.cci08b01.isChecked() ? "1" : bi.cci08b02.isChecked() ? "1" : bi.cci08b98.isChecked() ? "98" : "0");
-        sI.put("cci08c", bi.cci08c01.isChecked() ? "1" : bi.cci08c02.isChecked() ? "1" : bi.cci08c98.isChecked() ? "98" : "0");
-        sI.put("cci08d", bi.cci08d01.isChecked() ? "1" : bi.cci08d02.isChecked() ? "1" : bi.cci08d98.isChecked() ? "98" : "0");
-        sI.put("cci08e", bi.cci08e01.isChecked() ? "1" : bi.cci08e02.isChecked() ? "1" : bi.cci08e98.isChecked() ? "98" : "0");
-        sI.put("cci08f", bi.cci08f01.isChecked() ? "1" : bi.cci08f02.isChecked() ? "1" : bi.cci08f98.isChecked() ? "98" : "0");
-        sI.put("cci08g", bi.cci08g01.isChecked() ? "1" : bi.cci08g02.isChecked() ? "1" : bi.cci08g98.isChecked() ? "98" : "0");
-        sI.put("cci08h", bi.cci08h01.isChecked() ? "1" : bi.cci08h02.isChecked() ? "1" : bi.cci08h98.isChecked() ? "98" : "0");
-        sI.put("cci08i", bi.cci08i01.isChecked() ? "1" : bi.cci08i02.isChecked() ? "1" : bi.cci08i98.isChecked() ? "98" : "0");
-        sI.put("cci08j", bi.cci08j01.isChecked() ? "1" : bi.cci08j02.isChecked() ? "1" : bi.cci08j98.isChecked() ? "98" : "0");
-        sI.put("cci08k", bi.cci08k01.isChecked() ? "1" : bi.cci08k02.isChecked() ? "1" : bi.cci08k98.isChecked() ? "98" : "0");
-        sI.put("cci08l", bi.cci08l01.isChecked() ? "1" : bi.cci08l02.isChecked() ? "1" : bi.cci08l98.isChecked() ? "98" : "0");
-        sI.put("cci08m", bi.cci08m01.isChecked() ? "1" : bi.cci08m02.isChecked() ? "1" : bi.cci08m98.isChecked() ? "98" : "0");
-        sI.put("cci08n", bi.cci08n01.isChecked() ? "1" : bi.cci08n02.isChecked() ? "1" : bi.cci08n98.isChecked() ? "98" : "0");
-        sI.put("cci08o", bi.cci08o01.isChecked() ? "1" : bi.cci08o02.isChecked() ? "1" : bi.cci08o98.isChecked() ? "98" : "0");
-        sI.put("cci08p", bi.cci08p01.isChecked() ? "1" : bi.cci08p02.isChecked() ? "1" : bi.cci08p98.isChecked() ? "98" : "0");
-        sI.put("cci08q", bi.cci08q01.isChecked() ? "1" : bi.cci08q02.isChecked() ? "1" : bi.cci08q98.isChecked() ? "98" : "0");
+        sI.put("cci08a", bi.cci08a01.isChecked() ? "1" : bi.cci08a02.isChecked() ? "2" : bi.cci08a98.isChecked() ? "98" : "0");
+        sI.put("cci08b", bi.cci08b01.isChecked() ? "1" : bi.cci08b02.isChecked() ? "2" : bi.cci08b98.isChecked() ? "98" : "0");
+        sI.put("cci08c", bi.cci08c01.isChecked() ? "1" : bi.cci08c02.isChecked() ? "2" : bi.cci08c98.isChecked() ? "98" : "0");
+        sI.put("cci08d", bi.cci08d01.isChecked() ? "1" : bi.cci08d02.isChecked() ? "2" : bi.cci08d98.isChecked() ? "98" : "0");
+        sI.put("cci08e", bi.cci08e01.isChecked() ? "1" : bi.cci08e02.isChecked() ? "2" : bi.cci08e98.isChecked() ? "98" : "0");
+        sI.put("cci08f", bi.cci08f01.isChecked() ? "1" : bi.cci08f02.isChecked() ? "2" : bi.cci08f98.isChecked() ? "98" : "0");
+        sI.put("cci08g", bi.cci08g01.isChecked() ? "1" : bi.cci08g02.isChecked() ? "2" : bi.cci08g98.isChecked() ? "98" : "0");
+        sI.put("cci08h", bi.cci08h01.isChecked() ? "1" : bi.cci08h02.isChecked() ? "2" : bi.cci08h98.isChecked() ? "98" : "0");
+        sI.put("cci08i", bi.cci08i01.isChecked() ? "1" : bi.cci08i02.isChecked() ? "2" : bi.cci08i98.isChecked() ? "98" : "0");
+        sI.put("cci08j", bi.cci08j01.isChecked() ? "1" : bi.cci08j02.isChecked() ? "2" : bi.cci08j98.isChecked() ? "98" : "0");
+        sI.put("cci08k", bi.cci08k01.isChecked() ? "1" : bi.cci08k02.isChecked() ? "2" : bi.cci08k98.isChecked() ? "98" : "0");
+        sI.put("cci08l", bi.cci08l01.isChecked() ? "1" : bi.cci08l02.isChecked() ? "2" : bi.cci08l98.isChecked() ? "98" : "0");
+        sI.put("cci08m", bi.cci08m01.isChecked() ? "1" : bi.cci08m02.isChecked() ? "2" : bi.cci08m98.isChecked() ? "98" : "0");
+        sI.put("cci08n", bi.cci08n01.isChecked() ? "1" : bi.cci08n02.isChecked() ? "2" : bi.cci08n98.isChecked() ? "98" : "0");
+        sI.put("cci08o", bi.cci08o01.isChecked() ? "1" : bi.cci08o02.isChecked() ? "2" : bi.cci08o98.isChecked() ? "98" : "0");
+        sI.put("cci08p", bi.cci08p01.isChecked() ? "1" : bi.cci08p02.isChecked() ? "2" : bi.cci08p98.isChecked() ? "98" : "0");
+        sI.put("cci08q", bi.cci08q01.isChecked() ? "1" : bi.cci08q02.isChecked() ? "2" : bi.cci08q98.isChecked() ? "98" : "0");
 
         sI.put("cci09", bi.cci09a.isChecked() ? "1" : bi.cci09b.isChecked() ? "2" : bi.cci0998.isChecked() ? "98" : "0");
         sI.put("cci10", bi.cci1098.isChecked() ? "98" : "0");
@@ -606,9 +632,15 @@ public class SectionIActivity extends AppCompatActivity {
             if (!validatorClass.EmptyTextBox(this, bi.cci03hx, getString(R.string.cci03))) {
                 return false;
             }
+            if (!validatorClass.RangeTextBox(this, bi.cci03hx, 1, 23, getString(R.string.cci03), "Number")) {
+                return false;
+            }
         }
         if (bi.cci03d.isChecked()) {
             if (!validatorClass.EmptyTextBox(this, bi.cci03dx, getString(R.string.cci03))) {
+                return false;
+            }
+            if (!validatorClass.RangeTextBox(this, bi.cci03dx, 1, 30, getString(R.string.cci03), "Number")) {
                 return false;
             }
         }
@@ -632,12 +664,19 @@ public class SectionIActivity extends AppCompatActivity {
                 return false;
             }
 
+            if (!validatorClass.RangeTextBox(this, bi.cci07bx, 1, 10, getString(R.string.cci07b), "Number")) {
+                return false;
+            }
+
         }
         if (!validatorClass.EmptyRadioButton(this, bi.cci07c, bi.cci07c01, getString(R.string.cci07c))) {
             return false;
         }
         if (bi.cci07c01.isChecked()) {
             if (!validatorClass.EmptyTextBox(this, bi.cci07c01x, getString(R.string.cci07c))) {
+                return false;
+            }
+            if (!validatorClass.RangeTextBox(this, bi.cci07c01x, 1, 10, getString(R.string.cci07c), "Number")) {
                 return false;
             }
 
@@ -653,6 +692,9 @@ public class SectionIActivity extends AppCompatActivity {
         }
         if (bi.cci07f01.isChecked()) {
             if (!validatorClass.EmptyTextBox(this, bi.cci07f01x, getString(R.string.cci07f))) {
+                return false;
+            }
+            if (!validatorClass.RangeTextBox(this, bi.cci07f01x, 1, 10, getString(R.string.cci07f), "Number")) {
                 return false;
             }
         }
@@ -718,7 +760,7 @@ public class SectionIActivity extends AppCompatActivity {
             return false;
         }
         for (int j = 0; j < answersArray.size(); j++) {
-            if (answersArray.get(j) != 2) {
+            if (answersArray.get(j) == 2) {
                 if (!validatorClass.EmptyRadioButton(this, bi.cci09, bi.cci09a, getString(R.string.cci09))) {
                     return false;
                 }
@@ -726,6 +768,9 @@ public class SectionIActivity extends AppCompatActivity {
         }
         if (!bi.cci1098.isChecked()) {
             if (!validatorClass.EmptyTextBox(this, bi.cci10t, getString(R.string.cci10))) {
+                return false;
+            }
+            if (!validatorClass.RangeTextBox(this, bi.cci10t, 1, 15, getString(R.string.cci10), "Number")) {
                 return false;
             }
         }
@@ -750,12 +795,18 @@ public class SectionIActivity extends AppCompatActivity {
         }
 
         if (bi.cci16m.isChecked()) {
-            if (!validatorClass.EmptyTextBox(this, bi.cci16mx, getString(R.string.cci16))) {
+            if (!validatorClass.EmptyTextBox(this, bi.cci16mx, getString(R.string.cci16m))) {
+                return false;
+            }
+            if (!validatorClass.RangeTextBox(this, bi.cci16mx, 1, 31, getString(R.string.cci16m), "Number")) {
                 return false;
             }
         }
         if (bi.cci16d.isChecked()) {
-            return validatorClass.EmptyTextBox(this, bi.cci16dx, getString(R.string.cci16));
+            if (validatorClass.EmptyTextBox(this, bi.cci16dx, getString(R.string.cci16d))) {
+                return false;
+            }
+            return validatorClass.RangeTextBox(this, bi.cci16dx, 1, 12, getString(R.string.cci16d), "Number");
         }
 
         return true;

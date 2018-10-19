@@ -23,10 +23,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
                 android:background="@color/colorPrimaryDark"
                 android:gravity="center"
-                android:padding="5dp"
                 android:text="@string/ccdHeading"
                 android:textColor="@color/white"
                 android:textSize="25sp" />
@@ -34,11 +32,10 @@
 
             <!--Q1 Section D-->
             <TextView
+                android:layout_marginTop="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
                 android:background="@color/colorPrimary"
-                android:padding="5dp"
                 android:text="@string/ccd01"
                 android:textColor="@color/white"
                 android:textSize="25sp" />
@@ -99,13 +96,12 @@
 
             </LinearLayout>
 
-            <!--Q2 Section E-->
+            <!--Q2 Section D-->
             <TextView
+                android:layout_marginTop="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
                 android:background="@color/colorPrimary"
-                android:padding="5dp"
                 android:text="@string/ccd02"
                 android:textColor="@color/white"
                 android:textSize="25sp" />
@@ -169,22 +165,20 @@
             <!--Section E-->
 
             <TextView
+                android:layout_marginTop="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
                 android:background="@color/colorPrimaryDark"
                 android:gravity="center"
-                android:padding="5dp"
                 android:text="@string/cceHeading"
                 android:textColor="@color/white"
                 android:textSize="25sp" />
 
             <TextView
+                android:layout_marginTop="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
                 android:background="@color/colorPrimary"
-                android:padding="5dp"
                 android:text="@string/ccd01"
                 android:textColor="@color/white"
                 android:textSize="25sp" />
@@ -246,11 +240,10 @@
             </LinearLayout>
 
             <TextView
+                android:layout_marginTop="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
                 android:background="@color/colorPrimary"
-                android:padding="5dp"
                 android:text="@string/ccd02"
                 android:textColor="@color/white"
                 android:textSize="25sp" />
@@ -313,12 +306,11 @@
 
             <!--Section F-->
             <TextView
+                android:layout_marginTop="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
                 android:background="@color/colorPrimaryDark"
                 android:gravity="center"
-                android:padding="5dp"
                 android:text="@string/ccfHeading"
                 android:textColor="@color/white"
                 android:textSize="25sp" />
@@ -332,6 +324,7 @@
                 android:textSize="20sp" />
 
             <LinearLayout
+                android:layout_marginTop="5dp"
                 android:id="@+id/fldgrpFatherAnthro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -340,9 +333,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
                     android:background="@color/colorPrimary"
-                    android:padding="5dp"
                     android:text="@string/ccd01"
                     android:textColor="@color/white"
                     android:textSize="25sp" />
@@ -404,11 +395,10 @@
                 </LinearLayout>
 
                 <TextView
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
                     android:background="@color/colorPrimary"
-                    android:padding="5dp"
                     android:text="@string/ccd02"
                     android:textColor="@color/white"
                     android:textSize="25sp" />

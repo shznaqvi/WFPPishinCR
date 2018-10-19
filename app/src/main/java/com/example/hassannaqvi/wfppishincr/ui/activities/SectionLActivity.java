@@ -5,6 +5,7 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
@@ -43,11 +44,21 @@ public class SectionLActivity extends AppCompatActivity {
                     ClearClass.ClearAllFields(bi.fldgrpccl02, false);
                     bi.fldgrpccl03.setVisibility(View.GONE);
                     ClearClass.ClearAllFields(bi.fldgrpccl03, false);
+                    bi.ccl0196x.setVisibility(View.GONE);
+                    bi.ccl0196x.setText(null);
+                } else if (i == R.id.ccl0196) {
+                    bi.fldgrpccl02.setVisibility(View.GONE);
+                    ClearClass.ClearAllFields(bi.fldgrpccl02, false);
+                    bi.fldgrpccl03.setVisibility(View.GONE);
+                    ClearClass.ClearAllFields(bi.fldgrpccl03, false);
+                    bi.ccl0196x.setVisibility(View.VISIBLE);
                 } else {
                     bi.fldgrpccl02.setVisibility(View.VISIBLE);
                     ClearClass.ClearAllFields(bi.fldgrpccl02, true);
                     bi.fldgrpccl03.setVisibility(View.VISIBLE);
                     ClearClass.ClearAllFields(bi.fldgrpccl03, true);
+                    bi.ccl0196x.setVisibility(View.GONE);
+                    bi.ccl0196x.setText(null);
                 }
             }
         });
@@ -65,6 +76,33 @@ public class SectionLActivity extends AppCompatActivity {
                 }
             }
         });
+
+        bi.ccl0397.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+
+                if (b) {
+                    ClearClass.ClearAllFields(bi.ccl03, false);
+                } else {
+                    ClearClass.ClearAllFields(bi.ccl03, true);
+                }
+            }
+        });
+
+
+        bi.ccl0597.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+
+                if (b) {
+                    ClearClass.ClearAllFields(bi.ccl05, false);
+                } else {
+                    ClearClass.ClearAllFields(bi.ccl05, true);
+                }
+            }
+        });
+
+
 
 
     }
@@ -143,29 +181,36 @@ public class SectionLActivity extends AppCompatActivity {
         if (!validatorClass.EmptyRadioButton(this, bi.ccl01, bi.ccl01a, getString(R.string.ccl01))) {
             return false;
         }
+        if (bi.ccl0196.isChecked()) {
+            if (!validatorClass.EmptyTextBox(this, bi.ccl0196x, getString(R.string.ccl01))) {
+                return false;
+            }
+        }
 
         if (bi.ccl01a.isChecked()) {
 
             if (!validatorClass.EmptyRadioButton(this, bi.ccl02, bi.ccl02a, getString(R.string.ccl02))) {
                 return false;
             }
-            if (!validatorClass.EmptyCheckBox(this, bi.ccl03, bi.ccl03a, getString(R.string.ccl03))) {
-                return false;
+            if (!bi.ccl0397.isChecked()) {
+                if (!validatorClass.EmptyCheckBox(this, bi.ccl03, bi.ccl03a, getString(R.string.ccl03))) {
+                    return false;
+                }
             }
+
         }
-        if (bi.ccl0196.isChecked()) {
-            if (!validatorClass.EmptyTextBox(this, bi.ccl0196x, getString(R.string.ccl01))) {
-                return false;
-            }
-        }
+
         if (!validatorClass.EmptyRadioButton(this, bi.ccl04, bi.ccl04a, getString(R.string.ccl04))) {
             return false;
         }
 
         if (bi.ccl04a.isChecked()) {
-            if (!validatorClass.EmptyCheckBox(this, bi.ccl05, bi.ccl05a, getString(R.string.ccl05))) {
-                return false;
+            if (!bi.ccl0597.isChecked()) {
+                if (!validatorClass.EmptyCheckBox(this, bi.ccl05, bi.ccl05a, getString(R.string.ccl05))) {
+                    return false;
+                }
             }
+
         }
 
         if (!validatorClass.EmptyCheckBox(this, bi.ccl06, bi.ccl06a, getString(R.string.ccl06))) {

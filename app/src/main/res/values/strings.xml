@@ -72,7 +72,7 @@
  </string>
     <string name="ccb05g">ماسٹرز(15-16 سال)
  </string>
-    <string name="ccb05h">M.Phil./ PhD ایم فل / پی ایچ ڈی</string>
+    <string name="ccb05h"> ایم فل / پی ایچ ڈی</string>
     <string name="ccb06">پیشہ </string>
     <string name="ccb06a">قابل اطلاق نہیں
  </string>
@@ -337,7 +337,7 @@
     <string name="ccj09">کیا آخری حمل کے دوران ، آپ تشنج  سے بچانے کے لئے کولہوں یا آپ کے بازو میں ایک انجکشن لگایا گیا تھا  </string>
     <string name="ccj10">آخری حمل کے دوران آپ نے کتنی دفعہ تشنج سے بچاو کا ٹیکہ لگوایاتھا؟  </string>
     <string name="ccj11">کیا آخری حمل سے پہلے کسی بھی وقت، آپ کو کوئی تشنج کے انجکشن لگے تھے؟ </string>
-    <string name="ccj12">ٓخری حمل سے پہلے، آپ کوتشنج کے انجکشن کتنی دفعہ لگے تھے؟ </string>
+    <string name="ccj12">آخری حمل سے پہلے، آپ کوتشنج کے انجکشن کتنی دفعہ لگے تھے؟ </string>
     <string name="ccj13">ٓآخری حمل سے پہلے کتنے سال پہلے آپ کو آخری دفعہ تشنج کے انجکشن لگے تھے ؟ </string>
     <string name="ccj14">ٓآخری حمل کے دوران آپ کو فولاد کی گولیاں دی گئی یا  آپ نے خود خریدی؟ گولیاں ؍شربت دیکھا ئیں</string>
     <string name="ccj15">آخری حمل کے دوران کتنے دنوں تک  گولیاں یا شربت استعمال کی؟</string>
@@ -409,7 +409,7 @@
 
     <!--Section K-->
     <string name="cckHeading">سماجی اقتصادی معلومات</string>
-    <string name="cck01">ٓپ کی مادری زبان کیا ہے؟</string>
+    <string name="cck01">آپ کی مادری زبان کیا ہے؟</string>
     <string name="cck01a">اردو</string>
     <string name="cck01b">پنجابی</string>
     <string name="cck01c">ٓسندھی</string>
@@ -497,9 +497,9 @@
 </string>
     <string name="cck09f"> کوئلہ
 </string>
-    <string name="cck09g">لکٹری کاکوئہ
+    <string name="cck09g">لکڑی کاکوئہ
 </string>
-    <string name="cck09h"> لکٹری
+    <string name="cck09h"> لکڑی
 </string>
     <string name="cck09i"> تنکے/جھاڑیاں/گھاس پھونس
 </string>
@@ -523,13 +523,12 @@
 </string>
     <string name="cck12sub2">بنیادی /ابتدائی فرش
 </string>
-    <string name="cck12sub3"> تیار فرش
-د</string>
+    <string name="cck12sub3"> تیار فرش</string>
     <string name="cck12a">مٹی/چکنی مٹی/زمین/ریت /جانوروں کا گوبر
 </string>
     <string name="cck12b">جانوروں کا گوبر
 </string>
-    <string name="cck12c">  لکٹری کے تختے
+    <string name="cck12c">  لکڑی کے تختے
 </string>
     <string name="cck12d">کھجور  یاناریل کے پتے /بانس
 </string>
@@ -541,8 +540,7 @@
 </string>
     <string name="cck12h"> سیمنٹ
 </string>
-    <string name="cck12i"> قالین
-د</string>
+    <string name="cck12i"> قالین</string>
     <string name="cck12j">اینٹیں
 </string>
     <string name="cck12k">چونے کا پتھر
@@ -570,7 +568,7 @@
     <string name="cck13n">اینٹیں</string>
     <string name="cck1396"> دیگر وضاحت کریں</string>
 
-    <string name="cck14"> چھت کی تعمیر میں استعمال ہونے والا مواد</string>
+    <string name="cck14">بیرونی دیواروں کا اہم مواد</string>
     <string name="cck14sub1"> قدرتی دیواریں</string>
     <string name="cck14sub2"> بنیادی سادہ دیواریں</string>
     <string name="cck14sub3"> تیاردیواریں</string>
@@ -589,14 +587,14 @@
     <string name="cck14m">اینٹیں</string>
     <string name="cck14n"> سیمنٹ سے بنی ہوئی بلاکس</string>
     <string name="cck14o"> کچی اینٹوں سے بنی</string>
-    <string name="cck14p"> / لکڑی کے تختے</string>
+    <string name="cck14p">لکڑی کے تختے</string>
     <string name="cck1496">دیگر وضاحت کریں </string>
 
     <string name="cck15"> اس گھر  میں سونے کے لئے کتنے کمرے استعمال ہوتے ہیں؟</string>
     <string name="cck16">کیا اس گھر میں کسی کے پاس یہ چیزیں ہیں ؟ </string>
     <string name="cck16a">ہاتھ پر باندھنے والی گھٹری </string>
     <string name="cck16b"> موبائل فون </string>
-    <string name="cck16c">ائی سائیکل</string>
+    <string name="cck16c">بائی سائیکل</string>
     <string name="cck16d">موٹر سائیکل/اسکوٹر </string>
     <string name="cck16e">گدھا /گھوڑا گاڑی </string>
     <string name="cck16f">کار/ ٹرک /بس </string>
@@ -611,7 +609,7 @@
     <string name="cck19">کیا آپ کے اپنے مال مویشی  یا مرغیاں ہیں؟ </string>
     <string name="cck20">اگر ہاں تو کتنے مال مویشی اور مرغیاں ہیں؟ </string>
     <string name="cck20a">گائے ،بیل  </string>
-    <string name="cck20b">دھے ، گھوڑے، خچر          </string>
+    <string name="cck20b">گدھے ، گھوڑے، خچر          </string>
     <string name="cck20c">بکریاں  </string>
     <string name="cck20d">بھیڑیں   </string>
     <string name="cck20e">مرغیاں  </string>
@@ -640,11 +638,11 @@
     <string name="ccl0397">کچھ نہیں</string>
 
     <string name="ccl04">کیاآپ کے گھر میں  ہاتھ دھونے کے لئے کوئی صابن یا ڈٹرجنٹ ہے؟</string>
-    <string name="ccl05">کیاآپ کے گھر میں  ہاتھ دھونے کے لئے کوئی صابن یا ڈٹرجنٹ ہے؟</string>
+    <string name="ccl05">اگرہاں تو کیا  آپ مجھے  دکھا سکتے ہیں؟</string>
     <string name="ccl05a">صابن </string>
-    <string name="ccl05b"> مائع صابن</string>
-    <string name="ccl05c"> ریت /مٹی/راکھ</string>
-    <string name="ccl05d"> خاک /مٹی/ریت</string>
+    <string name="ccl05b"> ڈٹرجنٹ /مائع/ پاوڈر</string>
+    <string name="ccl05c"> مائع صابن</string>
+    <string name="ccl05d"> ریت /مٹی/راکھ</string>
     <string name="ccl0597">کچھ نہیں</string>
 
     <string name="ccl06">کن حالات میں آپ صابن سے ہاتھ دھوتے ہیں؟</string>
@@ -708,8 +706,8 @@
     <string name="cco01b">بہت مشکل سے ایک مرتبہ(1 سے 2 مرتبہ)  </string>
     <string name="cco01c">کبھی کبھی (3 سے 10 مرتبہ)</string>
     <string name="cco01d">اکثر اوقات (10 مرتبہ سے زیادہ) </string>
-    <string name="cco02">گزشتہ 4 ہفتوں میں(30دن)، کبھی ایسا وقت آیا کہ آپ کے گھر میں زرائع کی کمی  کی وجہ سے کھانا نہیں تھا؟ </string>
-    <string name="cco03">گزشتہ 4 ہفتوں میں(30دن)، کبھی ایسا وقت آیا کہ آپ کے گھر میں زرائع کی کمی  کی وجہ سے کھانا نہیں تھا؟ </string>
+    <string name="cco02">گزشتہ 4 ہفتوں میں(30دن)، کبھی ایسا وقت آیا کہ آپ یا آپ کے گھر کسی فرد کو گھر میں کھا نا نہ ہونے کی وجہ سے خالی پیٹ سونا پڑا ہو؟ </string>
+    <string name="cco03">گزشتہ 4 ہفتوں میں(30دن)، کبھی ایساہوا کہ آپ  یا آپ کے گھر کے کسی  فرد کو کھانے کی کمی کی وجہ سےپورا دن اور رات بغیر کچھ کھائے پیئے  خالی پیٹ گزارنا  پڑا ہو؟ </string>
 
     <!--Section P-->
     <string name="ccpHeading"> کھانے کے لئے کوئی مدد  </string>

@@ -22,10 +22,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
             android:background="@color/colorPrimaryDark"
             android:gravity="center"
-            android:padding="5dp"
+            android:layout_margin="5dp"
             android:text="@string/cccHeading"
             android:textColor="@color/white"
             android:textSize="25sp" />
@@ -43,9 +42,8 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
                     android:background="@color/colorPrimary"
-                    android:padding="5dp"
+
                     android:text="@string/ccc01"
                     android:textColor="@color/white"
                     android:textSize="25sp" />
@@ -68,9 +66,8 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
                     android:background="@color/colorPrimary"
-                    android:padding="5dp"
+                    android:layout_marginTop="5dp"
                     android:text="@string/ccc02"
                     android:textColor="@color/white"
                     android:textSize="25sp" />
@@ -92,9 +89,8 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
                     android:background="@color/colorPrimary"
-                    android:padding="5dp"
+                    android:layout_marginTop="5dp"
                     android:text="@string/ccc03"
                     android:textColor="@color/white"
                     android:textSize="25sp" />
@@ -104,8 +100,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layoutDirection="rtl"
-                    android:orientation="horizontal"
-                    android:padding="16dp">
+                    android:orientation="horizontal">
 
                     <RadioButton
                         android:id="@+id/ccc03a"
@@ -128,11 +123,10 @@
 
                 <!--Q4-->
                 <TextView
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
                     android:background="@color/colorPrimary"
-                    android:padding="5dp"
                     android:text="@string/ccc04"
                     android:textColor="@color/white"
                     android:textSize="25sp" />
@@ -146,11 +140,11 @@
 
                 <!--Q5-->
                 <TextView
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
                     android:background="@color/colorPrimary"
-                    android:padding="5dp"
+
                     android:text="@string/ccc05"
                     android:textColor="@color/white"
                     android:textSize="25sp" />
@@ -192,11 +186,11 @@
 
                 <!--Q6-->
                 <TextView
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
                     android:background="@color/colorPrimary"
-                    android:padding="5dp"
+
                     android:text="@string/ccc06"
                     android:textColor="@color/white"
                     android:textSize="25sp" />
@@ -206,8 +200,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layoutDirection="rtl"
-                    android:orientation="horizontal"
-                    android:padding="16dp">
+                    android:orientation="horizontal">
 
                     <RadioButton
                         android:id="@+id/ccc06a"
@@ -230,11 +223,11 @@
 
                 <!--Q7-->
                 <TextView
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
                     android:background="@color/colorPrimary"
-                    android:padding="5dp"
+
                     android:text="@string/ccc07"
                     android:textColor="@color/white"
                     android:textSize="25sp" />
@@ -254,11 +247,11 @@
 
                 <!--Q8-->
                 <TextView
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
                     android:background="@color/colorPrimary"
-                    android:padding="5dp"
+
                     android:text="@string/ccc08"
                     android:textColor="@color/white"
                     android:textSize="25sp" />
@@ -268,8 +261,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layoutDirection="rtl"
-                    android:orientation="vertical"
-                    android:padding="16dp">
+                    android:orientation="vertical">
 
                     <RadioButton
                         android:id="@+id/ccc08a"
@@ -301,6 +293,7 @@
 
                 <!--Q9-->
                 <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:id="@+id/fldgrpccc09"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -310,9 +303,8 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:background="@color/colorPrimary"
-                        android:padding="5dp"
+
                         android:text="@string/ccc09"
                         android:textColor="@color/white"
                         android:textSize="25sp" />

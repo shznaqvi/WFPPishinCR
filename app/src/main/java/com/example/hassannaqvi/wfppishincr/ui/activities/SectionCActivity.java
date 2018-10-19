@@ -12,25 +12,33 @@ import com.example.hassannaqvi.wfppishincr.core.DatabaseHelper;
 import com.example.hassannaqvi.wfppishincr.core.MainApp;
 import com.example.hassannaqvi.wfppishincr.databinding.ActivitySectionCBinding;
 import com.example.hassannaqvi.wfppishincr.validation.ClearClass;
+import com.example.hassannaqvi.wfppishincr.validation.validatorClass;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class SectionCActivity extends AppCompatActivity {
 
     private static final String TAG = "SectionCActivity";
 
     ActivitySectionCBinding bi;
+    String currentDate;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         this.setTitle("Section C");
-
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_c);
         bi.setCallback(this);
         bi.ccc04d.setManager(getSupportFragmentManager());
+
+        currentDate = new SimpleDateFormat("dd/MM/yyyy").format(new Date().getTime());
+        bi.ccc04d.setMaxDate(currentDate);
 
         bi.ccc08.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -104,44 +112,59 @@ public class SectionCActivity extends AppCompatActivity {
     }
 
     private boolean formValidate() {
-//        Toast.makeText(this, "Validating this section..", Toast.LENGTH_SHORT).show();
-//        if (!validatorClass.EmptyTextBox(this, bi.ccc01, getString(R.string.cca01))) {
-//            return false;
-//        }
-//
-//        if (!validatorClass.EmptyTextBox(this, bi.ccc02, getString(R.string.cca02))) {
-//            return false;
-//        }
-//
-//        if (!validatorClass.EmptyRadioButton(this, bi.ccc03, bi.ccc03a, getString(R.string.cca03))) {
-//            return false;
-//        }
-//        if (!validatorClass.EmptyTextBox(this, bi.ccc04d, getString(R.string.cca04))) {
-//            return false;
-//        }
-//        if (!validatorClass.EmptyTextBox(this, bi.ccc05m, getString(R.string.cca05))) {
-//            return false;
-//        }
-//        if (!validatorClass.EmptyTextBox(this, bi.ccc05d, getString(R.string.cca05))) {
-//            return false;
-//        }
-//        if (!validatorClass.EmptyRadioButton(this, bi.ccc06, bi.ccc06a, getString(R.string.cca06))) {
-//            return false;
-//        }
-//
-//        if (!validatorClass.EmptyTextBox(this, bi.ccc07w, getString(R.string.cca07))) {
-//            return false;
-//        }
-//
-//        if (!validatorClass.EmptyRadioButton(this, bi.ccc08, bi.ccc08a, getString(R.string.cca08))) {
-//            return false;
-//        }
-//
-//        if (bi.ccc08a.isChecked()) {
-//            if (!bi.ccc0998.isChecked()) {
-//                return validatorClass.EmptyTextBox(this, bi.ccc09kg, getString(R.string.ccc09));
-//            }
-//        }
+        Toast.makeText(this, "Validating this section..", Toast.LENGTH_SHORT).show();
+        if (!validatorClass.EmptyTextBox(this, bi.ccc01, getString(R.string.cca01))) {
+            return false;
+        }
+
+        if (!validatorClass.EmptyTextBox(this, bi.ccc02, getString(R.string.cca02))) {
+            return false;
+        }
+
+        if (!validatorClass.EmptyRadioButton(this, bi.ccc03, bi.ccc03a, getString(R.string.cca03))) {
+            return false;
+        }
+        if (!validatorClass.EmptyTextBox(this, bi.ccc04d, getString(R.string.cca04))) {
+            return false;
+        }
+        if (!validatorClass.EmptyTextBox(this, bi.ccc05m, getString(R.string.cca05))) {
+            return false;
+        }
+
+        if (!validatorClass.RangeTextBox(this, bi.ccc05m, 6, 12, getString(R.string.cca05), "Number")) {
+            return false;
+        }
+
+        if (!validatorClass.EmptyTextBox(this, bi.ccc05d, getString(R.string.cca05))) {
+            return false;
+        }
+        if (!validatorClass.RangeTextBox(this, bi.ccc05d, 0, 29, getString(R.string.cca05), "Number")) {
+            return false;
+        }
+        if (!validatorClass.EmptyRadioButton(this, bi.ccc06, bi.ccc06a, getString(R.string.cca06))) {
+            return false;
+        }
+
+        if (!validatorClass.EmptyTextBox(this, bi.ccc07w, getString(R.string.cca07))) {
+            return false;
+        }
+
+        if (!validatorClass.RangeTextBox(this, bi.ccc07w, 34, 42, getString(R.string.cca05), "Number")) {
+            return false;
+        }
+
+        if (!validatorClass.EmptyRadioButton(this, bi.ccc08, bi.ccc08a, getString(R.string.cca08))) {
+            return false;
+        }
+
+        if (bi.ccc08a.isChecked()) {
+            if (!bi.ccc0998.isChecked()) {
+                if (!validatorClass.EmptyTextBox(this, bi.ccc09kg, getString(R.string.ccc09))) {
+                    return false;
+                }
+                return validatorClass.RangeTextBox(this, bi.ccc09kg, 1, 5, getString(R.string.cca05), "Number");
+            }
+        }
 
 
         return true;
