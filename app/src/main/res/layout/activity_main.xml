@@ -7,6 +7,7 @@
             type="com.example.hassannaqvi.wfppishincr.ui.activities.MainActivity" />
     </data>
     <ScrollView
+        android:background="@drawable/background_inner"
         android:id="@+id/activity_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
