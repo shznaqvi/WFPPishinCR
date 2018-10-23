@@ -11,6 +11,7 @@ import com.example.hassannaqvi.wfppishincr.R;
 import com.example.hassannaqvi.wfppishincr.core.DatabaseHelper;
 import com.example.hassannaqvi.wfppishincr.core.MainApp;
 import com.example.hassannaqvi.wfppishincr.databinding.ActivitySectionCBinding;
+import com.example.hassannaqvi.wfppishincr.utils.DateUtils;
 import com.example.hassannaqvi.wfppishincr.validation.ClearClass;
 import com.example.hassannaqvi.wfppishincr.validation.validatorClass;
 
@@ -39,6 +40,7 @@ public class SectionCActivity extends AppCompatActivity {
 
         currentDate = new SimpleDateFormat("dd/MM/yyyy").format(new Date().getTime());
         bi.ccc04d.setMaxDate(currentDate);
+        bi.ccc04d.setMinDate(DateUtils.getYearsBack("dd/MM/yyyy", -1));
 
         bi.ccc08.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override

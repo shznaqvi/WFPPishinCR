@@ -1054,9 +1054,15 @@ public class SectionJActivity extends AppCompatActivity {
         sJ.put("ccj26m", bi.ccj26m.getText().toString());
         sJ.put("ccj26d", bi.ccj26d.getText().toString());
         sJ.put("ccj2697", bi.ccj2697.isChecked() ? "97" : "0");
-        sJ.put("ccj27", bi.ccj27a.isChecked() ? "1" : bi.ccj27b.isChecked() ? "2" : bi.ccj27c.isChecked() ? "3" : bi.ccj27d.isChecked() ? "4" : bi.ccj27e.isChecked() ? "5" : bi.ccj2796.isChecked() ? "96" : "0");
+        sJ.put("ccj27", bi.ccj27a.isChecked() ? "1"
+                : bi.ccj27b.isChecked() ? "2"
+                : bi.ccj27c.isChecked() ? "3"
+                : bi.ccj27d.isChecked() ? "4"
+                : bi.ccj27e.isChecked() ? "5"
+                : bi.ccj2796.isChecked() ? "96"
+                : "0");
 
-        sJ.put("ccj2796", bi.ccj2796.getText().toString());
+        sJ.put("ccj2796x", bi.ccj2796.getText().toString());
 
         sJ.put("ccj28a", bi.ccj28a.isChecked() ? "1" : "0");
         sJ.put("ccj28b", bi.ccj28b.isChecked() ? "2" : "0");
