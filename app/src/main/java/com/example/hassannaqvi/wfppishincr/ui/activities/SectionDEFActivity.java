@@ -450,7 +450,7 @@ public class SectionDEFActivity extends AppCompatActivity {
         sDEF.put("ccf02kg02", bi.ccf02kg02.getText().toString());
         sDEF.put("ccf02b", bi.ccf0202.getSelectedItem().toString());
         MainApp.fc.setsDEF(String.valueOf(sDEF));
-        Toast.makeText(this, "Validation Succecful", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Validation Successful", Toast.LENGTH_SHORT).show();
     }
 
     public void BtnEnd() {

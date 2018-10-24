@@ -158,7 +158,6 @@ public class SectionCActivity extends AppCompatActivity {
         if (!validatorClass.EmptyRadioButton(this, bi.ccc08, bi.ccc08a, getString(R.string.cca08))) {
             return false;
         }
-
         if (bi.ccc08a.isChecked()) {
             if (!bi.ccc0998.isChecked()) {
                 if (!validatorClass.EmptyTextBox(this, bi.ccc09kg, getString(R.string.ccc09))) {
