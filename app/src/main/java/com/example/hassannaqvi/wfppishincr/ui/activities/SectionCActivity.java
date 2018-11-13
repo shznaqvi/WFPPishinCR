@@ -163,7 +163,7 @@ public class SectionCActivity extends AppCompatActivity {
                 if (!validatorClass.EmptyTextBox(this, bi.ccc09kg, getString(R.string.ccc09))) {
                     return false;
                 }
-                return validatorClass.RangeTextBox(this, bi.ccc09kg, 1, 5, getString(R.string.ccc09), "Number");
+                return validatorClass.RangeTextBox(this, bi.ccc09kg, 1.0, 5.0, getString(R.string.ccc09), "Weight");
             }
         }
 

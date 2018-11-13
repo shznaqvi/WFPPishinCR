@@ -124,14 +124,17 @@ public class SectionDEFActivity extends AppCompatActivity {
             bi.ccd01cm01.clearFocus();
         }
 
-        if (Integer.parseInt(bi.ccd01cm01.getText().toString()) < 55.00 && Integer.parseInt(bi.ccd01cm01.getText().toString()) > 75.00) {
-            bi.ccd01cm01.setError("Range must be in b/w 55.00 cm to 75.00 cm ");
-            bi.ccd01cm01.requestFocus();
+        if (!validatorClass.RangeTextBox(this, bi.ccd01cm01, 55.0, 75.0, getString(R.string.ccd01), "length")) {
             return false;
-        } else {
-            bi.ccd01cm01.setError(null);
-            bi.ccd01cm01.clearFocus();
         }
+//        if (Integer.parseInt(bi.ccd01cm01.getText().toString()) < 55.00 && Integer.parseInt(bi.ccd01cm01.getText().toString()) > 75.00) {
+//            bi.ccd01cm01.setError("Range must be in b/w 55.00 cm to 75.00 cm ");
+//            bi.ccd01cm01.requestFocus();
+//            return false;
+//        } else {
+//            bi.ccd01cm01.setError(null);
+//            bi.ccd01cm01.clearFocus();
+//        }
 
 
 
@@ -150,14 +153,17 @@ public class SectionDEFActivity extends AppCompatActivity {
             bi.ccd01cm02.clearFocus();
         }
 
-        if (Integer.parseInt(bi.ccd01cm02.getText().toString()) < 55.00 && Integer.parseInt(bi.ccd01cm02.getText().toString()) > 75.00) {
-            bi.ccd01cm02.setError("Range must be in b/w 55.00 cm to 75.00 cm ");
-            bi.ccd01cm02.requestFocus();
+        if (!validatorClass.RangeTextBox(this, bi.ccd01cm02, 55.0, 75.0, getString(R.string.ccd01), "length")) {
             return false;
-        } else {
-            bi.ccd01cm02.setError(null);
-            bi.ccd01cm02.clearFocus();
         }
+//        if (Integer.parseInt(bi.ccd01cm02.getText().toString()) < 55.00 && Integer.parseInt(bi.ccd01cm02.getText().toString()) > 75.00) {
+//            bi.ccd01cm02.setError("Range must be in b/w 55.00 cm to 75.00 cm ");
+//            bi.ccd01cm02.requestFocus();
+//            return false;
+//        } else {
+//            bi.ccd01cm02.setError(null);
+//            bi.ccd01cm02.clearFocus();
+//        }
 
         ///---------------------------Weight------------------------------------------
 
@@ -176,14 +182,17 @@ public class SectionDEFActivity extends AppCompatActivity {
             bi.ccd02kg01.clearFocus();
         }
 
-        if (Integer.parseInt(bi.ccd02kg01.getText().toString()) < 4.50 && Integer.parseInt(bi.ccd02kg01.getText().toString()) > 11.50) {
-            bi.ccd02kg01.setError("Range must be in b/w 4.50 kg to 11.50 kg ");
-            bi.ccd02kg01.requestFocus();
+        if (!validatorClass.RangeTextBox(this, bi.ccd02kg01, 4.5, 11.5, getString(R.string.ccd01), "length")) {
             return false;
-        } else {
-            bi.ccd02kg01.setError(null);
-            bi.ccd02kg01.clearFocus();
         }
+//        if (Integer.parseInt(bi.ccd02kg01.getText().toString()) < 4.50 && Integer.parseInt(bi.ccd02kg01.getText().toString()) > 11.50) {
+//            bi.ccd02kg01.setError("Range must be in b/w 4.50 kg to 11.50 kg ");
+//            bi.ccd02kg01.requestFocus();
+//            return false;
+//        } else {
+//            bi.ccd02kg01.setError(null);
+//            bi.ccd02kg01.clearFocus();
+//        }
 
         if (!validatorClass.EmptySpinner(this, bi.ccd0202, getString(R.string.ccd02))) {
             return false;
@@ -199,15 +208,18 @@ public class SectionDEFActivity extends AppCompatActivity {
             bi.ccd02kg02.setError(null);
             bi.ccd02kg02.clearFocus();
         }
-
-        if (Integer.parseInt(bi.ccd02kg02.getText().toString()) < 4.50 && Integer.parseInt(bi.ccd02kg02.getText().toString()) > 11.50) {
-            bi.ccd02kg02.setError("Range must be in b/w 4.50 kg to 11.50 kg ");
-            bi.ccd02kg02.requestFocus();
+        if (!validatorClass.RangeTextBox(this, bi.ccd02kg02, 4.5, 11.5, getString(R.string.ccd02), "weight")) {
             return false;
-        } else {
-            bi.ccd02kg02.setError(null);
-            bi.ccd02kg02.clearFocus();
         }
+
+//        if (Integer.parseInt(bi.ccd02kg02.getText().toString()) < 4.50 && Integer.parseInt(bi.ccd02kg02.getText().toString()) > 11.50) {
+//            bi.ccd02kg02.setError("Range must be in b/w 4.50 kg to 11.50 kg ");
+//            bi.ccd02kg02.requestFocus();
+//            return false;
+//        } else {
+//            bi.ccd02kg02.setError(null);
+//            bi.ccd02kg02.clearFocus();
+//        }
 
         //======================Mother=======================================================
         if (!validatorClass.EmptySpinner(this, bi.cce0101, getString(R.string.ccd01))) {
@@ -226,14 +238,18 @@ public class SectionDEFActivity extends AppCompatActivity {
             bi.cce01cm01.clearFocus();
         }
 
-        if (Integer.parseInt(bi.cce01cm01.getText().toString()) < 110 && Integer.parseInt(bi.cce01cm01.getText().toString()) > 220) {
-            bi.cce01cm01.setError("Range must be in b/w 110cm to 220 cm ");
-            bi.cce01cm01.requestFocus();
+        if (!validatorClass.RangeTextBox(this, bi.cce01cm01, 110.0, 220.0, getString(R.string.ccd01), "length")) {
             return false;
-        } else {
-            bi.cce01cm01.setError(null);
-            bi.cce01cm01.clearFocus();
         }
+
+//        if (Integer.parseInt(bi.cce01cm01.getText().toString()) < 110 && Integer.parseInt(bi.cce01cm01.getText().toString()) > 220) {
+//            bi.cce01cm01.setError("Range must be in b/w 110cm to 220 cm ");
+//            bi.cce01cm01.requestFocus();
+//            return false;
+//        } else {
+//            bi.cce01cm01.setError(null);
+//            bi.cce01cm01.clearFocus();
+//        }
 
         if (!validatorClass.EmptySpinner(this, bi.cce0102, getString(R.string.ccd01))) {
             return false;
@@ -249,14 +265,18 @@ public class SectionDEFActivity extends AppCompatActivity {
             bi.cce01cm02.setError(null);
             bi.cce01cm02.clearFocus();
         }
-        if (Integer.parseInt(bi.cce01cm02.getText().toString()) < 110 && Integer.parseInt(bi.cce01cm02.getText().toString()) > 220) {
-            bi.cce01cm02.setError("Range must be in b/w 110cm to 220 cm ");
-            bi.cce01cm02.requestFocus();
+
+        if (!validatorClass.RangeTextBox(this, bi.cce01cm02, 110.0, 220.0, getString(R.string.ccd01), "length")) {
             return false;
-        } else {
-            bi.cce01cm02.setError(null);
-            bi.cce01cm02.clearFocus();
         }
+//        if (Integer.parseInt(bi.cce01cm02.getText().toString()) < 110 && Integer.parseInt(bi.cce01cm02.getText().toString()) > 220) {
+//            bi.cce01cm02.setError("Range must be in b/w 110cm to 220 cm ");
+//            bi.cce01cm02.requestFocus();
+//            return false;
+//        } else {
+//            bi.cce01cm02.setError(null);
+//            bi.cce01cm02.clearFocus();
+//        }
 
         ///------------------------Weight------------------------------------------
 
@@ -275,14 +295,17 @@ public class SectionDEFActivity extends AppCompatActivity {
             bi.cce02kg01.clearFocus();
         }
 
-        if (Integer.parseInt(bi.cce02kg01.getText().toString()) < 25.0 && Integer.parseInt(bi.cce02kg01.getText().toString()) > 110) {
-            bi.cce02kg01.setError("Range must be in b/w 25.0 kg to 110 kg ");
-            bi.cce02kg01.requestFocus();
+        if (!validatorClass.RangeTextBox(this, bi.cce02kg01, 25.0, 110.0, getString(R.string.ccd02), "weight")) {
             return false;
-        } else {
-            bi.cce02kg01.setError(null);
-            bi.cce02kg01.clearFocus();
         }
+//        if (Integer.parseInt(bi.cce02kg01.getText().toString()) < 25.0 && Integer.parseInt(bi.cce02kg01.getText().toString()) > 110) {
+//            bi.cce02kg01.setError("Range must be in b/w 25.0 kg to 110 kg ");
+//            bi.cce02kg01.requestFocus();
+//            return false;
+//        } else {
+//            bi.cce02kg01.setError(null);
+//            bi.cce02kg01.clearFocus();
+//        }
 
         if (!validatorClass.EmptySpinner(this, bi.cce0202, getString(R.string.ccd02))) {
             return false;
@@ -299,15 +322,18 @@ public class SectionDEFActivity extends AppCompatActivity {
             bi.cce02kg02.clearFocus();
         }
 
-
-        if (Integer.parseInt(bi.cce02kg02.getText().toString()) < 25.0 && Integer.parseInt(bi.cce02kg02.getText().toString()) > 110) {
-            bi.cce02kg02.setError("Range must be in b/w 25.0 kg to 110 kg ");
-            bi.cce02kg02.requestFocus();
+        if (!validatorClass.RangeTextBox(this, bi.cce02kg02, 25.0, 110.0, getString(R.string.ccd02), "weight")) {
             return false;
-        } else {
-            bi.cce02kg02.setError(null);
-            bi.cce02kg02.clearFocus();
         }
+
+//        if (Integer.parseInt(bi.cce02kg02.getText().toString()) < 25.0 && Integer.parseInt(bi.cce02kg02.getText().toString()) > 110) {
+//            bi.cce02kg02.setError("Range must be in b/w 25.0 kg to 110 kg ");
+//            bi.cce02kg02.requestFocus();
+//            return false;
+//        } else {
+//            bi.cce02kg02.setError(null);
+//            bi.cce02kg02.clearFocus();
+//        }
 
         //===================================Father================================
 
@@ -329,14 +355,18 @@ public class SectionDEFActivity extends AppCompatActivity {
                 bi.ccf01cm01.clearFocus();
             }
 
-            if (Integer.parseInt(bi.ccf01cm01.getText().toString()) < 110 && Integer.parseInt(bi.ccf01cm01.getText().toString()) > 220) {
-                bi.ccf01cm01.setError("Range must be in b/w 110 cm to 220 cm ");
-                bi.ccf01cm01.requestFocus();
+            if (!validatorClass.RangeTextBox(this, bi.ccf01cm01, 110.0, 220.0, getString(R.string.ccd01), "length")) {
                 return false;
-            } else {
-                bi.ccf01cm01.setError(null);
-                bi.ccf01cm01.clearFocus();
             }
+
+//            if (Integer.parseInt(bi.ccf01cm01.getText().toString()) < 110 && Integer.parseInt(bi.ccf01cm01.getText().toString()) > 220) {
+//                bi.ccf01cm01.setError("Range must be in b/w 110 cm to 220 cm ");
+//                bi.ccf01cm01.requestFocus();
+//                return false;
+//            } else {
+//                bi.ccf01cm01.setError(null);
+//                bi.ccf01cm01.clearFocus();
+//            }
 
             if (!validatorClass.EmptySpinner(this, bi.ccf0102, getString(R.string.ccd01))) {
                 return false;
@@ -353,14 +383,19 @@ public class SectionDEFActivity extends AppCompatActivity {
                 bi.ccf01cm02.clearFocus();
             }
 
-            if (Integer.parseInt(bi.ccf01cm02.getText().toString()) < 110 && Integer.parseInt(bi.ccf01cm02.getText().toString()) > 220) {
-                bi.ccf01cm02.setError("Range must be in b/w 110 cm to 220 cm ");
-                bi.ccf01cm02.requestFocus();
+
+            if (!validatorClass.RangeTextBox(this, bi.ccf01cm02, 110.0, 220.0, getString(R.string.ccd01), "length")) {
                 return false;
-            } else {
-                bi.ccf01cm02.setError(null);
-                bi.ccf01cm02.clearFocus();
             }
+//
+//            if (Integer.parseInt(bi.ccf01cm02.getText().toString()) < 110 && Integer.parseInt(bi.ccf01cm02.getText().toString()) > 220) {
+//                bi.ccf01cm02.setError("Range must be in b/w 110 cm to 220 cm ");
+//                bi.ccf01cm02.requestFocus();
+//                return false;
+//            } else {
+//                bi.ccf01cm02.setError(null);
+//                bi.ccf01cm02.clearFocus();
+//            }
 
             ///------------------------Weight------------------------------------------
 
@@ -379,14 +414,17 @@ public class SectionDEFActivity extends AppCompatActivity {
                 bi.ccf02kg01.clearFocus();
             }
 
-            if (Integer.parseInt(bi.ccf02kg01.getText().toString()) < 25.0 && Integer.parseInt(bi.ccf02kg01.getText().toString()) > 110) {
-                bi.ccf02kg01.setError("Range must be in b/w 25.0 kg to 110 kg ");
-                bi.ccf02kg01.requestFocus();
+            if (!validatorClass.RangeTextBox(this, bi.ccf02kg01, 25.0, 110.0, getString(R.string.ccd02), "weight")) {
                 return false;
-            } else {
-                bi.ccf02kg01.setError(null);
-                bi.ccf02kg01.clearFocus();
             }
+//            if (Integer.parseInt(bi.ccf02kg01.getText().toString()) < 25.0 && Integer.parseInt(bi.ccf02kg01.getText().toString()) > 110) {
+//                bi.ccf02kg01.setError("Range must be in b/w 25.0 kg to 110 kg ");
+//                bi.ccf02kg01.requestFocus();
+//                return false;
+//            } else {
+//                bi.ccf02kg01.setError(null);
+//                bi.ccf02kg01.clearFocus();
+//            }
 
             if (!validatorClass.EmptySpinner(this, bi.ccf0202, getString(R.string.ccd02))) {
                 return false;
@@ -403,14 +441,16 @@ public class SectionDEFActivity extends AppCompatActivity {
                 bi.ccf02kg02.clearFocus();
             }
 
-            if (Integer.parseInt(bi.ccf02kg02.getText().toString()) < 25.0 && Integer.parseInt(bi.ccf02kg02.getText().toString()) > 110) {
-                bi.ccf02kg02.setError("Range must be in b/w 25.0 kg to 110 kg ");
-                bi.ccf02kg02.requestFocus();
-                return false;
-            } else {
-                bi.ccf02kg02.setError(null);
-                bi.ccf02kg02.clearFocus();
-            }
+            return validatorClass.RangeTextBox(this, bi.ccf02kg02, 25.0, 110.0, getString(R.string.ccd02), "weight");
+
+//            if (Integer.parseInt(bi.ccf02kg02.getText().toString()) < 25.0 && Integer.parseInt(bi.ccf02kg02.getText().toString()) > 110) {
+//                bi.ccf02kg02.setError("Range must be in b/w 25.0 kg to 110 kg ");
+//                bi.ccf02kg02.requestFocus();
+//                return false;
+//            } else {
+//                bi.ccf02kg02.setError(null);
+//                bi.ccf02kg02.clearFocus();
+//            }
 
 
         }
