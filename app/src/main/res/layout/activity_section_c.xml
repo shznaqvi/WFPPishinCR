@@ -316,7 +316,7 @@
                         android:layout_height="wrap_content"
                         android:hint="@string/ccc09a"
                         android:inputType="numberDecimal"
-                        android:maxLength="4"
+                        android:maxLength="3"
                         android:text='@{ccc0998.checked? ccc09kg.getText.toString : "" }'
                         android:visibility='@{ccc0998.checked? View.GONE : View.VISIBLE}' />
 
