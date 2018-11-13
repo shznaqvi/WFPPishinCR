@@ -60,9 +60,9 @@
                         android:id="@+id/ccd01cm01"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="XX.X cm"
+                        android:hint="XXX.X cm"
                         android:inputType="numberDecimal"
-                        android:maxLength="4" />
+                        android:maxLength="5" />
 
                 </android.support.design.widget.TextInputLayout>
 
@@ -88,9 +88,9 @@
                         android:id="@+id/ccd01cm02"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="XX.X cm"
+                        android:hint="XXX.X cm"
                         android:inputType="numberDecimal"
-                        android:maxLength="4" />
+                        android:maxLength="5" />
 
                 </android.support.design.widget.TextInputLayout>
 
@@ -126,9 +126,9 @@
                         android:id="@+id/ccd02kg01"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="XX.X kg"
+                        android:hint="XXX.X kg"
                         android:inputType="numberDecimal"
-                        android:maxLength="4" />
+                        android:maxLength="5" />
 
                 </android.support.design.widget.TextInputLayout>
 
@@ -154,9 +154,9 @@
                         android:id="@+id/ccd02kg02"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="XX.X kg"
+                        android:hint="XXX.X kg"
                         android:inputType="numberDecimal"
-                        android:maxLength="4" />
+                        android:maxLength="5" />
 
                 </android.support.design.widget.TextInputLayout>
 
@@ -203,9 +203,9 @@
                         android:id="@+id/cce01cm01"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="XX.X cm"
+                        android:hint="XXX.X cm"
                         android:inputType="numberDecimal"
-                        android:maxLength="4" />
+                        android:maxLength="5" />
 
                 </android.support.design.widget.TextInputLayout>
 
@@ -231,9 +231,9 @@
                         android:id="@+id/cce01cm02"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="XX.X cm"
+                        android:hint="XXX.X cm"
                         android:inputType="numberDecimal"
-                        android:maxLength="4" />
+                        android:maxLength="5" />
 
                 </android.support.design.widget.TextInputLayout>
 
@@ -268,9 +268,9 @@
                         android:id="@+id/cce02kg01"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="XX.X kg"
+                        android:hint="XXX.X kg"
                         android:inputType="numberDecimal"
-                        android:maxLength="4" />
+                        android:maxLength="5" />
 
                 </android.support.design.widget.TextInputLayout>
 
@@ -296,9 +296,9 @@
                         android:id="@+id/cce02kg02"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="XX.X kg"
+                        android:hint="XXX.X kg"
                         android:inputType="numberDecimal"
-                        android:maxLength="4" />
+                        android:maxLength="5" />
 
                 </android.support.design.widget.TextInputLayout>
 
@@ -358,9 +358,9 @@
                             android:id="@+id/ccf01cm01"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="XX.X cm"
+                            android:hint="XXX.X cm"
                             android:inputType="numberDecimal"
-                            android:maxLength="4" />
+                            android:maxLength="5" />
 
                     </android.support.design.widget.TextInputLayout>
 
@@ -386,9 +386,9 @@
                             android:id="@+id/ccf01cm02"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="XX.X cm"
+                            android:hint="XXX.X cm"
                             android:inputType="numberDecimal"
-                            android:maxLength="4" />
+                            android:maxLength="5" />
 
                     </android.support.design.widget.TextInputLayout>
 
@@ -423,9 +423,9 @@
                             android:id="@+id/ccf02kg01"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="XX.X kg"
+                            android:hint="XXX.X kg"
                             android:inputType="numberDecimal"
-                            android:maxLength="4" />
+                            android:maxLength="5" />
 
                     </android.support.design.widget.TextInputLayout>
 
@@ -451,9 +451,9 @@
                             android:id="@+id/ccf02kg02"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="XX.X kg"
+                            android:hint="XXX.X kg"
                             android:inputType="numberDecimal"
-                            android:maxLength="4" />
+                            android:maxLength="5" />
 
                     </android.support.design.widget.TextInputLayout>
 
