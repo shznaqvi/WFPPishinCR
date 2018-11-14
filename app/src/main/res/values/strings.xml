@@ -134,6 +134,7 @@
     <string name="ccdHeading">Child Anthropometry </string>
     <string name="ccd01">لمبائی</string>
     <string name="ccd02">وزن</string>
+    <string name="ccd03"> خون کی مقدار کا نتیجہ</string>
 
     <!--Section E-->
     <string name="cceHeading">Mother Anthropometry </string>

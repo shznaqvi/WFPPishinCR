@@ -36,7 +36,7 @@ public class SectionNOPActivity extends AppCompatActivity {
             try {
                 saveData();
                 if (updateDb()) {
-                    Intent secNext = new Intent(this, EndingActivity.class).putExtra("complete",true);
+                    Intent secNext = new Intent(this, SectionDEFActivity.class).putExtra("complete", true);
                     startActivity(secNext);
                     finish();
                 }

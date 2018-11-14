@@ -40,138 +40,22 @@ public class SectionGHActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
 
                 if (isChecked) {
-                    bi.fldgrpccg002.setVisibility(View.GONE);
-                    bi.ccg0101.clearCheck();
-                    bi.ccg0102.clearCheck();
-                    bi.ccg0103.clearCheck();
-                    bi.ccg0104.clearCheck();
-                    bi.ccg0105.clearCheck();
-                    bi.ccg0106.clearCheck();
-                    bi.ccg0107.clearCheck();
-                    bi.ccg0108.clearCheck();
-                    bi.ccg01096.clearCheck();
-                    bi.ccg01096x.setText(null);
+                    ClearClass.ClearAllFields(bi.fldgrpccg01a, false);
+                    bi.fldgrpccg02.setVisibility(View.GONE);
+                    bi.fldgrpccg03.setVisibility(View.GONE);
+                    ClearClass.ClearAllFields(bi.fldgrpccg02, false);
+                    ClearClass.ClearAllFields(bi.fldgrpccg03, false);
                 } else {
-                    bi.fldgrpccg002.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccg01a, true);
+                    bi.fldgrpccg02.setVisibility(View.VISIBLE);
+                    bi.fldgrpccg03.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldgrpccg02, true);
+                    ClearClass.ClearAllFields(bi.fldgrpccg03, true);
 
                 }
             }
         });
 
-        bi.ccg0101.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup radioGroup, int i) {
-
-                if (i == R.id.ccg0101a || i == R.id.ccg0101b) {
-                    bi.ccg0197.setChecked(false);
-                    //  bi.fldgrpccg002.setVisibility(View.VISIBLE);
-                } else {
-                    bi.ccg0197.setChecked(true);
-                }
-            }
-        });
-
-        bi.ccg0102.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup radioGroup, int i) {
-
-                if (i == R.id.ccg0102a || i == R.id.ccg0102b) {
-                    bi.ccg0197.setChecked(false);
-                    // bi.fldgrpccg002.setVisibility(View.VISIBLE);
-                } else {
-                    bi.ccg0197.setChecked(true);
-                }
-            }
-        });
-        bi.ccg0103.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup radioGroup, int i) {
-
-                if (i == R.id.ccg0103a || i == R.id.ccg0103b) {
-                    bi.ccg0197.setChecked(false);
-                    //  bi.fldgrpccg002.setVisibility(View.VISIBLE);
-                } else {
-                    bi.ccg0197.setChecked(true);
-                }
-            }
-        });
-        bi.ccg0104.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup radioGroup, int i) {
-
-                if (i == R.id.ccg0104a || i == R.id.ccg0104b) {
-                    bi.ccg0197.setChecked(false);
-                    // bi.fldgrpccg002.setVisibility(View.VISIBLE);
-                } else {
-                    bi.ccg0197.setChecked(true);
-                }
-            }
-        });
-        bi.ccg0105.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup radioGroup, int i) {
-
-                if (i == R.id.ccg0105a || i == R.id.ccg0105b) {
-                    bi.ccg0197.setChecked(false);
-                    // bi.fldgrpccg002.setVisibility(View.VISIBLE);
-                } else {
-                    bi.ccg0197.setChecked(true);
-                }
-            }
-        });
-        bi.ccg0106.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup radioGroup, int i) {
-
-                if (i == R.id.ccg0106a || i == R.id.ccg0106b) {
-                    bi.ccg0197.setChecked(false);
-                    // bi.fldgrpccg002.setVisibility(View.VISIBLE);
-                } else {
-                    bi.ccg0197.setChecked(true);
-                }
-            }
-        });
-        bi.ccg0107.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup radioGroup, int i) {
-
-                if (i == R.id.ccg0107a || i == R.id.ccg0107b) {
-                    bi.ccg0197.setChecked(false);
-                    //bi.fldgrpccg002.setVisibility(View.VISIBLE);
-                } else {
-                    bi.ccg0197.setChecked(true);
-                }
-            }
-        });
-        bi.ccg0108.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup radioGroup, int i) {
-
-                if (i == R.id.ccg0108a || i == R.id.ccg0108b) {
-                    bi.ccg0197.setChecked(false);
-
-                    //bi.fldgrpccg002.setVisibility(View.VISIBLE);
-                } else {
-                    bi.ccg0197.setChecked(true);
-                }
-            }
-        });
-
-        bi.ccg01096.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup radioGroup, int i) {
-
-                if (i == R.id.ccg01096a) {
-                    bi.ccg0197.setChecked(false);
-                    bi.ccg01096x.setVisibility(View.VISIBLE);
-                    //bi.fldgrpccg002.setVisibility(View.VISIBLE);
-                } else {
-                    bi.ccg0197.setChecked(true);
-                    bi.ccg01096x.setVisibility(View.GONE);
-                    bi.ccg01096x.setText(null);
-                }
-            }
-        });
 
 
         bi.ccg02.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {

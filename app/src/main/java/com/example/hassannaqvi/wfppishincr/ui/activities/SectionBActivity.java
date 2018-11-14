@@ -349,7 +349,7 @@ public class SectionBActivity extends AppCompatActivity {
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
                 if (!bi.ccb03m.getText().toString().equalsIgnoreCase("")) {
-                    if (Integer.valueOf(bi.ccb04.getText().toString()) == 1) {
+                    if (Integer.valueOf(bi.ccb04.getText().toString()) == 1 || Integer.valueOf(bi.ccb04.getText().toString()) == 0) {
                         switch (Integer.valueOf(bi.ccb03m.getText().toString())) {
                             case 0:
                                 bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -12, 0));
@@ -396,7 +396,7 @@ public class SectionBActivity extends AppCompatActivity {
                     } else if (Integer.valueOf(bi.ccb04.getText().toString()) == 2) {
                         switch (Integer.valueOf(bi.ccb03m.getText().toString())) {
                             case 0:
-                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -12, 0));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -12, -1));
                                 break;
                             case 1:
                                 bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -13, -1));
@@ -440,10 +440,10 @@ public class SectionBActivity extends AppCompatActivity {
                     } else if (Integer.valueOf(bi.ccb04.getText().toString()) == 3) {
                         switch (Integer.valueOf(bi.ccb03m.getText().toString())) {
                             case 0:
-                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -12, 0));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -12, -2));
                                 break;
                             case 1:
-                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -13, -3));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -13, -2));
                                 break;
                             case 2:
                                 bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -14, -2));
@@ -484,7 +484,7 @@ public class SectionBActivity extends AppCompatActivity {
                     } else if (Integer.valueOf(bi.ccb04.getText().toString()) == 4) {
                         switch (Integer.valueOf(bi.ccb03m.getText().toString())) {
                             case 0:
-                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -12, 0));
+                                bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -12, -3));
                                 break;
                             case 1:
                                 bi.ccb03dob.setMinDate(DateUtils.getYearsAndMonthsBack("dd/MM/yyyy", -13, -3));

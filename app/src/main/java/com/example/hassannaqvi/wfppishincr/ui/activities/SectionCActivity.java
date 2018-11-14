@@ -64,7 +64,7 @@ public class SectionCActivity extends AppCompatActivity {
             try {
                 saveData();
                 if (updateDb()) {
-                    Intent secNext = new Intent(this, SectionDEFActivity.class);
+                    Intent secNext = new Intent(this, SectionGHActivity.class);
                     secNext.putExtra("check", false);
                     startActivity(secNext);
                     finish();

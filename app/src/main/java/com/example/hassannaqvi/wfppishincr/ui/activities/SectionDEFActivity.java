@@ -81,8 +81,8 @@ public class SectionDEFActivity extends AppCompatActivity {
             try {
                 saveData();
                 if (updateDb()) {
-                    Intent secNext = new Intent(this, SectionGHActivity.class);
-                    secNext.putExtra("check", false);
+                    Intent secNext = new Intent(this, EndingActivity.class);
+                    secNext.putExtra("complete", false);
                     startActivity(secNext);
                     finish();
                 }
@@ -166,7 +166,7 @@ public class SectionDEFActivity extends AppCompatActivity {
         if (!validatorClass.EmptyTextBox(this, bi.ccd02kg01, getString(R.string.ccd02))) {
             return false;
         }
-        if (!bi.ccd02kg01.getText().toString().matches("^(\\d{1,3}\\.\\d{1,1})$")) {
+        if (!bi.ccd02kg01.getText().toString().matches("^(\\d{2,2}\\.\\d{2,2})$")) {
             bi.ccd02kg01.setError("Wrong Presentation ");
             bi.ccd02kg01.requestFocus();
             return false;
@@ -193,7 +193,7 @@ public class SectionDEFActivity extends AppCompatActivity {
         if (!validatorClass.EmptyTextBox(this, bi.ccd02kg02, getString(R.string.ccd02))) {
             return false;
         }
-        if (!bi.ccd02kg02.getText().toString().matches("^(\\d{1,3}\\.\\d{1,1})$")) {
+        if (!bi.ccd02kg02.getText().toString().matches("^(\\d{2,2}\\.\\d{2,2})$")) {
             bi.ccd02kg02.setError("Wrong Presentation ");
             bi.ccd02kg02.requestFocus();
             return false;
@@ -212,6 +212,18 @@ public class SectionDEFActivity extends AppCompatActivity {
             return false;
         } else {
             ((TextView) bi.ccd0202.getSelectedView()).setError(null);
+        }
+
+        if (!validatorClass.EmptyTextBox(this, bi.ccd03, getString(R.string.ccd03))) {
+            return false;
+        }
+        if (!bi.ccd03.getText().toString().matches("^(\\d{2,2}\\.\\d{1,1})$")) {
+            bi.ccd03.setError("Wrong Presentation ");
+            bi.ccd03.requestFocus();
+            return false;
+        } else {
+            bi.ccd03.setError(null);
+            bi.ccd03.clearFocus();
         }
 
 //        if (Integer.parseInt(bi.ccd02kg02.getText().toString()) < 4.50 && Integer.parseInt(bi.ccd02kg02.getText().toString()) > 11.50) {
@@ -297,7 +309,7 @@ public class SectionDEFActivity extends AppCompatActivity {
         if (!validatorClass.EmptyTextBox(this, bi.cce02kg01, getString(R.string.ccd02))) {
             return false;
         }
-        if (!bi.cce02kg01.getText().toString().matches("^(\\d{1,3}\\.\\d{1,1})$")) {
+        if (!bi.cce02kg01.getText().toString().matches("^(\\d{1,3}\\.\\d{2,2})$")) {
             bi.cce02kg01.setError("Wrong Presentation ");
             bi.cce02kg01.requestFocus();
             return false;
@@ -324,7 +336,7 @@ public class SectionDEFActivity extends AppCompatActivity {
         if (!validatorClass.EmptyTextBox(this, bi.cce02kg02, getString(R.string.ccd02))) {
             return false;
         }
-        if (!bi.cce02kg02.getText().toString().matches("^(\\d{1,3}\\.\\d{1,1})$")) {
+        if (!bi.cce02kg02.getText().toString().matches("^(\\d{1,3}\\.\\d{2,2})$")) {
             bi.cce02kg02.setError("Wrong Presentation ");
             bi.cce02kg02.requestFocus();
             return false;
@@ -435,7 +447,7 @@ public class SectionDEFActivity extends AppCompatActivity {
             if (!validatorClass.EmptyTextBox(this, bi.ccf02kg01, getString(R.string.ccd02))) {
                 return false;
             }
-            if (!bi.ccf02kg01.getText().toString().matches("^(\\d{1,3}\\.\\d{1,1})$")) {
+            if (!bi.ccf02kg01.getText().toString().matches("^(\\d{1,3}\\.\\d{2,2})$")) {
                 bi.ccf02kg01.setError("Wrong Presentation ");
                 bi.ccf02kg01.requestFocus();
                 return false;
@@ -462,7 +474,7 @@ public class SectionDEFActivity extends AppCompatActivity {
             if (!validatorClass.EmptyTextBox(this, bi.ccf02kg02, getString(R.string.ccd02))) {
                 return false;
             }
-            if (!bi.ccf02kg02.getText().toString().matches("^(\\d{1,3}\\.\\d{1,1})$")) {
+            if (!bi.ccf02kg02.getText().toString().matches("^(\\d{1,3}\\.\\d{2,2})$")) {
                 bi.ccf02kg02.setError("Wrong Presentation ");
                 bi.ccf02kg02.requestFocus();
                 return false;
@@ -510,6 +522,7 @@ public class SectionDEFActivity extends AppCompatActivity {
         sDEF.put("ccd02a", bi.ccd0201.getSelectedItem().toString());
         sDEF.put("ccd02kg02", bi.ccd02kg02.getText().toString());
         sDEF.put("ccd02b", bi.ccd0202.getSelectedItem().toString());
+        sDEF.put("ccd03", bi.ccd03.getText().toString());
 
         sDEF.put("cce01cm01", bi.cce01cm01.getText().toString());
         sDEF.put("cce01a", bi.cce0101.getSelectedItem().toString());
