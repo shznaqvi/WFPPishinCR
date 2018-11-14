@@ -18,9 +18,9 @@
         android:orientation="vertical">
 
         <TextView
-            android:layout_margin="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
             android:background="@color/colorPrimaryDark"
             android:gravity="center"
             android:text="@string/cciHeading"
@@ -84,10 +84,10 @@
 
                 <!--Q 1.1-->
                 <LinearLayout
-                    android:layout_marginTop="5dp"
                     android:id="@+id/fldgrpcci02"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:orientation="vertical">
 
                     <TextView
@@ -99,9 +99,9 @@
                         android:textSize="25sp" />
 
                     <TextView
-                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
                         android:background="@color/colorPrimary"
                         android:text="@string/cci02"
                         android:textColor="@color/white"
@@ -146,9 +146,9 @@
                 <!--Q2-->
 
                 <LinearLayout
-                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:orientation="vertical">
 
                     <TextView
@@ -186,6 +186,7 @@
                             android:textSize="20sp" />
 
                         <EditText
+                            android:inputType="number"
                             android:id="@+id/cci03hx"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -203,6 +204,7 @@
                             android:textSize="20sp" />
 
                         <EditText
+                            android:inputType="number"
                             android:id="@+id/cci03dx"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -215,9 +217,9 @@
 
                 <!--Q3-->
                 <LinearLayout
-                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:orientation="vertical">
 
                     <TextView
@@ -267,9 +269,9 @@
                 <!--Q4-->
 
                 <LinearLayout
-                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:orientation="vertical">
 
 
@@ -321,9 +323,9 @@
                 <!--Q5-->
 
                 <LinearLayout
-                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:orientation="vertical">
 
 
@@ -374,9 +376,9 @@
 
                 <!--Q6-->
                 <LinearLayout
-                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:orientation="vertical">
 
 
@@ -389,9 +391,9 @@
                         android:textSize="25sp" />
 
                     <TextView
-                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
                         android:background="@color/colorPrimary"
                         android:text="@string/cci07sub"
                         android:textColor="@color/white"
@@ -441,9 +443,9 @@
                     </RadioGroup>
 
                     <TextView
-                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
                         android:background="@color/colorPrimaryDark"
                         android:text="@string/cci07b"
                         android:textColor="@color/white"
@@ -466,11 +468,11 @@
                             android:textSize="20sp" />
 
                         <EditText
-                            android:inputType="number"
-                            android:maxLength="2"
                             android:id="@+id/cci07bx"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:maxLength="2"
                             android:text='@{cci07b01.checked? cci07bx.getText.toString :"" }'
                             android:visibility='@{cci07b01.checked? View.VISIBLE : View.GONE}' />
 
@@ -494,9 +496,9 @@
                     </RadioGroup>
 
                     <TextView
-                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
                         android:background="@color/colorPrimaryDark"
                         android:text="@string/cci07c"
                         android:textColor="@color/white"
@@ -519,11 +521,11 @@
                             android:textSize="20sp" />
 
                         <EditText
-                            android:inputType="number"
-                            android:maxLength="2"
                             android:id="@+id/cci07c01x"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:maxLength="2"
                             android:text='@{cci07c01.checked? cci07c01x.getText.toString :"" }'
                             android:visibility='@{cci07c01.checked? View.VISIBLE : View.GONE}' />
 
@@ -547,9 +549,9 @@
                     </RadioGroup>
 
                     <TextView
-                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
                         android:background="@color/colorPrimaryDark"
                         android:text="@string/cci07d"
                         android:textColor="@color/white"
@@ -591,9 +593,9 @@
                     </RadioGroup>
 
                     <TextView
-                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
                         android:background="@color/colorPrimaryDark"
                         android:text="@string/cci07e"
                         android:textColor="@color/white"
@@ -635,9 +637,9 @@
                     </RadioGroup>
 
                     <TextView
-                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
                         android:background="@color/colorPrimaryDark"
                         android:text="@string/cci07f"
                         android:textColor="@color/white"
@@ -660,11 +662,11 @@
                             android:textSize="20sp" />
 
                         <EditText
-                            android:inputType="number"
-                            android:maxLength="2"
                             android:id="@+id/cci07f01x"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:maxLength="2"
                             android:text='@{cci07f01.checked? cci07f01x.getText.toString :"" }'
                             android:visibility='@{cci07f01.checked? View.VISIBLE : View.GONE}' />
 
@@ -688,9 +690,9 @@
                     </RadioGroup>
 
                     <TextView
-                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
                         android:background="@color/colorPrimaryDark"
                         android:text="@string/cci07g"
                         android:textColor="@color/white"
@@ -732,9 +734,9 @@
                     </RadioGroup>
 
                     <TextView
-                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
                         android:background="@color/colorPrimaryDark"
                         android:text="@string/cci07h"
                         android:textColor="@color/white"
@@ -776,9 +778,9 @@
                     </RadioGroup>
 
                     <TextView
-                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
                         android:background="@color/colorPrimaryDark"
                         android:text="@string/cci07i"
                         android:textColor="@color/white"
@@ -823,9 +825,9 @@
                 <!--Q7-->
 
                 <LinearLayout
-                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:orientation="vertical">
 
                     <TextView
@@ -837,9 +839,9 @@
                         android:textSize="25sp" />
 
                     <TextView
-                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
                         android:background="@color/colorPrimaryDark"
                         android:text="@string/cci08a"
                         android:textColor="@color/white"
@@ -881,9 +883,9 @@
                     </RadioGroup>
 
                     <TextView
-                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
                         android:background="@color/colorPrimaryDark"
                         android:text="@string/cci08b"
                         android:textColor="@color/white"
@@ -925,9 +927,9 @@
                     </RadioGroup>
 
                     <TextView
-                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
                         android:background="@color/colorPrimaryDark"
                         android:text="@string/cci08c"
                         android:textColor="@color/white"
@@ -969,9 +971,9 @@
                     </RadioGroup>
 
                     <TextView
-                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
                         android:background="@color/colorPrimaryDark"
                         android:text="@string/cci08d"
                         android:textColor="@color/white"
@@ -1013,9 +1015,9 @@
                     </RadioGroup>
 
                     <TextView
-                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
                         android:background="@color/colorPrimaryDark"
                         android:text="@string/cci08e"
                         android:textColor="@color/white"
@@ -1057,9 +1059,9 @@
                     </RadioGroup>
 
                     <TextView
-                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
                         android:background="@color/colorPrimaryDark"
                         android:text="@string/cci08f"
                         android:textColor="@color/white"
@@ -1101,9 +1103,9 @@
                     </RadioGroup>
 
                     <TextView
-                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
                         android:background="@color/colorPrimaryDark"
                         android:text="@string/cci08g"
                         android:textColor="@color/white"
@@ -1145,9 +1147,9 @@
                     </RadioGroup>
 
                     <TextView
-                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
                         android:background="@color/colorPrimaryDark"
                         android:text="@string/cci08h"
                         android:textColor="@color/white"
@@ -1189,9 +1191,9 @@
                     </RadioGroup>
 
                     <TextView
-                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
                         android:background="@color/colorPrimaryDark"
                         android:text="@string/cci08i"
                         android:textColor="@color/white"
@@ -1233,9 +1235,9 @@
                     </RadioGroup>
 
                     <TextView
-                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
                         android:background="@color/colorPrimaryDark"
                         android:text="@string/cci08j"
                         android:textColor="@color/white"
@@ -1277,9 +1279,9 @@
                     </RadioGroup>
 
                     <TextView
-                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
                         android:background="@color/colorPrimaryDark"
                         android:text="@string/cci08k"
                         android:textColor="@color/white"
@@ -1321,9 +1323,9 @@
                     </RadioGroup>
 
                     <TextView
-                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
                         android:background="@color/colorPrimaryDark"
                         android:text="@string/cci08l"
                         android:textColor="@color/white"
@@ -1365,9 +1367,9 @@
                     </RadioGroup>
 
                     <TextView
-                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
                         android:background="@color/colorPrimaryDark"
                         android:text="@string/cci08m"
                         android:textColor="@color/white"
@@ -1409,9 +1411,9 @@
                     </RadioGroup>
 
                     <TextView
-                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
                         android:background="@color/colorPrimaryDark"
                         android:text="@string/cci08n"
                         android:textColor="@color/white"
@@ -1453,9 +1455,9 @@
                     </RadioGroup>
 
                     <TextView
-                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
                         android:background="@color/colorPrimaryDark"
                         android:text="@string/cci08o"
                         android:textColor="@color/white"
@@ -1497,9 +1499,9 @@
                     </RadioGroup>
 
                     <TextView
-                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
                         android:background="@color/colorPrimaryDark"
                         android:text="@string/cci08p"
                         android:textColor="@color/white"
@@ -1541,9 +1543,9 @@
                     </RadioGroup>
 
                     <TextView
-                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
                         android:background="@color/colorPrimaryDark"
                         android:text="@string/cci08q"
                         android:textColor="@color/white"
@@ -1588,11 +1590,12 @@
                 <!--Q8-->
 
                 <LinearLayout
-                    android:layout_marginTop="5dp"
                     android:id="@+id/fldgrpcci08"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -1650,11 +1653,12 @@
                 <!--Q9-->
 
                 <LinearLayout
-                    android:layout_marginTop="5dp"
                     android:id="@+id/fldgrpcci09"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:visibility='@{cci09a.checked? View.VISIBLE : View.GONE}'>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -1665,11 +1669,11 @@
                         android:textSize="25sp" />
 
                     <EditText
-                        android:inputType="number"
-                        android:maxLength="2"
                         android:id="@+id/cci10t"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:maxLength="2"
                         android:text='@{cci1098.checked? cci10t.getText.toString : "" }'
                         android:visibility='@{cci1098.checked? View.GONE : View.VISIBLE}' />
 
@@ -1684,9 +1688,9 @@
 
                 <!--Q10-->
                 <LinearLayout
-                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:orientation="vertical">
 
 
@@ -1736,9 +1740,9 @@
 
                 <!--Q11-->
                 <LinearLayout
-                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:orientation="vertical">
 
                     <TextView
@@ -1750,9 +1754,9 @@
                         android:textSize="25sp" />
 
                     <TextView
-                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
                         android:background="@color/colorPrimary"
                         android:text="@string/cci12"
                         android:textColor="@color/white"
@@ -1796,9 +1800,9 @@
 
                 <!--Q12-->
                 <LinearLayout
-                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:orientation="vertical">
 
                     <TextView
@@ -1847,9 +1851,9 @@
 
                 <!--Q13-->
                 <LinearLayout
-                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:orientation="vertical">
 
 
@@ -1862,9 +1866,9 @@
                         android:textSize="25sp" />
 
                     <TextView
-                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
                         android:background="@color/colorPrimary"
                         android:text="@string/cci14"
                         android:textColor="@color/white"
@@ -1908,9 +1912,9 @@
 
                 <!--Q14-->
                 <LinearLayout
-                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:orientation="vertical">
 
                     <TextView
@@ -1959,9 +1963,9 @@
 
                 <!--Q15-->
                 <LinearLayout
-                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:orientation="vertical">
 
                     <TextView
@@ -2034,25 +2038,26 @@
                     android:layout_gravity="end"
                     android:layout_marginTop="30dp"
                     android:orientation="horizontal">
+
                     <Button
-                        style="@style/buttons"
                         android:id="@+id/btn_Continue"
+                        style="@style/buttons"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:onClick='@{() ->  callback.BtnContinue()}'
                         android:layout_weight="1"
                         android:backgroundTint="#1ed61e"
+                        android:onClick='@{() ->  callback.BtnContinue()}'
                         android:text="@string/nextSection"
                         android:textColor="@color/white" />
 
                     <Button
-                        style="@style/buttons"
                         android:id="@+id/btn_End"
+                        style="@style/buttons"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:onClick='@{ () -> callback.BtnEnd()}'
                         android:backgroundTint="@color/red"
+                        android:onClick='@{ () -> callback.BtnEnd()}'
                         android:text="@string/end_interview"
                         android:textColor="@color/white" />
 

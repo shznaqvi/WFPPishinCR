@@ -49,7 +49,8 @@ public class SectionGHActivity extends AppCompatActivity {
                     bi.ccg0106.clearCheck();
                     bi.ccg0107.clearCheck();
                     bi.ccg0108.clearCheck();
-                    bi.ccg0196x.setText(null);
+                    bi.ccg01096.clearCheck();
+                    bi.ccg01096x.setText(null);
                 } else {
                     bi.fldgrpccg002.setVisibility(View.VISIBLE);
 
@@ -148,12 +149,30 @@ public class SectionGHActivity extends AppCompatActivity {
 
                 if (i == R.id.ccg0108a || i == R.id.ccg0108b) {
                     bi.ccg0197.setChecked(false);
+
                     //bi.fldgrpccg002.setVisibility(View.VISIBLE);
                 } else {
                     bi.ccg0197.setChecked(true);
                 }
             }
         });
+
+        bi.ccg01096.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+
+                if (i == R.id.ccg01096a) {
+                    bi.ccg0197.setChecked(false);
+                    bi.ccg01096x.setVisibility(View.VISIBLE);
+                    //bi.fldgrpccg002.setVisibility(View.VISIBLE);
+                } else {
+                    bi.ccg0197.setChecked(true);
+                    bi.ccg01096x.setVisibility(View.GONE);
+                    bi.ccg01096x.setText(null);
+                }
+            }
+        });
+
 
         bi.ccg02.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -232,11 +251,20 @@ public class SectionGHActivity extends AppCompatActivity {
         sGH.put("ccg01f", bi.ccg0106a.isChecked() ? "1" : bi.ccg0106b.isChecked() ? "2" : "0");
         sGH.put("ccg01g", bi.ccg0107a.isChecked() ? "1" : bi.ccg0107b.isChecked() ? "2" : "0");
         sGH.put("ccg01h", bi.ccg0108a.isChecked() ? "1" : bi.ccg0108b.isChecked() ? "2" : "0");
-        sGH.put("ccg0196", bi.ccg0196x.getText().toString());
+        sGH.put("ccg0196", bi.ccg01096a.isChecked() ? "1" : bi.ccg01096b.isChecked() ? "2" : "0");
+        sGH.put("ccg0196x", bi.ccg01096x.getText().toString());
         sGH.put("ccg0197", bi.ccg0197.isChecked() ? "97" : "0");
 
         sGH.put("ccg02", bi.ccg02a.isChecked() ? "1" : bi.ccg02b.isChecked() ? "2" : "0");
-        sGH.put("ccg03", bi.ccg03a.isChecked() ? "1" : bi.ccg03b.isChecked() ? "2" : bi.ccg03c.isChecked() ? "3" : bi.ccg03d.isChecked() ? "4" : bi.ccg03e.isChecked() ? "5" : bi.ccg03f.isChecked() ? "6" : bi.ccg03g.isChecked() ? "7" : bi.ccg03h.isChecked() ? "8" : bi.ccg0396.isChecked() ? "96" : "0");
+        sGH.put("ccg03a", bi.ccg03a.isChecked() ? "1" : "0");
+        sGH.put("ccg03b", bi.ccg03b.isChecked() ? "2" : "0");
+        sGH.put("ccg03c", bi.ccg03c.isChecked() ? "3" : "0");
+        sGH.put("ccg03d", bi.ccg03d.isChecked() ? "4" : "0");
+        sGH.put("ccg03e", bi.ccg03e.isChecked() ? "5" : "0");
+        sGH.put("ccg03f", bi.ccg03f.isChecked() ? "6" : "0");
+        sGH.put("ccg03g", bi.ccg03g.isChecked() ? "7" : "0");
+        sGH.put("ccg03h", bi.ccg03h.isChecked() ? "8" : "0");
+        sGH.put("ccg0396", bi.ccg0396.isChecked() ? "96" : "0");
         sGH.put("ccg0396", bi.ccg0396x.getText().toString());
 
         sGH.put("cch01", bi.cch01a.isChecked() ? "1" : bi.cch01b.isChecked() ? "2" : "0");
@@ -292,6 +320,14 @@ public class SectionGHActivity extends AppCompatActivity {
             if (!validatorClass.EmptyRadioButton(this, bi.ccg0108, bi.ccg0108a, getString(R.string.ccg01h))) {
                 return false;
             }
+            if (!validatorClass.EmptyRadioButton(this, bi.ccg01096, bi.ccg01096a, getString(R.string.ccg0196))) {
+                return false;
+            }
+            if (bi.ccg01096a.isChecked()) {
+                if (!validatorClass.EmptyTextBox(this, bi.ccg01096x, getString(R.string.ccg0196))) {
+                    return false;
+                }
+            }
 
         }
         if (!bi.ccg0197.isChecked()) {
@@ -302,7 +338,7 @@ public class SectionGHActivity extends AppCompatActivity {
 
             if (bi.ccg02a.isChecked()) {
 
-                if (!validatorClass.EmptyRadioButton(this, bi.ccg03, bi.ccg03a, getString(R.string.ccg03))) {
+                if (!validatorClass.EmptyCheckBox(this, bi.fldgrpccg03, bi.ccg03a, getString(R.string.ccg03))) {
                     return false;
                 }
 

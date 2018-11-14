@@ -2,11 +2,13 @@ package com.example.hassannaqvi.wfppishincr.ui.activities;
 
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.CompoundButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.hassannaqvi.wfppishincr.R;
@@ -127,16 +129,6 @@ public class SectionDEFActivity extends AppCompatActivity {
         if (!validatorClass.RangeTextBox(this, bi.ccd01cm01, 55.0, 75.0, getString(R.string.ccd01), "length")) {
             return false;
         }
-//        if (Integer.parseInt(bi.ccd01cm01.getText().toString()) < 55.00 && Integer.parseInt(bi.ccd01cm01.getText().toString()) > 75.00) {
-//            bi.ccd01cm01.setError("Range must be in b/w 55.00 cm to 75.00 cm ");
-//            bi.ccd01cm01.requestFocus();
-//            return false;
-//        } else {
-//            bi.ccd01cm01.setError(null);
-//            bi.ccd01cm01.clearFocus();
-//        }
-
-
 
         if (!validatorClass.EmptySpinner(this, bi.ccd0102, getString(R.string.ccd01))) {
             return false;
@@ -156,14 +148,15 @@ public class SectionDEFActivity extends AppCompatActivity {
         if (!validatorClass.RangeTextBox(this, bi.ccd01cm02, 55.0, 75.0, getString(R.string.ccd01), "length")) {
             return false;
         }
-//        if (Integer.parseInt(bi.ccd01cm02.getText().toString()) < 55.00 && Integer.parseInt(bi.ccd01cm02.getText().toString()) > 75.00) {
-//            bi.ccd01cm02.setError("Range must be in b/w 55.00 cm to 75.00 cm ");
-//            bi.ccd01cm02.requestFocus();
-//            return false;
-//        } else {
-//            bi.ccd01cm02.setError(null);
-//            bi.ccd01cm02.clearFocus();
-//        }
+
+        if (bi.ccd0102.getSelectedItem().equals(bi.ccd0101.getSelectedItem().toString())) {
+            Toast.makeText(this, "ERROR: Same Users", Toast.LENGTH_SHORT).show();
+            ((TextView) bi.ccd0102.getSelectedView()).setText("Can not be same");
+            ((TextView) bi.ccd0102.getSelectedView()).setTextColor(Color.RED);
+            return false;
+        } else {
+            ((TextView) bi.ccd0102.getSelectedView()).setError(null);
+        }
 
         ///---------------------------Weight------------------------------------------
 
@@ -210,6 +203,15 @@ public class SectionDEFActivity extends AppCompatActivity {
         }
         if (!validatorClass.RangeTextBox(this, bi.ccd02kg02, 4.5, 11.5, getString(R.string.ccd02), "weight")) {
             return false;
+        }
+
+        if (bi.ccd0201.getSelectedItem().equals(bi.ccd0202.getSelectedItem().toString())) {
+            Toast.makeText(this, "ERROR: Same Users", Toast.LENGTH_SHORT).show();
+            ((TextView) bi.ccd0202.getSelectedView()).setText("Can not be same");
+            ((TextView) bi.ccd0202.getSelectedView()).setTextColor(Color.RED);
+            return false;
+        } else {
+            ((TextView) bi.ccd0202.getSelectedView()).setError(null);
         }
 
 //        if (Integer.parseInt(bi.ccd02kg02.getText().toString()) < 4.50 && Integer.parseInt(bi.ccd02kg02.getText().toString()) > 11.50) {
@@ -269,6 +271,15 @@ public class SectionDEFActivity extends AppCompatActivity {
         if (!validatorClass.RangeTextBox(this, bi.cce01cm02, 110.0, 220.0, getString(R.string.ccd01), "length")) {
             return false;
         }
+
+        if (bi.cce0101.getSelectedItem().equals(bi.cce0102.getSelectedItem().toString())) {
+            Toast.makeText(this, "ERROR: Same Users", Toast.LENGTH_SHORT).show();
+            ((TextView) bi.cce0102.getSelectedView()).setText("Can not be same");
+            ((TextView) bi.cce0102.getSelectedView()).setTextColor(Color.RED);
+            return false;
+        } else {
+            ((TextView) bi.cce0102.getSelectedView()).setError(null);
+        }
 //        if (Integer.parseInt(bi.cce01cm02.getText().toString()) < 110 && Integer.parseInt(bi.cce01cm02.getText().toString()) > 220) {
 //            bi.cce01cm02.setError("Range must be in b/w 110cm to 220 cm ");
 //            bi.cce01cm02.requestFocus();
@@ -324,6 +335,16 @@ public class SectionDEFActivity extends AppCompatActivity {
 
         if (!validatorClass.RangeTextBox(this, bi.cce02kg02, 25.0, 110.0, getString(R.string.ccd02), "weight")) {
             return false;
+        }
+
+
+        if (bi.cce0201.getSelectedItem().equals(bi.cce0202.getSelectedItem().toString())) {
+            Toast.makeText(this, "ERROR: Same Users", Toast.LENGTH_SHORT).show();
+            ((TextView) bi.cce0202.getSelectedView()).setText("Can not be same");
+            ((TextView) bi.cce0202.getSelectedView()).setTextColor(Color.RED);
+            return false;
+        } else {
+            ((TextView) bi.cce0202.getSelectedView()).setError(null);
         }
 
 //        if (Integer.parseInt(bi.cce02kg02.getText().toString()) < 25.0 && Integer.parseInt(bi.cce02kg02.getText().toString()) > 110) {
@@ -387,6 +408,15 @@ public class SectionDEFActivity extends AppCompatActivity {
             if (!validatorClass.RangeTextBox(this, bi.ccf01cm02, 110.0, 220.0, getString(R.string.ccd01), "length")) {
                 return false;
             }
+
+            if (bi.ccf0101.getSelectedItem().equals(bi.ccf0102.getSelectedItem().toString())) {
+                Toast.makeText(this, "ERROR: Same Users", Toast.LENGTH_SHORT).show();
+                ((TextView) bi.ccf0102.getSelectedView()).setText("Can not be same");
+                ((TextView) bi.ccf0102.getSelectedView()).setTextColor(Color.RED);
+                return false;
+            } else {
+                ((TextView) bi.ccf0102.getSelectedView()).setError(null);
+            }
 //
 //            if (Integer.parseInt(bi.ccf01cm02.getText().toString()) < 110 && Integer.parseInt(bi.ccf01cm02.getText().toString()) > 220) {
 //                bi.ccf01cm02.setError("Range must be in b/w 110 cm to 220 cm ");
@@ -441,7 +471,18 @@ public class SectionDEFActivity extends AppCompatActivity {
                 bi.ccf02kg02.clearFocus();
             }
 
-            return validatorClass.RangeTextBox(this, bi.ccf02kg02, 25.0, 110.0, getString(R.string.ccd02), "weight");
+            if (!validatorClass.RangeTextBox(this, bi.ccf02kg02, 25.0, 110.0, getString(R.string.ccd02), "weight")) {
+                return false;
+            }
+
+            if (bi.ccf0201.getSelectedItem().equals(bi.ccf0202.getSelectedItem().toString())) {
+                Toast.makeText(this, "ERROR: Same Users", Toast.LENGTH_SHORT).show();
+                ((TextView) bi.ccf0202.getSelectedView()).setText("Can not be same");
+                ((TextView) bi.ccf0202.getSelectedView()).setTextColor(Color.RED);
+                return false;
+            } else {
+                ((TextView) bi.ccf0202.getSelectedView()).setError(null);
+            }
 
 //            if (Integer.parseInt(bi.ccf02kg02.getText().toString()) < 25.0 && Integer.parseInt(bi.ccf02kg02.getText().toString()) > 110) {
 //                bi.ccf02kg02.setError("Range must be in b/w 25.0 kg to 110 kg ");
