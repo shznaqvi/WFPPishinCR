@@ -10,6 +10,7 @@ import com.example.hassannaqvi.wfppishincr.R;
 import com.example.hassannaqvi.wfppishincr.core.DatabaseHelper;
 import com.example.hassannaqvi.wfppishincr.core.MainApp;
 import com.example.hassannaqvi.wfppishincr.databinding.ActivityEndingBinding;
+import com.example.hassannaqvi.wfppishincr.validation.validatorClass;
 
 import org.json.JSONException;
 
@@ -36,9 +37,13 @@ public class EndingActivity extends AppCompatActivity {
         if (check) {
             binding.istatusa.setEnabled(true);
             binding.istatusb.setEnabled(false);
+            binding.istatusc.setEnabled(false);
+            binding.istatusd.setEnabled(false);
         } else {
             binding.istatusa.setEnabled(false);
             binding.istatusb.setEnabled(true);
+            binding.istatusc.setEnabled(true);
+            binding.istatusd.setEnabled(true);
         }
 
 /*        istatus.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -82,6 +87,8 @@ public class EndingActivity extends AppCompatActivity {
 
         MainApp.fc.setIstatus(binding.istatusa.isChecked() ? "1"
                 : binding.istatusb.isChecked() ? "2"
+                : binding.istatusc.isChecked() ? "3"
+                : binding.istatusd.isChecked() ? "4"
                 : "0");
 
 //        MainApp.fc.setIstatus88x(istatus88x.getText().toString());
@@ -110,9 +117,9 @@ public class EndingActivity extends AppCompatActivity {
     private boolean formValidation() {
         Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
 
-        /*if (!validatorClass.EmptyRadioButton(this, binding.istatus, binding.istatusb, getString(R.string.istatus))) {
+        if (!validatorClass.EmptyRadioButton(this, binding.istatus, binding.istatusa, getString(R.string.istatus))) {
             return false;
-        }*/
+        }
 
         /*if (istatus88.isChecked()) {
 

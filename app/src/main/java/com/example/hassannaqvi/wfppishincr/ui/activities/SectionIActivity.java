@@ -45,14 +45,21 @@ public class SectionIActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
 
-                if (i != R.id.cci01a) {
-
+                if (i == R.id.cci01a) {
                     bi.fldgrpcci02.setVisibility(View.GONE);
+                    bi.fldgrpcci03.setVisibility(View.VISIBLE);
+                    bi.fldgrpcci04.setVisibility(View.VISIBLE);
                     ClearClass.ClearAllFields(bi.fldgrpcci02, false);
+                    ClearClass.ClearAllFields(bi.fldgrpcci03, true);
+                    ClearClass.ClearAllFields(bi.fldgrpcci04, true);
 
                 } else {
                     bi.fldgrpcci02.setVisibility(View.VISIBLE);
                     ClearClass.ClearAllFields(bi.fldgrpcci02, true);
+                    bi.fldgrpcci03.setVisibility(View.GONE);
+                    bi.fldgrpcci04.setVisibility(View.GONE);
+                    ClearClass.ClearAllFields(bi.fldgrpcci03, false);
+                    ClearClass.ClearAllFields(bi.fldgrpcci04, false);
                 }
             }
         });
@@ -118,7 +125,6 @@ public class SectionIActivity extends AppCompatActivity {
         bi.cci08o.setOnCheckedChangeListener(check);
         bi.cci08p.setOnCheckedChangeListener(check);
         bi.cci08q.setOnCheckedChangeListener(check);
-
 
 
         bi.cci16.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -235,34 +241,36 @@ public class SectionIActivity extends AppCompatActivity {
         }
 
         // Q 1.1 check
-        if (bi.cci01a.isChecked()) {
+        if (!bi.cci01a.isChecked()) {
             if (!validatorClass.EmptyRadioButton(this, bi.cci02, bi.cci02a, getString(R.string.cci02))) {
+                return false;
+            }
+        }else {
+            if (!validatorClass.EmptyRadioButton(this, bi.cci03, bi.cci03a, getString(R.string.cci03))) {
+                return false;
+            }
+            if (bi.cci03h.isChecked()) {
+                if (!validatorClass.EmptyTextBox(this, bi.cci03hx, getString(R.string.cci03))) {
+                    return false;
+                }
+                if (!validatorClass.RangeTextBox(this, bi.cci03hx, 1, 23, getString(R.string.cci03), " Hours")) {
+                    return false;
+                }
+            }
+            if (bi.cci03d.isChecked()) {
+                if (!validatorClass.EmptyTextBox(this, bi.cci03dx, getString(R.string.cci03))) {
+                    return false;
+                }
+                if (!validatorClass.RangeTextBox(this, bi.cci03dx, 1, 30, getString(R.string.cci03), " Days")) {
+                    return false;
+                }
+            }
+            if (!validatorClass.EmptyRadioButton(this, bi.cci04, bi.cci04a, getString(R.string.cci04))) {
                 return false;
             }
         }
         //Q2 check
-        if (!validatorClass.EmptyRadioButton(this, bi.cci03, bi.cci03a, getString(R.string.cci03))) {
-            return false;
-        }
-        if (bi.cci03h.isChecked()) {
-            if (!validatorClass.EmptyTextBox(this, bi.cci03hx, getString(R.string.cci03))) {
-                return false;
-            }
-            if (!validatorClass.RangeTextBox(this, bi.cci03hx, 1, 23, getString(R.string.cci03), "Number")) {
-                return false;
-            }
-        }
-        if (bi.cci03d.isChecked()) {
-            if (!validatorClass.EmptyTextBox(this, bi.cci03dx, getString(R.string.cci03))) {
-                return false;
-            }
-            if (!validatorClass.RangeTextBox(this, bi.cci03dx, 1, 30, getString(R.string.cci03), "Number")) {
-                return false;
-            }
-        }
-        if (!validatorClass.EmptyRadioButton(this, bi.cci04, bi.cci04a, getString(R.string.cci04))) {
-            return false;
-        }
+
         if (!validatorClass.EmptyRadioButton(this, bi.cci05, bi.cci05a, getString(R.string.cci05))) {
             return false;
         }

@@ -82,7 +82,7 @@ public class SectionDEFActivity extends AppCompatActivity {
                 saveData();
                 if (updateDb()) {
                     Intent secNext = new Intent(this, EndingActivity.class);
-                    secNext.putExtra("complete", false);
+                    secNext.putExtra("complete", true);
                     startActivity(secNext);
                     finish();
                 }
@@ -225,7 +225,9 @@ public class SectionDEFActivity extends AppCompatActivity {
             bi.ccd03.setError(null);
             bi.ccd03.clearFocus();
         }
-
+        if (!validatorClass.RangeTextBox(this, bi.ccd03, 4.0, 20.0, getString(R.string.ccd03), " HB")) {
+            return false;
+        }
 //        if (Integer.parseInt(bi.ccd02kg02.getText().toString()) < 4.50 && Integer.parseInt(bi.ccd02kg02.getText().toString()) > 11.50) {
 //            bi.ccd02kg02.setError("Range must be in b/w 4.50 kg to 11.50 kg ");
 //            bi.ccd02kg02.requestFocus();

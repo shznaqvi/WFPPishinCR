@@ -351,7 +351,6 @@ public class SectionJActivity extends AppCompatActivity {
             }
         }
 
-
     }
 
     public boolean updateDb() {

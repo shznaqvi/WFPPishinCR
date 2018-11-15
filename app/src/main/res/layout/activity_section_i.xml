@@ -146,6 +146,7 @@
                 <!--Q2-->
 
                 <LinearLayout
+                    android:id="@+id/fldgrpcci03"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
@@ -192,7 +193,8 @@
                             android:layout_height="wrap_content"
                             android:hint="@string/cci03h"
                             android:text='@{cci03h.checked? cci03hx.getText.toString : ""}'
-                            android:visibility='@{cci03h.checked? View.VISIBLE : View.GONE}' />
+                            android:visibility='@{cci03h.checked? View.VISIBLE : View.GONE}'
+                            android:maxLength="2"/>
 
                         <RadioButton
                             android:id="@+id/cci03d"
@@ -209,6 +211,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/cci03d"
+                            android:maxLength="2"
                             android:text='@{cci03d.checked? cci03dx.getText.toString : ""}'
                             android:visibility='@{cci03d.checked? View.VISIBLE : View.GONE}' />
                     </RadioGroup>
@@ -217,6 +220,7 @@
 
                 <!--Q3-->
                 <LinearLayout
+                    android:id="@+id/fldgrpcci04"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
